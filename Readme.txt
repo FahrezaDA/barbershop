@@ -9,8 +9,9 @@ Slide index
 Noted : 
 Butuh 
 Ukuran gambar : 
-Warna latar :
-Font : 
+Warna latar : putih
+warna button : #25316D
+Font : roboto
 
 Slide pelayanan 
 1.	List pelayanan :
