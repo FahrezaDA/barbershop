@@ -13,6 +13,10 @@ Warna latar : putih
 warna button : #25316D
 Font : roboto
 
+Untuk desainnya seperti link figma dibawah ini ya
+konten : https://www.figma.com/file/ohF4DiLry32dYcRfCrz89Z/Czech-Property-Service-(Community)?node-id=0%3A1
+dashboard : https://www.figma.com/file/axKVV2h4IQcnHCvvbln1kA/Untitled?node-id=25%3A77
+
 Slide pelayanan 
 1.	List pelayanan :
 1.	Potong rambut : 
