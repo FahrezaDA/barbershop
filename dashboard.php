@@ -1,16 +1,13 @@
-
+//test
 <?php
 require("koneksi.php");
-
 session_start();
-
 if (!isset($_SESSION['id'])) {
     $_SESSION['msg'] = 'anda harus login untuk mengakses halaman ini';
     header('Location: login.php');
 }
 $sesID = $_SESSION['id'];
 $sesName = $_SESSION['name'];
-$sesLvl = $_SESSION['level'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +20,7 @@ $sesLvl = $_SESSION['level'];
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Tables</title>
+    <title>DASHBOARD</title>
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -379,7 +376,7 @@ $sesLvl = $_SESSION['level'];
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">DATA ADMIN </h1>
+                    <h1 class="h3 mb-2 text-gray-800">DATA KARYAWAN </h1>
 
                     <!-- DataTales Example -->
                         <div class="card-body">
@@ -389,45 +386,53 @@ $sesLvl = $_SESSION['level'];
                                         <tr>
                                             <th>No</th>
                                             <th>id</th>
-                                            <th>Email</th>
-                                            <th>Username</th>
-                                            <th>User Level </th>
+                                            <th>Nama</th>
+                                            <th>Alamat</th>
+                                            <th>No Telpon </th>
+                                            <th>Email </th>
+                                            <th>Posisi </th>
+                                            <th>Gaji </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php
-                                            $query = "SELECT * FROM user_detail";
+                                            $query = "SELECT*FROM karyawan";
                                             $result = mysqli_query($koneksi, $query); 
-                                            $no = 1;      
-                                            if ($sesLvl == 2) {
-                                                $dis = "";    
-                                            }else{
-                                                $dis = "disabled";
-                                            }        
+                                            $no = 1; 
+                                            $postt ="admin";        
                                             while ($row = mysqli_fetch_array($result)){
-                                                $userId = $row['id'];
-                                                $userMail = $row['user_email'];
-                                                $userName = $row['user_fullname'];
-                                                $userLevel = $row['level'];
+                                                $userId = $row['karyawanID'];
+                                                $userName = $row['nama_karyawan'];
+                                                $userAlamat = $row['alamat'];
+                                                $userNoTelpon = $row['no_telpon'];
+                                                $userEmail = $row['email'];
+                                                $userPosisi = $row['posisi'];
+                                                $userGaji = $row['gaji'];
                                         ?>
                                         <tr>
                                             <td><?php echo $no; ?></td>
                                             <td><?php echo $userId; ?></td>
-                                            <td><?php echo $userMail; ?></td>
                                             <td><?php echo $userName; ?></td>
-                                            <td><?php echo $userLevel; ?></td>
+                                            <td><?php echo $userAlamat; ?></td>
+                                            <td><?php echo $userNoTelpon; ?></td>
+                                            <td><?php echo $userEmail; ?></td>
+                                            <td><?php echo $userPosisi; ?></td>
+                                            <td><?php echo $userGaji; ?></td>
                                             <td>
-                                            <a href="edit.php?id= <?php echo $row['id']; ?>" class="btn btn-primary btn-circle <?php echo $dis; ?>"><i class="fas fa-pen"></i></a>
-
-                                            <a href="#" class="btn btn-danger btn-circle <?php echo $dis;?>" onClick="confirmModal('hapus.php?&id=<?php echo $row['id']; ?>');"><i class="fas fa-trash"></i></a>
+                                            <a href="edit.php?id= <?php echo $row['karyawanID']; ?>" class="btn btn-primary btn-circle <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
+                                            <a href="hapus.php?id= <?php echo $row['karyawanID']; ?>" class="btn btn-danger btn-circle <?php echo" ";?>" onClick="confirmModal('hapus.php?&id=<?php echo $row['karyawanID']; ?>');"><i class="fas fa-trash"></i></a>
                                             </td>
+                                            
                                         </tr>
                                         <?php
                                             $no++;
                                             }
                                         ?>
+                                        
                                     </tbody>
+                                    
                                 </table>
+                                <a href="register_karyawan.php" type="submit" name="register" class="btn btn-primary">Register</a>
                             </div>
                         </div>
                     </div>
