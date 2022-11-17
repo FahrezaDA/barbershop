@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -46,12 +45,12 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>UpConstruction<span>.</span></h1>
+        <h1>CUTLUCK BARBERSHOP<span>.</span></h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar" >
         <ul>
           <li><a href="index.php" class="active">Utama</a></li>
           <li><a href="pelayanan.php">Pelayanan </a></li>
@@ -82,9 +81,10 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2 data-aos="fade-down">Welcome to <span>UpConstruction</span></h2>
-            <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Get Started</a>
+            <h2 data-aos="fade-down">WELCOME TO <span>CUTLUCK BARBERSHOP</span></h2>
+            <p data-aos="fade-up">Tampil dengan keren setiap hari adalah impian semua pria, berpenampilan menarik dapat dicapai dengan rambut yang rapi dan klimis.
+              <br>untuk urusan rambut percayakan pada kami </p>
+            <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">MULAI</a>
           </div>
         </div>
       </div>
@@ -93,10 +93,10 @@
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
       <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/hero-carousel-1.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-2.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-3.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-6.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-2.png)"></div>
       <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-4.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-5.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-5.png)"></div>
 
       <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
@@ -164,12 +164,12 @@
       </div>
     </section><!-- End Get Started Section -->
 
-   
+    <!-- ======= Constructions Section ======= -->
     <section id="constructions" class="constructions">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Constructions</h2>
+          <h2>Pelayanan</h2>
           <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p>
         </div>
 
@@ -207,7 +207,7 @@
             </div>
           </div><!-- End Card Item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-6" dnavata-aos="fade-up" data-aos-delay="300">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
@@ -331,10 +331,12 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row justify-content-around gy-4">
-          <div class="col-lg-6 img-bg" style="background-image: url(assets/img/alt-services.jpg);" data-aos="zoom-in" data-aos-delay="100"></div>
+          <div class="col-lg-6 img-bg" class="img-fluid" data-aos="zoom-in" data-aos-delay="100">
+            <img style="width:700px;height:500px;" src="gambar/kelebihan.jpg"></img>
+          </div>
 
           <div class="col-lg-5 d-flex flex-column justify-content-center">
-            <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
+            <h3>Kelebihan CutLuck Barbershop </h3>
             <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi</p>
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
@@ -521,7 +523,7 @@
                 <div class="portfolio-info">
                   <h4>Remodeling 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/projects/remodeling-1.jpg" title="Remodeling 1" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/projects/gambar1.jpg" title="Remodeling 1"  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -898,7 +900,7 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3>UpConstruction</h3>
+              <h3>BarberCepmek</h3>
               <p>
                 A108 Adam Street <br>
                 NY 535022, USA<br><br>
