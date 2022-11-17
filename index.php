@@ -55,7 +55,7 @@
           <li><a href="index.php" class="active">Utama</a></li>
           <li><a href="pelayanan.php">Pelayanan </a></li>
           <li><a href="tentangKami.php">Tentang Kami </a></li>
-          <li><a href="pegawai.php">Pegawai </a></li>
+          <li><a href="projects.php">Galeri </a></li>
           <li><a href="blog.php">Pesan </a></li>
           <li><a href="blog.php">Kontak</a></li>
         
