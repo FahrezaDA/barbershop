@@ -62,9 +62,9 @@
 
           <li class="dropdown"><a href="#"><span>DASHBOARD</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="dashboard.php">PEMESANAN </a></li>
-              <li><a href="#">PENGELUARAN</a></li>
-              <li><a href="#">PEMASUKAN</a></li>
+              <li><a href="pemesanan.php">PEMESANAN </a></li>
+              <li><a href="pengeluaran.php">PENGELUARAN</a></li>
+              <li><a href="pemasukan.php">PEMASUKAN</a></li>
             </ul>
           </li>
           <li><a href="login.php">Logout</a></li>
