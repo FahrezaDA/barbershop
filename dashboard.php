@@ -49,7 +49,7 @@ $sesName = $_SESSION['name'];
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">DASHBOARD <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">DASHBOARD</div>
             </a>
 
             <!-- Divider -->
@@ -57,7 +57,7 @@ $sesName = $_SESSION['name'];
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.php">
+                <a class="nav-link" href="dashboard.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Utama</span></a>
             </li>
@@ -144,8 +144,8 @@ $sesName = $_SESSION['name'];
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">admin</h6>
                         <a class="collapse-item" href="pemesanan.php">Pemesanan</a>
-                        <a class="collapse-item" href="buttons.html">Pemasukan</a>
-                        <a class="collapse-item" href="cards.html">Pengeluaran</a>
+                        <a class="collapse-item" href="pemasukan.php">Pemasukan</a>
+                        <a class="collapse-item" href="pengeluaran.php">Pengeluaran</a>
                     </div>
                 </div>
             </li>
