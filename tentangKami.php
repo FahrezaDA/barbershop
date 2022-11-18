@@ -74,7 +74,6 @@
               
             </ul>
           </li>
-          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -122,7 +121,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Our Team</h2>
+          <h2>Team Kami</h2>
         </div>
 
         <div class="row gy-5">
@@ -134,7 +133,7 @@
               
             </div>
             <div class="member-info text-center">
-              <h4>Siti</h4>
+              <h4>Fahreza</h4>
 
               <p>Merupakan pegawai yang kompeten dan berdedikasi tinggi</p>
             </div>
@@ -146,7 +145,7 @@
               
             </div>
             <div class="member-info text-center">
-              <h4>Paijo</h4>
+              <h4>Nia</h4>
              
               <p>Merupakan pegawai yang kompeten dan berdedikasi tinggi</p>
             </div>
@@ -158,7 +157,31 @@
               
             </div>
             <div class="member-info text-center">
-              <h4>Susi</h4>
+              <h4>Lucky</h4>
+            
+              <p>Merupakan pegawai yang kompeten dan berdedikasi tinggi</p>
+            </div>
+          </div><!-- End Team Member -->
+          
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
+            <div class="member-img">
+              <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
+              
+            </div>
+            <div class="member-info text-center">
+              <h4>Wulan</h4>
+            
+              <p>Merupakan pegawai yang kompeten dan berdedikasi tinggi</p>
+            </div>
+          </div><!-- End Team Member -->
+          
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
+            <div class="member-img">
+              <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
+              
+            </div>
+            <div class="member-info text-center">
+              <h4>Suci</h4>
             
               <p>Merupakan pegawai yang kompeten dan berdedikasi tinggi</p>
             </div>
