@@ -350,9 +350,9 @@ $sesLvl = $_SESSION['level'];
                                                 $userCustomer = $row['nama_customer'];
                                                 $userJenis = $row['jenis_pelayanan'];
                                                 $userHrg = $row['harga'];
-                                                $userAntri = $row['no_antri']
+                                                $userAntri = $row['no_antri'];
                                                 $userId = $row['id_user'];
-                                                $userLayanan = $row['id_pelayanan']
+                                                $userLayanan = $row['id_pelayanan'];
                                                 $userTanggal = $row['tanggal_pemesanan'];
                                         ?>
                                         <tr>
