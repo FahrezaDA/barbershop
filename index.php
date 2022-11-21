@@ -57,7 +57,7 @@
           <li><a href="tentangKami.php">Tentang Kami </a></li>
           <li><a href="projects.php">Galeri </a></li>
           <li><a href="blog.php">Pesan </a></li>
-          <li><a href="kontak.php">Kontak</a></li>
+          <li><a href="contact.php">Kontak</a></li>
         
 
           <li class="dropdown"><a href="#"><span>DASHBOARD</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
