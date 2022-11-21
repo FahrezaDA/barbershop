@@ -84,7 +84,7 @@
 
         <h2>Pelayanan</h2>
         <ol>
-          <li><a href="index.html">Utama</a></li>
+          <li><a href="index.php">Utama</a></li>
           <li>Pelayanan</li>
         </ol>
 
