@@ -328,7 +328,7 @@ $sesLvl = $_SESSION['level'];
                                             <th>Nama Customer</th>
                                             <th>Jenis Pelayanan</th>
                                             <th>Harga</th>
-                                            <th>No Antri</th>
+                                            <th>No Antrian</th>
                                             <th>Id User</th>
                                             <th>Id Pelayanan</th>
                                             <th>Tanggal Pemesanan</th>
@@ -350,7 +350,7 @@ $sesLvl = $_SESSION['level'];
                                                 $userCustomer = $row['nama_customer'];
                                                 $userJenis = $row['jenis_pelayanan'];
                                                 $userHrg = $row['harga'];
-                                                $userAntri = $row['no_antri'];
+                                                $userAntri = $row['no_antrian'];
                                                 $userId = $row['id_user'];
                                                 $userLayanan = $row['id_pelayanan'];
                                                 $userTanggal = $row['tanggal_pemesanan'];
@@ -377,7 +377,7 @@ $sesLvl = $_SESSION['level'];
                                         ?>
                                     </tbody>
                                 </table>
-
+                                <a href="add_pemesanan.php" type="submit" name="tambah" class="btn btn-primary">Tambah</a>
                             </div>
                         </div>
                     </div>
