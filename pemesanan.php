@@ -74,7 +74,7 @@ if( isset($_POST['register']) ){
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="Tanggal Pemesanan" name="txt_tanggal_pemesanan">
                                 </div>
-                                <button type="submit" name="register" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
+                                <button type="submit" name="tambahkan" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
                             </form>
                             <hr>
                             <div class="text-center">
