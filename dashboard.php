@@ -142,7 +142,7 @@ $sesName = $_SESSION['name'];
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">admin</h6>
-                        <a class="collapse-item" href="pemesanan.php">Pemesanan</a>
+                        <a class="collapse-item" href="dashboardPemesanan.php">Pemesanan</a>
                         <a class="collapse-item" href="pemasukan.php">Pemasukan</a>
                         <a class="collapse-item" href="pengeluaran.php">Pengeluaran</a>
                     </div>
