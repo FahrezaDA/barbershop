@@ -9,7 +9,7 @@ if( isset($_POST['register']) ){
     
     // query memasukkan data 
 
-    $query = "INSERT INTO pemesanan VALUES(null, '$nama_customer', '$jenis_pelayanan', '$harga','$no_antrian','$tanggal_pemesanan')";
+    $query = "INSERT INTO pemesanan VALUES(null, '$nama_customer', '$jenis_pelayanan', '$harga','$no_antrian','$tanggal_pemesanan',null)";
     $result = mysqli_query($koneksi, $query);
     header('Location: pemesanan2.php');
 }
@@ -26,7 +26,7 @@ if( isset($_POST['register']) ){
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title> Register</title>
+    <title> Tes</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -51,7 +51,7 @@ if( isset($_POST['register']) ){
                     <div class="col-lg-7">
                         <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">TAMBAH DATA KARYAWAN</h1>
+                                <h1 class="h4 text-gray-900 mb-4">PEMESANAN</h1>
                             </div>
                             <form class="user" action="pemesanan2.php" method="POST">
                                 <div class="form-group">
@@ -71,7 +71,7 @@ if( isset($_POST['register']) ){
                                         placeholder="No Antrian " name="txt_no_antrian">
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control form-control-user" id="exampleInputPassword"
+                                    <input type="text" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="Tanggal Pemesanan" name="txt_tanggal_pemesanan">
                                 </div>
                                 <button type="submit" name="register" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
