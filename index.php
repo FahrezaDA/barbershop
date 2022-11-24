@@ -58,15 +58,7 @@
           <li><a href="projects.php">Galeri </a></li>
           <li><a href="blog.php">Pesan </a></li>
           <li><a href="contact.php">Kontak</a></li>
-        
-
-          <li class="dropdown"><a href="#"><span>DASHBOARD</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="pemesanan.php">PEMESANAN </a></li>
-              <li><a href="pengeluaran.php">PENGELUARAN</a></li>
-              <li><a href="pemasukan.php">PEMASUKAN</a></li>
-            </ul>
-          </li>
+          <li><a href="dashboard.php">Dashboard</a></li>
           <li><a href="login.php">Logout</a></li>
         </ul>
       </nav><!-- .navbar -->

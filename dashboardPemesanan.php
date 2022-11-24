@@ -375,7 +375,7 @@ $sesName = $_SESSION['name'];
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">DATA KARYAWAN </h1>
+                    <h1 class="h3 mb-2 text-gray-800">DATA PEMESANAN</h1>
 
                     <!-- DataTales Example -->
                         <div class="card-body">
@@ -386,40 +386,44 @@ $sesName = $_SESSION['name'];
                                             <th>No</th>
                                             <th>id</th>
                                             <th>Nama</th>
-                                            <th>Alamat</th>
-                                            <th>No Telpon </th>
-                                            <th>Email </th>
-                                            <th>Posisi </th>
-                                            <th>Gaji </th>
+                                            <th>Jenis Pelayanan</th>
+                                            <th>Harga </th>
+                                            <th>No Antrian</th>
+                                            <th>Tanggal Pemesanan </th>
+                                            <th>Id User </th>
+                                            <th>Id Pelayanan </th>
+
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php
-                                            $query = "SELECT*FROM karyawan";
+                                            $query = "SELECT*FROM pemesanan";
                                             $result = mysqli_query($koneksi, $query); 
                                             $no = 1; 
-                                            $postt ="admin";        
+                                            $post ="admin";        
                                             while ($row = mysqli_fetch_array($result)){
-                                                $userId = $row['karyawanID'];
-                                                $userName = $row['nama_karyawan'];
-                                                $userAlamat = $row['alamat'];
-                                                $userNoTelpon = $row['no_telpon'];
-                                                $userEmail = $row['email'];
-                                                $userPosisi = $row['posisi'];
-                                                $userGaji = $row['gaji'];
+                                                $userId = $row['id_pemesanan '];
+                                                $userName = $row['nama_customer'];
+                                                $userJenisPelayanan = $row['jenis_pelayanan'];
+                                                $userHarga = $row['harga'];
+                                                $userNoAntrian = $row['no_antrian'];
+                                                $userTanggalPemesanan = $row['tanggal_pemesanan'];
+                                                $userIdUser = $row['id_user'];
+                                                $userIdPelayanan = $row['id_pelayanan'];
                                         ?>
                                         <tr>
                                             <td><?php echo $no; ?></td>
                                             <td><?php echo $userId; ?></td>
                                             <td><?php echo $userName; ?></td>
-                                            <td><?php echo $userAlamat; ?></td>
-                                            <td><?php echo $userNoTelpon; ?></td>
-                                            <td><?php echo $userEmail; ?></td>
-                                            <td><?php echo $userPosisi; ?></td>
-                                            <td><?php echo $userGaji; ?></td>
+                                            <td><?php echo $userJenisPelayanan; ?></td>
+                                            <td><?php echo $userHarga; ?></td>
+                                            <td><?php echo $userNoAntrian; ?></td>
+                                            <td><?php echo $userTanggalPemesanan; ?></td>
+                                            <td><?php echo $userIdUser; ?></td>
+                                            <td><?php echo $userIdPelayanan; ?></td>
                                             <td>
-                                            <a href="edit.php?id= <?php echo $row['karyawanID']; ?>" class="btn btn-primary btn-circle <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
-                                            <a href="hapus.php?id= <?php echo $row['karyawanID']; ?>" class="btn btn-danger btn-circle <?php echo" ";?>" onClick="confirmModal('hapus.php?&id=<?php echo $row['karyawanID']; ?>');"><i class="fas fa-trash"></i></a>
+                                            <a href="editPemesanan.php?id= <?php echo $row['id_pemesanan ']; ?>" class="btn btn-primary btn-circle <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
+                                            <a href="hapusPemesanan.php?id= <?php echo $row['id_pemesanan']; ?>" class="btn btn-danger btn-circle <?php echo" ";?>" onClick="confirmModal('hapusPemesanan.php?&id=<?php echo $row['id_pemesanan']; ?>');"><i class="fas fa-trash"></i></a>
                                             </td>
                                             
                                         </tr>
@@ -431,8 +435,8 @@ $sesName = $_SESSION['name'];
                                     </tbody>
                                     
                                 </table>
-                                <a href="register_karyawan.php" type="submit" name="register" class="btn btn-primary">Register</a>
-                            </div>
+                                <a href="pemesanan.php" type="submit" name="register" class="btn btn-primary">Register</a>
+                            </div>r
                         </div>
                     </div>
 
