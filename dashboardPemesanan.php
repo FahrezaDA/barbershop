@@ -3,7 +3,7 @@ require("koneksi.php");
 session_start();
 if (!isset($_SESSION['id'])) {
     $_SESSION['msg'] = 'anda harus login untuk mengakses halaman ini';
-    header('Location: login.php');
+    header('Location: loginS.php');
 }
 $sesID = $_SESSION['id'];
 $sesName = $_SESSION['name'];
@@ -108,7 +108,7 @@ $sesName = $_SESSION['name'];
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.php">Login</a>
+                        <a class="collapse-item" href="loginS.php">Login</a>
                         <a class="collapse-item" href="register.php">Register</a>
                         <a class="collapse-item" href="forgot-password.php">Forgot Password</a>
                         <div class="collapse-divider"></div>
@@ -400,9 +400,9 @@ $sesName = $_SESSION['name'];
                                             $query = "SELECT*FROM pemesanan";
                                             $result = mysqli_query($koneksi, $query); 
                                             $no = 1; 
-                                            $post ="admin";        
+                                            $postt ="admin";        
                                             while ($row = mysqli_fetch_array($result)){
-                                                $userId = $row['id_pemesanan '];
+                                                $userId = $row['id_pemesanan'];
                                                 $userName = $row['nama_customer'];
                                                 $userJenisPelayanan = $row['jenis_pelayanan'];
                                                 $userHarga = $row['harga'];

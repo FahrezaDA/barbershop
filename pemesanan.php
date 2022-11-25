@@ -11,7 +11,7 @@ if( isset($_POST['register']) ){
 
     $query = "INSERT INTO pemesanan VALUES(null, '$nama_customer', '$jenis_pelayanan', '$harga','$no_antrian','$tanggal_pemesanan',null)";
     $result = mysqli_query($koneksi, $query);
-    header('Location: pemesanan2.php');
+    header('Location: pemesanan.php');
 }
 ?>
 
