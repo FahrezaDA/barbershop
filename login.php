@@ -75,7 +75,7 @@ if( isset($_POST['submit'])){
                         <p>Welcome back! Please enter your details.</p>  
                     </div>
         
-                    <form  class="user" method="POST" action="login2.php">
+                    <form  class="user" method="POST" action="login.php">
                     <div class="user login-form" method="POST" action="login2.php">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" name="txt_email" class="form-control" id="email" placeholder="Enter your Email">

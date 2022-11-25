@@ -108,7 +108,7 @@ $sesName = $_SESSION['name'];
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="loginS.php">Login</a>
+                        <a class="collapse-item" href="login.php">Login</a>
                         <a class="collapse-item" href="register.php">Register</a>
                         <a class="collapse-item" href="forgot-password.php">Forgot Password</a>
                         <div class="collapse-divider"></div>
@@ -142,7 +142,7 @@ $sesName = $_SESSION['name'];
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">admin</h6>
-                        <a class="collapse-item" href="pemesanan.php">Pemesanan</a>
+                        <a class="collapse-item" href="dashboardPemesanan.php">Pemesanan</a>
                         <a class="collapse-item" href="pemasukan.php">Pemasukan</a>
                         <a class="collapse-item" href="pengeluaran.php">Pengeluaran</a>
                     </div>
@@ -375,7 +375,7 @@ $sesName = $_SESSION['name'];
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">DATA PEMESANAN</h1>
+                    <h1 class="h3 mb-2 text-gray-800">DATA KARYAWAN </h1>
 
                     <!-- DataTales Example -->
                         <div class="card-body">
@@ -386,44 +386,40 @@ $sesName = $_SESSION['name'];
                                             <th>No</th>
                                             <th>id</th>
                                             <th>Nama</th>
-                                            <th>Jenis Pelayanan</th>
-                                            <th>Harga </th>
-                                            <th>No Antrian</th>
-                                            <th>Tanggal Pemesanan </th>
-                                            <th>Id User </th>
-                                            <th>Id Pelayanan </th>
-
+                                            <th>Alamat</th>
+                                            <th>No Telpon </th>
+                                            <th>Email </th>
+                                            <th>Posisi </th>
+                                            <th>Gaji </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php
-                                            $query = "SELECT*FROM pemesanan";
+                                            $query = "SELECT*FROM karyawan";
                                             $result = mysqli_query($koneksi, $query); 
                                             $no = 1; 
                                             $postt ="admin";        
                                             while ($row = mysqli_fetch_array($result)){
-                                                $userId = $row['id_pemesanan'];
-                                                $userName = $row['nama_customer'];
-                                                $userJenisPelayanan = $row['jenis_pelayanan'];
-                                                $userHarga = $row['harga'];
-                                                $userNoAntrian = $row['no_antrian'];
-                                                $userTanggalPemesanan = $row['tanggal_pemesanan'];
-                                                $userIdUser = $row['id_user'];
-                                                $userIdPelayanan = $row['id_pelayanan'];
+                                                $userId = $row['karyawanID'];
+                                                $userName = $row['nama_karyawan'];
+                                                $userAlamat = $row['alamat'];
+                                                $userNoTelpon = $row['no_telpon'];
+                                                $userEmail = $row['email'];
+                                                $userPosisi = $row['posisi'];
+                                                $userGaji = $row['gaji'];
                                         ?>
                                         <tr>
                                             <td><?php echo $no; ?></td>
                                             <td><?php echo $userId; ?></td>
                                             <td><?php echo $userName; ?></td>
-                                            <td><?php echo $userJenisPelayanan; ?></td>
-                                            <td><?php echo $userHarga; ?></td>
-                                            <td><?php echo $userNoAntrian; ?></td>
-                                            <td><?php echo $userTanggalPemesanan; ?></td>
-                                            <td><?php echo $userIdUser; ?></td>
-                                            <td><?php echo $userIdPelayanan; ?></td>
+                                            <td><?php echo $userAlamat; ?></td>
+                                            <td><?php echo $userNoTelpon; ?></td>
+                                            <td><?php echo $userEmail; ?></td>
+                                            <td><?php echo $userPosisi; ?></td>
+                                            <td><?php echo $userGaji; ?></td>
                                             <td>
-                                            <a href="editPemesanan.php?id= <?php echo $row['id_pemesanan ']; ?>" class="btn btn-primary btn-circle <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
-                                            <a href="hapusPemesanan.php?id= <?php echo $row['id_pemesanan']; ?>" class="btn btn-danger btn-circle <?php echo" ";?>" onClick="confirmModal('hapusPemesanan.php?&id=<?php echo $row['id_pemesanan']; ?>');"><i class="fas fa-trash"></i></a>
+                                            <a href="edit.php?id= <?php echo $row['karyawanID']; ?>" class="btn btn-primary btn-circle <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
+                                            <a href="hapusKaryawan.php?id= <?php echo $row['karyawanID']; ?>" class="btn btn-danger btn-circle <?php echo" ";?>" onClick="confirmModal('hapus.php?&id=<?php echo $row['karyawanID']; ?>');"><i class="fas fa-trash"></i></a>
                                             </td>
                                             
                                         </tr>
@@ -435,8 +431,8 @@ $sesName = $_SESSION['name'];
                                     </tbody>
                                     
                                 </table>
-                                <a href="pemesanan.php" type="submit" name="register" class="btn btn-primary">Register</a>
-                            </div>r
+                                <a href="register_karyawan.php" type="submit" name="register" class="btn btn-primary">Register</a>
+                            </div>
                         </div>
                     </div>
 

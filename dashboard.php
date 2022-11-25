@@ -3,7 +3,7 @@ require("koneksi.php");
 session_start();
 if (!isset($_SESSION['id'])) {
     $_SESSION['msg'] = 'anda harus login untuk mengakses halaman ini';
-    header('Location: login2.php');
+    header('Location: login.php');
 }
 $sesID = $_SESSION['id'];
 $sesName = $_SESSION['name'];
@@ -419,7 +419,7 @@ $sesName = $_SESSION['name'];
                                             <td><?php echo $userGaji; ?></td>
                                             <td>
                                             <a href="edit.php?id= <?php echo $row['karyawanID']; ?>" class="btn btn-primary btn-circle <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
-                                            <a href="hapus.php?id= <?php echo $row['karyawanID']; ?>" class="btn btn-danger btn-circle <?php echo" ";?>" onClick="confirmModal('hapus.php?&id=<?php echo $row['karyawanID']; ?>');"><i class="fas fa-trash"></i></a>
+                                            <a href="hapusKaryawan.php?id= <?php echo $row['karyawanID']; ?>" class="btn btn-danger btn-circle <?php echo" ";?>" onClick="confirmModal('hapus.php?&id=<?php echo $row['karyawanID']; ?>');"><i class="fas fa-trash"></i></a>
                                             </td>
                                             
                                         </tr>
