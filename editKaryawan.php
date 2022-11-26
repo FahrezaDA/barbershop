@@ -1,18 +1,39 @@
 <?php
 require('koneksi.php');
-if( isset($_POST['register']) ){
+
+session_start();
+
+if (!isset($_SESSION['id'])) {
+    $_SESSION['msg'] = 'anda harus login untuk mengakses halaman ini';
+    header('Location: login.php');
+}
+
+$sesID = $_SESSION['id'];
+$sesName = $_SESSION['name'];
+
+if( isset($_POST['update']) ){
     $userName = $_POST['txt_name'];
     $userAlamat = $_POST['txt_alamat'];
     $userNoTelpon = $_POST['txt_no_telpon'];
     $userEmail = $_POST['txt_email'];
     $userPosisi = $_POST['txt_posisi'];
     $userGaji = $_POST['txt_gaji'];
-    
 
-    $query = "INSERT INTO karyawan VALUES(null, '$userName', '$userAlamat', '$userNoTelpon','$userEmail','$userPosisi','$userGaji')";
+    $query = "UPDATE user_detail SET user_password='$userPass', user_fullname='$userName' WHERE id='$userId'";
+    echo $query;
     $result = mysqli_query($koneksi, $query);
-    header('Location: dashboard.php');
+    header('Location: tables.php');
 }
+$id = $_GET['id'];
+$query = "SELECT * FROM user_detail WHERE id='$id'";
+$result = mysqli_query($koneksi, $query) or die(mysql_error());
+//$nomor = 1;
+while ($row = mysqli_fetch_array($result)){
+    $id = $row['id'];
+    $userMail = $row['user_email'];
+    $userPass = $row['user_password'];
+    $userName = $row['user_fullname'];
+
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +47,7 @@ if( isset($_POST['register']) ){
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title> Register</title>
+    <title> Tambah</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -35,7 +56,7 @@ if( isset($_POST['register']) ){
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -53,32 +74,40 @@ if( isset($_POST['register']) ){
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
-                            <form class="user" action="register_karyawan.php" method="POST">
+                            <form class="user" action="add_pemesanan.php" method="POST">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="Nama" name="txt_name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="Alamat" name="txt_alamat">
+                                        placeholder="id_pemesanan" name="txt_id_pemesanan">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="NO Telpon" name="txt_no_telpon">
+                                        placeholder="nama_customer" name="txt_nama_customer">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="Email " name="txt_email">
+                                    <input type="text" class="form-control form-control-user" id="exampleInputUsername"
+                                        placeholder="jenis_pelayanan" name="txt_jenis_pelayanan">
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control form-control-user" id="exampleInputPassword"
-                                        placeholder="Posisi" name="txt_posisi">
+                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail"
+                                        placeholder="harga" name="txt_harga">
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control form-control-user" id="exampleInputPassword"
-                                        placeholder="Gaji" name="txt_gaji">
+                                    <input type="text" class="form-control form-control-user" id="exampleInputPassword"
+                                        placeholder="no_antrian" name="txt_no_antrian">
                                 </div>
-                                <button type="submit" name="register" class="btn btn-primary btn-user btn-block">Register</button>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" id="exampleInputPassword"
+                                        placeholder="tanggal_pemesanan" name="txt_tanggal_pemesanan">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" id="exampleInputPassword"
+                                        placeholder="id_user" name="txt_id_user">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" id="exampleInputPassword"
+                                        placeholder="id_pelayanan" name="txt_id_pelayanan">
+                                </div>
+                                <button type="submit" name="tambah" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
                             </form>
                             <hr>
                             <div class="text-center">

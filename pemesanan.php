@@ -53,7 +53,7 @@ if( isset($_POST['register']) ){
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">PEMESANAN</h1>
                             </div>
-                            <form class="user" action="pemesanan2.php" method="POST">
+                            <form class="user" action="pemesanan.php" method="POST">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="Nama" name="txt_nama_customer">
