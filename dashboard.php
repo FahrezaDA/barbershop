@@ -12,27 +12,50 @@ $sesName = $_SESSION['name'];
 <html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <title>Barbershop</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <title>DASHBOARD</title>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    
+  <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: UpConstruction - v1.2.1
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body id="page-top">
@@ -109,7 +132,7 @@ $sesName = $_SESSION['name'];
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
                         <a class="collapse-item" href="login.php">Login</a>
-                        <a class="collapse-item" href="register.php">Register</a>
+                        <a class="collapse-item" href="register_Karyawan.php">Register</a>
                         <a class="collapse-item" href="forgot-password.php">Forgot Password</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
@@ -142,7 +165,7 @@ $sesName = $_SESSION['name'];
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">admin</h6>
-                        <a class="collapse-item" href="pemesanan.php">Pemesanan</a>
+                        <a class="collapse-item" href="dashboardPemesanan.php">Pemesanan</a>
                         <a class="collapse-item" href="pemasukan.php">Pemasukan</a>
                         <a class="collapse-item" href="pengeluaran.php">Pengeluaran</a>
                     </div>
@@ -413,13 +436,13 @@ $sesName = $_SESSION['name'];
                                             <td><?php echo $userId; ?></td>
                                             <td><?php echo $userName; ?></td>
                                             <td><?php echo $userAlamat; ?></td>
-                                            <td><?php echo $userNoTelpon; ?></td>
+                                            <td><?php echo $userNoTelpon; ?></td> 
                                             <td><?php echo $userEmail; ?></td>
                                             <td><?php echo $userPosisi; ?></td>
                                             <td><?php echo $userGaji; ?></td>
                                             <td>
-                                            <a href="edit.php?id= <?php echo $row['karyawanID']; ?>" class="btn btn-primary btn-circle <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
-                                            <a href="hapus.php?id= <?php echo $row['karyawanID']; ?>" class="btn btn-danger btn-circle <?php echo" ";?>" onClick="confirmModal('hapus.php?&id=<?php echo $row['karyawanID']; ?>');"><i class="fas fa-trash"></i></a>
+                                            <a href="editKaryawan.php?id= <?php echo $row['karyawanID']; ?>" class="btn btn-primary btn-circle <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
+                                            <a href="hapusKaryawan.php?id= <?php echo $row['karyawanID']; ?>" class="btn btn-danger btn-circle <?php echo" ";?>" onClick="confirmModal('hapus.php?&id=<?php echo $row['karyawanID']; ?>');"><i class="fas fa-trash"></i></a>
                                             </td>
                                             
                                         </tr>
