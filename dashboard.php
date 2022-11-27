@@ -436,12 +436,12 @@ $sesName = $_SESSION['name'];
                                             <td><?php echo $userId; ?></td>
                                             <td><?php echo $userName; ?></td>
                                             <td><?php echo $userAlamat; ?></td>
-                                            <td><?php echo $userNoTelpon; ?></td>
+                                            <td><?php echo $userNoTelpon; ?></td> 
                                             <td><?php echo $userEmail; ?></td>
                                             <td><?php echo $userPosisi; ?></td>
                                             <td><?php echo $userGaji; ?></td>
                                             <td>
-                                            <a href="edit.php?id= <?php echo $row['karyawanID']; ?>" class="btn btn-primary btn-circle <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
+                                            <a href="editKaryawan.php?id= <?php echo $row['karyawanID']; ?>" class="btn btn-primary btn-circle <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
                                             <a href="hapusKaryawan.php?id= <?php echo $row['karyawanID']; ?>" class="btn btn-danger btn-circle <?php echo" ";?>" onClick="confirmModal('hapus.php?&id=<?php echo $row['karyawanID']; ?>');"><i class="fas fa-trash"></i></a>
                                             </td>
                                             
