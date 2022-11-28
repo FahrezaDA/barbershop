@@ -58,7 +58,7 @@
           <li><a href="projects.php">Galeri </a></li>
           <li><a href="blog.php">Pesan </a></li>
           <li><a href="contact.php">Kontak</a></li>
-          <li><a href="dashboard.php">Dashboard</a></li>
+          <li><a href="dashboardPemesanan.php">Dashboard</a></li>
           <li><a href="login.php">Logout</a></li>
         </ul>
       </nav><!-- .navbar -->
