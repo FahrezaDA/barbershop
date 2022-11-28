@@ -1,19 +1,38 @@
 <?php
 require('koneksi.php');
-if( isset($_POST['tambah']) ){
-    $userID = $row['id_pemesanan'];
-    $userCustomer = $row['nama_customer'];
-    $userJenis = $row['jenis_pelayanan'];
-    $userHrg = $row['harga'];
-    $userAntri = $row['no_antrian'];
-    $userId = $row['id_user'];
-    $userLayanan = $row['id_pelayanan'];
-    $userTanggal = $row['tanggal_pemesanan'];
+if( isset($_POST['update']) ){
+    $userIDD =$_POST['txt_id_pemesanan'];
+    $userCustomer = $_POST['txt_nama_customer'];
+    $userJenis = $_POST['txt_jenis_pelayanan'];
+    $userHarga = $_POST['txt_harga'];
+    $userAntri = $_POST['txt_no_antrian'];
+    $userTanggal = $_POST['txt_tanggal_pemesanan'];
+    $userId = $_POST['txt_id_user'];
+    $userLayanan = $_POST['txt_id_pelayanan'];
+    
     
 
-    $query = "INSERT INTO pemesanan VALUES(null, '$userID', '$userCustomer', '$userJenis','$userHrg','$userAntri','$userId', '$userLayanan', '$userTanggal')";
+    $query = "UPDATE pemesanan SET nama_customer='$userCustomer', jenis_pelayanan='$userJenis', harga='$userHarga', no_antrian='$userAntri',tanggal_pemesanan='$userTanggal', id_user='$userId', id_pelayanan='$userLayanan'";
+    echo $query;
     $result = mysqli_query($koneksi, $query);
     header('Location: dashboard.php');
+}
+
+$id = $_GET['id'];
+$query = "SELECT * FROM pemesanan WHERE id_pemesanan='$id'";
+$result = mysqli_query($koneksi, $query)or die(mysql_error());
+//$nomor = 1;
+while ($row =mysqli_fetch_array($result)){
+    $id     = $row['id_pemesanan'];
+    $userCustomer = $row['nama_customer'];
+    $userJenis = $row['jenis_pelayanan'];
+    $userHarga = $row['harga'];
+    $userAntri = $row['no_antrian'];
+    $userTanggal = $row['tanggal_pemesanan'];
+    $userId = $row['id_user'];
+    $userLayanan = $row['id_pelayanan'];
+    
+    
 }
 ?>
 
@@ -37,7 +56,7 @@ if( isset($_POST['tambah']) ){
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2.css" rel="stylesheet">
 
 </head>
 
@@ -55,40 +74,40 @@ if( isset($_POST['tambah']) ){
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
-                            <form class="user" action="add_pemesanan.php" method="POST">
+                            <form class="user" action="editPemesanan.php" method="POST">
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="id_pemesanan" name="txt_id_pemesanan">
+                                    <input type="hidden" class="form-control form-control-user" id="exampleInputUsername"
+                                        placeholder="ID pemesanan" name="txt_id_pemesanan" value="<?php echo $id; ?>">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="nama_customer" name="txt_nama_customer">
+                                        placeholder="Nama Customer" name="txt_nama_customer" value="<?php echo $userCustomer; ?>">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="jenis_pelayanan" name="txt_jenis_pelayanan">
+                                        placeholder="Jenis Pelayanan" name="txt_jenis_pelayanan" value="<?php echo $userJenis; ?>">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="harga" name="txt_harga">
+                                        placeholder="Harga" name="txt_harga" value="<?php echo $userHarga; ?>">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputPassword"
-                                        placeholder="no_antrian" name="txt_no_antrian">
+                                        placeholder="No Antrian" name="txt_no_antrian" value="<?php echo $userAntri; ?>">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputPassword"
-                                        placeholder="tanggal_pemesanan" name="txt_tanggal_pemesanan">
+                                        placeholder="Tanggal Pemesanan" name="txt_tanggal_pemesanan" value="<?php echo $userTanggal; ?>">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputPassword"
-                                        placeholder="id_user" name="txt_id_user">
+                                        placeholder="Id User" name="txt_id_user" value="<?php echo $userId; ?>">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputPassword"
-                                        placeholder="id_pelayanan" name="txt_id_pelayanan">
+                                        placeholder="ID Pelayanan" name="txt_id_pelayanan" value="<?php echo $userLayanan; ?>">
                                 </div>
-                                <button type="submit" name="tambah" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
+                                <button type="submit" name="update" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
                             </form>
                             <hr>
                             <div class="text-center">

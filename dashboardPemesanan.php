@@ -385,7 +385,6 @@ $sesName = $_SESSION['name'];
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>id</th>
                                             <th>Nama</th>
                                             <th>Jenis Pelayanan</th>
                                             <th>Harga </th>
@@ -403,7 +402,7 @@ $sesName = $_SESSION['name'];
                                             $no = 1; 
                                             $postt ="admin";        
                                             while ($row = mysqli_fetch_array($result)){
-                                                $userId = $row['id_pemesanan'];
+                                              
                                                 $userName = $row['nama_customer'];
                                                 $userJenisPelayanan = $row['jenis_pelayanan'];
                                                 $userHarga = $row['harga'];
@@ -414,7 +413,7 @@ $sesName = $_SESSION['name'];
                                         ?>
                                         <tr>
                                             <td><?php echo $no; ?></td>
-                                            <td><?php echo $userId; ?></td>
+                                           
                                             <td><?php echo $userName; ?></td>
                                             <td><?php echo $userJenisPelayanan; ?></td>
                                             <td><?php echo $userHarga; ?></td>
@@ -436,7 +435,7 @@ $sesName = $_SESSION['name'];
                                     </tbody>
                                     
                                 </table>
-                                <a href="pemesanan.php" type="submit" name="register" class="btn btn-primary">Register</a>
+                                <a href="pemesanan.php" type="submit" name="register" class="btn btn-primary">Tambah</a>
                             </div>
                         </div>
                     </div>
