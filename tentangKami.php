@@ -106,7 +106,7 @@
           <div class="col-lg-7">
             <h2>Selamat Datang di CutLook Barber Shop</h2>
             <div class="our-story">
-              <h3>CutLook/h3>
+              <h3>CutLook</h3>
               <p>Adalah tempat potong rambut / pangkas rambut yang melayani berbagai model atau syle rambut dengan fasilitas terbaik dan ditangani oleh pegawai yang kompeten kepada pelanggan sehingga tingakt kenyamanan yang tinggi dapat dirasakan oleh pelanggan.</p>
             </div>
           </div>
