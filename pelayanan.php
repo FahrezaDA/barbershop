@@ -102,7 +102,7 @@
               <div class="icon">
                 <i class="fa-solid fa-mountain-city"></i>
               </div>
-              <h3>Gentlement Cut</h3>
+              <h3>Gentlement Cut and hair cut</h3>
               <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
               <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
             </div>
