@@ -937,7 +937,7 @@
               <li><a href="#">Tentang Kami </a></li>
               <li><a href="#">Pegawai </a></li>
               <li><a href="#">Pesan</a></li>
-              <li><a href="kontak.php">Kontak</a></li>
+              <li><a href="#">Kontak</a></li>
               
 
 
