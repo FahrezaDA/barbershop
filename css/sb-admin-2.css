@@ -10860,8 +10860,17 @@ a:focus {
   }
 }
 
+.gradient-custom {
+  /* fallback for old browsers */
+  background: url("https://furnizing.com/files/img/5f79bdab267ab.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  }
+
 .bg-login-image {
-  background: url("../assets/img/favicon.png");
+  background: #000;
   background-position: center;
   background-size: cover;
 }

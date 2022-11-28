@@ -55,6 +55,7 @@ if( isset($_POST['submit'])){
 
     <!--Style-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/sb-admin-2.css">
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,69 +67,54 @@ if( isset($_POST['submit'])){
 
   <body>
 
-    <sectoin class="login d-flex">
-        <div class="login-left w-50 h-100">
-            <div class="row justify-content-center align-items-center h-100">
-                <div class="col-6">
-                    <div class="header">
-                        <h1>Welcome Back</h1>
-                        <p>Welcome back! Please enter your details.</p>  
-                    </div>
-        
-                    <form  class="user" method="POST" action="login.php">
-                    <div class="user login-form" method="POST" action="login.php">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" name="txt_email" class="form-control" id="email" placeholder="Enter your Email">
-        
-                        <label for="password" class="form-label">Password</label> <br>
-                        <input type="password" name="txt_password" class="form-control" id="password" placeholder="Enter your Password">
-                        <button name="submit" type="submit" class="btn btn-primary btn-user btn-block">login </button>
-                        <a href="#" class="text-decoration-none text-center">Forget Password</a>
-                        <button class="signin"><a href="dashboard.php" class="d-inline text-decoration-none">Sign In</a></button>
-                        <button class="signin-google">
-                            <img src="img/icon google.png" alt="" width="25px">
-                            Sign In With Google</button>
-                            <div class="text-center"><span class="d-inline">Don't have an account? <a href="index.php" class="d-inline text-decoration-none">Sign up</a></span>
-                        </div>
-                    </div>
-                </div>
-                </form>
-                </div>
-            </div>
-            
-        <div class="login-right w-50 h-100">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/image1.jpeg" class="d-block" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5></h5>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/image2.jpeg" class="d-block" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5></h5>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/image3.jpeg" class="d-block" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5></h5>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+  <section class="vh-100 gradient-custom">
+  <div class="container py-0 vh-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-form-login text-white" style="border-radius: 1rem;">
+          <div class="card-body p-1 text-center">
+
+            <div class="mb-md-5 mt-5 vh-25" style = "height: 400px; !important;">
+
+              <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+              <p class="text-white-50 mb-5">Please enter your login and password!</p>
+
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="typeEmailX" class="form-control form-control-lg" />
+                <label class="form-label" for="typeEmailX">Email</label>
               </div>
+
+              <div class="form-outline form-white mb-4">
+                <input type="password" id="typePasswordX" class="form-control form-control-lg" />
+                <label class="form-label" for="typePasswordX">Password</label>
+              </div>
+
+              <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
+
+              <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+
+              <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+                <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
+              </div>
+
+            </div>
+
+            <div>
+              <p class="mb-0">Don't have an account? <a href="#!" class="text-white-50 fw-bold">Sign Up</a>
+              </p>
+            </div>
+
+          </div>
         </div>
-    </sectoin>
+      </div>
+    </div>
+  </div>
+</section>
+            
+
+    </section>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
