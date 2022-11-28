@@ -23,7 +23,7 @@ if( isset($_POST['submit'])){
             if($userVal==$email && $passVal==$pass){
                 $_SESSION['id'] = $id;
                 $_SESSION['name'] = $userName;
-                header('Location: dashboard.php');
+                header('Location: dashboardPemesanan.php');
             }else{
                 $error= 'user atau password salah!!';
                 echo'<div id="tampil_modal">
@@ -76,7 +76,7 @@ if( isset($_POST['submit'])){
                     </div>
         
                     <form  class="user" method="POST" action="login.php">
-                    <div class="user login-form" method="POST" action="login2.php">
+                    <div class="user login-form" method="POST" action="login.php">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" name="txt_email" class="form-control" id="email" placeholder="Enter your Email">
         

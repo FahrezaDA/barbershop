@@ -78,7 +78,7 @@ if( isset($_POST['register']) ){
                                     <input type="password" class="form-control form-control-user" id="exampleInputPassword"
                                         placeholder="Gaji" name="txt_gaji">
                                 </div>
-                                <button type="submit" name="register" class="btn btn-primary btn-user btn-block">Register</button>
+                                <button type="submit" name="register" class="btn btn-primary btn-user btn-block">Tambah Karyawan</button>
                             </form>
                             <hr>
                             <div class="text-center">

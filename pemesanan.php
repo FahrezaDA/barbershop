@@ -8,8 +8,7 @@ if( isset($_POST['register']) ){
     $tanggal_pemesanan= $_POST['txt_tanggal_pemesanan'];
     
     // query memasukkan data 
-
-    $query = "INSERT INTO pemesanan VALUES(null, '$nama_customer', '$jenis_pelayanan', '$harga','$no_antrian','$tanggal_pemesanan',null)";
+    $query = "INSERT INTO pemesanan VALUES(null, '$nama_customer', '$jenis_pelayanan', '$harga','$no_antrian','$tanggal_pemesanan',124,131)";
     $result = mysqli_query($koneksi, $query);
     header('Location: dashboardPemesanan.php');
 }
@@ -53,7 +52,7 @@ if( isset($_POST['register']) ){
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">PEMESANAN</h1>
                             </div>
-                            <form class="user" action="dashboardPemesanan.php" method="POST">
+                            <form class="user" action="Pemesanan.php" method="POST">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="Nama" name="txt_nama_customer">
