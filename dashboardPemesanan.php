@@ -43,6 +43,7 @@ $sesName = $_SESSION['name'];
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
+        
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
@@ -108,7 +109,7 @@ $sesName = $_SESSION['name'];
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="loginS.php">Login</a>
+                        <a class="collapse-item" href="login.php">Login</a>
                         <a class="collapse-item" href="register.php">Register</a>
                         <a class="collapse-item" href="forgot-password.php">Forgot Password</a>
                         <div class="collapse-divider"></div>
@@ -422,8 +423,8 @@ $sesName = $_SESSION['name'];
                                             <td><?php echo $userIdUser; ?></td>
                                             <td><?php echo $userIdPelayanan; ?></td>
                                             <td>
-                                            <a href="editPemesanan.php?id= <?php echo $row['id_pemesanan ']; ?>" class="btn btn-primary btn-circle <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
-                                            <a href="hapusPemesanan.php?id= <?php echo $row['id_pemesanan']; ?>" class="btn btn-danger btn-circle <?php echo" ";?>" onClick="confirmModal('hapusPemesanan.php?&id=<?php echo $row['id_pemesanan']; ?>');"><i class="fas fa-trash"></i></a>
+                                            <a href="editPemesanan.php?id= <?php echo $row['id_pemesanan']; ?>" class="btn btn-primary btn-circle" <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
+                                            <a href="hapusPemesanan.php?id= <?php echo $row['id_pemesanan']; ?>" class="btn btn-danger btn-circle" <?php echo" ";?>" onClick="confirmModal('hapusPemesanan.php?&id=<?php echo $row['id_pemesanan']; ?>');"><i class="fas fa-trash"></i></a>
                                             </td>
                                             
                                         </tr>
@@ -436,7 +437,7 @@ $sesName = $_SESSION['name'];
                                     
                                 </table>
                                 <a href="pemesanan.php" type="submit" name="register" class="btn btn-primary">Register</a>
-                            </div>r
+                            </div>
                         </div>
                     </div>
 
