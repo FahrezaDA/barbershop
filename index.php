@@ -1,4 +1,3 @@
-<<<<<<< HEAD:index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1045,7 +1044,6 @@
 </body>
 
 </html>
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2034,4 +2032,3 @@
 </body>
 
 </html>
->>>>>>> c3ac445477ea4d5c8b1d3d208dcc626591ba4ef3:index.php
