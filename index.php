@@ -171,28 +171,28 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(assets/img/constructions-1.jpg);"></div>
+                <img src="Pelayanan/gentlemen cut.jpg" alt="" width="250" height="310">
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
-                    <h4 class="card-title">Eligendi omnis sunt veritatis.</h4>
-                    <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.</p>
+                    <h4 class="card-title"><h3>Gentlement Cut</h3>
+                    <p>Potongan rambut pria klasik yang biasanya lebih pendek dan ditata dengan belahan samping atau sisir. Terinspirasi oleh potongan rambut vintage yang melambangkan kualitas seorang pria, potongan rambut ini tetap halus dan bergaya sepanjang waktu.</p></h4>
                   </div>
                 </div>
               </div>
             </div>
           </div><!-- End Card Item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(assets/img/constructions-2.jpg);"></div>
+                <img src="Pelayanan/gentlemen grooming.jpg" alt="" widht="500" height="310">
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
-                    <h4 class="card-title">Possimus ut sed velit assumenda</h4>
-                    <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                    <h4 class="card-title">Gentlement Grooming</h4>
+                    <p>Berbagai kebiasaan yang berfokus untuk meningkatkan penampilan serta merawat diri sendiri. Jangan salah, perawatan tubuh tak hanya perlu dilakukan wanita, tetapi pria juga wajib memikirkannya.</p>
                   </div>
                 </div>
               </div>
@@ -203,12 +203,12 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(assets/img/constructions-3.jpg);"></div>
+                <img src="Pelayanan/kids haircut.jpg" alt="" width="270">
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
-                    <h4 class="card-title">Error beatae dolor inventore aut</h4>
-                    <p>Dicta porro nobis. Velit cum in. Nesciunt dignissimos enim molestiae facilis numquam quae quaerat ipsam omnis. Neque debitis ipsum at architecto officia laboriosam odit. Ut sunt temporibus nulla culpa.</p>
+                    <h4 class="card-title">Kids Haircut</h4>
+                    <p>Pengalaman potong rambut yang ramah dan nyaman untuk si kecil.</p>
                   </div>
                 </div>
               </div>
@@ -219,17 +219,114 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(assets/img/constructions-4.jpg);"></div>
+                <img src="Pelayanan/grooming and hair tato.jpg" alt="" width="290" height="315">
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
-                    <h4 class="card-title">Expedita voluptas ut ut nesciunt</h4>
-                    <p>Aut est quidem doloremque voluptatem magnam quis excepturi vero quia. Eum eos doloremque architecto illo at beatae dolore. Fugiat suscipit et sint ratione dolores. Aut aliquid ea dolores libero nobis.</p>
+                    <h4 class="card-title">Grooming And Hair Tato</h4>
+                    <p>Untuk kamu yang ingin mencari gaya rambut khas. Biarkan barberman kami yang terampil untuk membentuk dan merancang gaya rambut-mu seperti hasil mahakaryanya.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                <img src="Pelayanan/black hair coloring.jpg" alt="" width="270">
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Black Hair Coloring</h4>
+                    <p>Ubah rambut ubanmu menjadi rambut hitam berkilau</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                <img src="Pelayanan/basic hair coloring.jpg" alt="" width="290" height="270">
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Basic Hair Color</h4>
+                    <p>Warnai rambutmu (tanpa dibleaching) dengan sempurna sesuai dengan warna idaman-mu dengan barberman kami yang sudah berpengalaman</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                <img src="Pelayanan/Fashion hair treatment.jpg" alt="" width="290" height="250">
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Fashion Hair Color</h4>
+                    <p>Warnai rambutmu dengan sempurna sesuai dengan warna idaman-mu dengan barberman kami yang sudah berpengalaman</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                <img src="Pelayanan/smoothing.jpg" alt="" width="290" height="250">
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Smoothing</h4>
+                    <p>Pelurusan rambut dengan hasil yang natural</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                <img src="Pelayanan/perm hair treatment.jpg" alt="" width="250">
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Perm Hair Treatment</h4>
+                    <p>Pengeritingan rambut dengan hasil yang natural dan trendy</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <img src="Pelayanan/hair repair treatment.jpg" alt="" width="300">
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Hair Repair Treatment</h4>
+                    <p>Treatment untuk rambut yang sudah rusak akibat bahan kimia yang berfungsi untuk mengembalikan kesehatan rambutmu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+          
 
         </div>
 
