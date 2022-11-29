@@ -338,7 +338,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Services</h2>
+          <h2>Fasilitas</h2>
           <p>Nikmati layanan yang tersedia di CUTLUCK BARBERSHOP untuk perawatan khusus rambut Anda</p>
         </div>
 
