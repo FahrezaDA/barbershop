@@ -339,7 +339,7 @@
 
         <div class="section-header">
           <h2>Fasilitas</h2>
-          <p>Nikmati layanan yang tersedia di CUTLUCK BARBERSHOP untuk perawatan khusus rambut Anda</p>
+          <p>Nikmati fasilitas yang tersedia di CUTLUCK BARBERSHOP untuk perawatan khusus rambut Anda</p>
         </div>
 
         <div class="row gy-4">
