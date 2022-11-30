@@ -167,16 +167,17 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                <img src="Pelayanan/gentlemen cut.jpg" alt="" width="240" height="280">
+                <img src="Pelayanan/gentlemen cut.jpg" alt="" width="240">
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
-                    <h4 class="card-title"><h3>Gentlement Cut</h3>
-                    <p>Potongan rambut pria klasik yang biasanya lebih pendek dan ditata dengan belahan samping atau sisir. Terinspirasi oleh potongan rambut vintage yang melambangkan kualitas seorang pria, potongan rambut ini tetap halus dan bergaya sepanjang waktu.</p></h4>
+                    <h4 class="card-title">Gentlement Cut</h4>
+                    <p>Potongan rambut pria klasik yang biasanya lebih pendek dan ditata dengan belahan samping atau sisir. Terinspirasi oleh potongan rambut vintage yang melambangkan kualitas seorang pria, potongan rambut ini tetap halus dan bergaya sepanjang waktu.</p>
+                    <a href="servis_detail.php" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -187,12 +188,13 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                <img src="Pelayanan/kids haircut.jpg" alt="" width="250">
+                <img src="Pelayanan/kids haircut.jpg" alt="" width="265">
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
                     <h4 class="card-title">Kids Haircut</h4>
                     <p>Pengalaman potong rambut yang ramah dan nyaman untuk si kecil.</p>
+                    <a href="servis_detail.php" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -209,6 +211,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Grooming And Hair Tato</h4>
                     <p>Untuk kamu yang ingin mencari gaya rambut khas. Biarkan barberman kami yang terampil untuk membentuk dan merancang gaya rambut-mu seperti hasil mahakaryanya.</p>
+                    <a href="servis_detail.php" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -225,6 +228,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Black Hair Coloring</h4>
                     <p>Ubah rambut ubanmu menjadi rambut hitam berkilau</p>
+                    <a href="servis_detail.php" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -241,6 +245,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Smoothing</h4>
                     <p>Pelurusan rambut dengan hasil yang natural</p>
+                    <a href="servis_detail.php" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -257,6 +262,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Perm Hair Treatment</h4>
                     <p>Pengeritingan rambut dengan hasil yang natural dan trendy</p>
+                    <a href=".php" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -287,7 +293,6 @@
               </div>
               <h3>Ruangan ber-AC</h3>
               <p>Barbershop kami menggunakan air conditioner agar suasana selalu terasa lebih dingin supaya bisa dirasakan oleh pelangan.</p>
-              <a href="basic hair coloring.jpg" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
