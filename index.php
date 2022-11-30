@@ -167,11 +167,11 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                <img src="Pelayanan/gentlemen cut.jpg" alt="" width="250" height="310">
+                <img src="Pelayanan/gentlemen cut.jpg" alt="" width="240" height="310">
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -183,27 +183,11 @@
             </div>
           </div><!-- End Card Item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6" dnavata-aos="fade-up" data-aos-delay="200">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                <img src="Pelayanan/gentlemen grooming.jpg" alt="" widht="500" height="310">
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Gentlement Grooming</h4>
-                    <p>Berbagai kebiasaan yang berfokus untuk meningkatkan penampilan serta merawat diri sendiri. Jangan salah, perawatan tubuh tak hanya perlu dilakukan wanita, tetapi pria juga wajib memikirkannya.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-6" dnavata-aos="fade-up" data-aos-delay="300">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                <img src="Pelayanan/kids haircut.jpg" alt="" width="270">
+                <img src="Pelayanan/kids haircut.jpg" alt="" width="260">
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -215,11 +199,11 @@
             </div>
           </div><!-- End Card Item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                <img src="Pelayanan/grooming and hair tato.jpg" alt="" width="290" height="315">
+                <img src="Pelayanan/grooming and hair tato.jpg" alt="" width="260">
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -231,11 +215,11 @@
             </div>
           </div><!-- End Card Item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                <img src="Pelayanan/black hair coloring.jpg" alt="" width="270">
+                <img src="Pelayanan/black hair coloring.jpg" alt="" width="260">
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -247,43 +231,11 @@
             </div>
           </div><!-- End Card Item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                <img src="Pelayanan/basic hair coloring.jpg" alt="" width="290" height="270">
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Basic Hair Color</h4>
-                    <p>Warnai rambutmu (tanpa dibleaching) dengan sempurna sesuai dengan warna idaman-mu dengan barberman kami yang sudah berpengalaman</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                <img src="Pelayanan/Fashion hair treatment.jpg" alt="" width="290" height="250">
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Fashion Hair Color</h4>
-                    <p>Warnai rambutmu dengan sempurna sesuai dengan warna idaman-mu dengan barberman kami yang sudah berpengalaman</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                <img src="Pelayanan/smoothing.jpg" alt="" width="290" height="250">
+                <img src="Pelayanan/smoothing.jpg" alt="" width="260">
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -295,11 +247,11 @@
             </div>
           </div><!-- End Card Item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                <img src="Pelayanan/perm hair treatment.jpg" alt="" width="250">
+                <img src="Pelayanan/perm hair treatment.jpg" alt="" width="220">
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -311,22 +263,6 @@
             </div>
           </div><!-- End Card Item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <img src="Pelayanan/hair repair treatment.jpg" alt="" width="300">
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Hair Repair Treatment</h4>
-                    <p>Treatment untuk rambut yang sudah rusak akibat bahan kimia yang berfungsi untuk mengembalikan kesehatan rambutmu</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-          
 
         </div>
 
