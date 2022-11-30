@@ -167,11 +167,11 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                <img src="Pelayanan/gentlemen cut.jpg" alt="" width="240" height="310">
+                <img src="Pelayanan/gentlemen cut.jpg" alt="" width="240" height="280">
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -187,7 +187,7 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                <img src="Pelayanan/kids haircut.jpg" alt="" width="260">
+                <img src="Pelayanan/kids haircut.jpg" alt="" width="250">
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
