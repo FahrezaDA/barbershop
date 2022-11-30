@@ -339,7 +339,7 @@
 
         <div class="section-header">
           <h2>Fasilitas</h2>
-          <p>Nikmati fasilitas yang tersedia di CUTLUCK BARBERSHOP untuk perawatan khusus rambut Anda</p>
+          <p>Mengutamakan kenyaman adalah prioritas kami untuk membuat anda nyaman di barbershop, maka dari itu kami memberikan fasilitas terbaik untuk anda.</p>
         </div>
 
         <div class="row gy-4">
@@ -349,8 +349,8 @@
               <div class="icon">
                 <i class="fa-solid fa-mountain-city"></i>
               </div>
-              <h3>basic hair coloring</h3>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <h3>Ruangan ber-AC</h3>
+              <p>Barbershop kami menggunakan air conditioner agar suasana selalu terasa lebih dingin supaya bisa dirasakan oleh pelangan.</p>
               <a href="basic hair coloring.jpg" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -360,8 +360,8 @@
               <div class="icon">
                 <i class="fa-solid fa-arrow-up-from-ground-water"></i>
               </div>
-              <h3>Eosle Commodi</h3>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <h3>Free wifi</h3>
+              <p>Untuk ke stabilan dan kenyamanan berinternet kami memasang wifi dan bisa bisa digunakan oleh pelanggan.</p>
               <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -371,8 +371,8 @@
               <div class="icon">
                 <i class="fa-solid fa-compass-drafting"></i>
               </div>
-              <h3>Ledo Markt</h3>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <h3>Hiburan diruang tunggu</h3>
+              <p>Nah sembari pelanggann menunggu antrian, kami menyediakan tv, majalah dan buku yang bisa anda nikmati.</p>
               <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -382,8 +382,8 @@
               <div class="icon">
                 <i class="fa-solid fa-trowel-bricks"></i>
               </div>
-              <h3>Asperiores Commodit</h3>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <h3>Minuman & Snack</h3>
+              <p>Untuk menunda lapar pada saat menunggu antrian, pelanggan bisa mengganjal lapar dan haus saat di barbershop.</p>
               <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -393,8 +393,8 @@
               <div class="icon">
                 <i class="fa-solid fa-helmet-safety"></i>
               </div>
-              <h3>Velit Doloremque</h3>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <h3>Kursi barber</h3>
+              <p>Barbershop memiliki kursi yang empuk dan tentunya berkualitas, agar pelanggan bisa duduk dengan nyaman pada saat potong rambut.</p>
               <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -404,8 +404,8 @@
               <div class="icon">
                 <i class="fa-solid fa-arrow-up-from-ground-water"></i>
               </div>
-              <h3>Dolori Architecto</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <h3>Toilet</h3>
+              <p>Kami menyediakan toilet bagi pelanggan barbershop yang bersih dan rapi tentunya agar pelanggan tidak merasa risih.</p>
               <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
