@@ -115,7 +115,7 @@
               <p>Pengalaman potong rambut yang ramah dan nyaman untuk si kecil</p>
               <br>
 
-              <h3>Grooming and Hair Tato -------------- 25k-50k</h3>
+              <h3>Grooming and Hair Tato ----------- 25k-50k</h3>
               <p>Untuk kamu yang ingin mencari gaya rambut khas. Biarkan barberman kami yang terampil untuk membentuk dan merancang gaya rambut-mu seperti hasil mahakaryanya.</p>
               <br>
 
