@@ -84,11 +84,11 @@
 
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
-      <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/hero-carousel-1.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-6.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-2.png)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-4.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-5.png)"></div>
+      <div class="carousel-item active" style="background-image: url(https://furnizing.com/files/img/5f79be16b7d3d.jpeg)"></div>
+      <div class="carousel-item" style="background-image: url(https://furnizing.com/files/img/5f79bdea7824c.jpeg)"></div>
+      <div class="carousel-item" style="background-image: url(https://furnizing.com/files/img/5f79bdcdd1cae.png)"></div>
+      <div class="carousel-item" style="background-image: url(https://furnizing.com/files/img/5f79bdab267ab.png)"></div>
+      <div class="carousel-item" style="background-image: url(https://furnizing.com/files/img/5f79bda1226e6.jpeg)"></div>
 
       <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
