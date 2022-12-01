@@ -70,7 +70,7 @@ if( isset($_POST['register']) ){
                                         placeholder="No Antrian " name="txt_no_antrian">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputUsername"
+                                    <input type="date" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="Tanggal Pemesanan" name="txt_tanggal_pemesanan">
                                 </div>
                                 <button type="submit" name="register" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
