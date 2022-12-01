@@ -3,7 +3,7 @@
 $server  ="localhost";
 $username="root" ;
 $password="";
-$db= "barbershop";
+$db= "db_barbershop";
 $koneksi= mysqli_connect($server,$username,$password,$db);
 
 //pastikan urutan pemanggilan vriabel sama 
