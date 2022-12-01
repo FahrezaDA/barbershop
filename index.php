@@ -45,7 +45,7 @@
       <a href="index.php" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>CUTLUCK BARBERSHOP<span>.</span></h1>
+        <h1>CUTLUCK BARBERSHOP</h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -57,7 +57,7 @@
           <li><a href="tentangKami.php">Tentang Kami </a></li>
           <li><a href="projects.php">Galeri </a></li>
           <li><a href="blog.php">Pesan </a></li>
-          <li><a href="contact.php">Kontak</a></li>
+          <li><a href="kontak.php">Kontak</a></li>
           <li><a href="dashboard.php">Dashboard</a></li>
           <li><a href="login.php">Logout</a></li>
         </ul>
