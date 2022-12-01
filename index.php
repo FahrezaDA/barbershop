@@ -351,85 +351,110 @@
     </section><!-- End Services Section -->
 
   <!-- ======= kelebihan & kekurangan ======= -->
-   <div class="container ">
-<<<<<<< HEAD
-   <div class="section-header">
-          <h2>Kekurangan & Kelebihan</h2>
+  <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>kelebihan & kekurangan</h2>
+          <p>nah, setiap barbershop pasti mempunyai kekurangan dan kelebihan seperti pangkas rambut lainya, dan dibawah ini kekurangan dan kelebihan pada barbershop CutLuck. </p>
         </div>
-=======
->>>>>>> 372603872468eba72ea3be334f3a5542edbd6652
-     <div class="row">
-       <div class="col-md-6">
-        <div class="col-lg-8 img-bg" class="img-fluid" data-aos="zoom-in" data-aos-delay="100">
-          <h3>Kekurangan Cutluck Barbershop</h3>
-          <p>Dalam barbershop pastinya ada kekurangan seperti pangkas rambut pada umumnya, ada beberapa point kekurangan untuk pengetahuan anda supaya bisa meminalimisir kekurangan tersebut. Berikut ada beberdapa kekurangan yang ada di barbershop </p>
+          <div class="row">
 
-          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
-            <div>
-              <h4><a href="" class="stretched-link">1.Karyawan Yang Kurang Handal </a></h4>
-              <p>Perlu anda ketahui, Membuka usaha pangkas rambut khusus untuk karyawan cukur yang ahli sangat sulit. Kriteria karyawan yang membidangi seperti rapi, mampu mencukur dalam berbagai kondisi, serta pandai teknik.</p>
+            <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
+              <img src="https://images.pexels.com/photos/2061820/pexels-photo-2061820.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid p-4" alt="">
             </div>
-          </div><!-- End Icon Box -->
 
-          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
-            <div>
-              <h4><a href="" class="stretched-link">2. Tarif Yang Sangat Mahal </a></h4>
-              <p>Dalam barbershop kita harus mematok harga sesuai standart, jika mematok harga diatas rata- rata pelanggan akan pinda ke tempat potong rambut yang lebih murah dari barbershop.</p>
+            <div class="col-xl-8 d-flex content">
+              <div class="row align-self-center gy-4">
+
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="ri-line-chart-line"></i>
+                  <div>
+                    <h4><strong>Kekurangan Barbershop CutLuck</strong></h4>
+                    <p>Di Barbershop pastinya ada kekurangan, mungkin cara berikut bisa meminalimisir kekurangan tersebut.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="ri-line-chart-line"></i>
+                  <div>
+                    <h4><strong>Kelebihan Barbershop CutLuck</strong></h4>
+                    <p>Dibalik kekurangan pasti ada kelebihan pada Barbershop, kelebihanya seperti berikut. </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="ri-line-chart-line"></i>
+                  <div>
+                    <h4>- karyawan kurang handal</h4>
+                    <p>pada barbershop mungkin ada karyawan baru yang masih belum menguasai teknik memotong rambut.  </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="ri-stack-line"></i>
+                  <div>
+                    <h4>- karyawan profesional</h4>
+                    <p>karyawan memiliki keahlian untuk memotong rambut, karyawan juga bisa memotong cambang dan kumis.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="ri-brush-4-line"></i>
+                  <div>
+                    <h4>- tarif mahal</h4>
+                    <p>jangan memasang harga yang tinggi diatas rata-rata, nantinya pelanggan akan pindah ke barbershop lain.  </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="ri-line-chart-line"></i>
+                  <div>
+                    <h4>- peralatan lengkap</h4>
+                    <p>alat yang dipakai baberman yaitu clipper yang memang sangat cocok untuk memotong rambut pria.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="ri-line-chart-line"></i>
+                  <div>
+                    <h4>- peralatan tidak memadai</h4>
+                    <p>memiliki alat lengkap itu kewajiban barbershop, jika alat tidak memadai pelanggan tidak akan datang lagi.</p>
+                  </div>
+                </div>                
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="ri-magic-line"></i>
+                  <div>
+                    <h4>- pelayanan memuaskan</h4>
+                    <p>pelayanan habis potong rambut mendapatkan pijatan dibagian pundak, kepala dan punggung supaya relax.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="ri-command-line"></i>
+                  <div>
+                    <h4>- tempat kotor</h4>
+                    <p>karyawan harus selalu membersihkan alat cukur dan lantai setelah memangkas, supaya barbershop tidak berkesan kotor.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                  <i class="ri-radar-line"></i>
+                  <div>
+                    <h4>- suasana nyaman</h4>
+                    <p>barbershop menggunakan ac dan memberikan koneksi internet yang cepat agar pelanggan merasakan kenyamanan.</p>
+                  </div>
+                </div>
+
+              </div>
             </div>
-          </div><!-- End Icon Box -->
 
-          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-            <div>
-              <h4><a href="" class="stretched-link">3. Peralatan Yang Tidak Memadai </a></h4>
-              <p>kekurang yang terpenting pada barbershop yaitu pada peralatan potong rambut, jika kita tidak mempunyai alat yang memadai untuk pangkas rambut maka pelanggan tidak akan datang lagi ke barbershop.</p>
-            </div>
-          </div><!-- End Icon Box -->
+          </div>
 
-          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
-            <div>
-              <h4><a href="" class="stretched-link">4. Tempat Yang Kotor </a></h4>
-              <p>Karyawan pangkas rambut mesti rajin membersihkan bagian kursi dan lantai, selain itu pada peralatan cukur. Jika tidak dibersihkan maka akan menimbulkan kesan jorok bagi pelanggan. Ini salah satu kekurangan Pangkas rambut yaitu kita harus ekstra rajin.</p>
-            </div>
-          </div><!-- End Icon Box -->
+        </div><!-- End Feature Icons -->
 
-        </div>
-       </div>
-       <div class="col-md-6">
-        <div class="col-lg-8 img-bg" class="img-fluid" data-aos="zoom-in" data-aos-delay="100">
-          <h3>Kelebihan CutLuck Barbershop </h3>
-          <p>pangkas rambut di barbershop lebih dari sekadar potong rambut dengan layanan dan suasana berbeda. Tempat pangkas rambut kekinian ini memiliki sejumlah kelebihan yang cukup menguntungkan. Karena itu, berikut lima alasan pria harus potong rambut di barbershop.</p>
-          
-          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
-            <div>
-              <h4><a href="" class="stretched-link">1. Karyawan yang professional</a></h4>
-              <p>Barberman dilatih untuk melakukan langkah-langkah yang berbeda dari staf atau tukang cukur biasa. Mereka memiliki keahlian khusus untuk memotong rambut bahkan dalam hal mencukur cambang dan kumis.</p>
-            </div>
-          </div><!-- End Icon Box -->
-
-          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
-            <div>
-              <h4><a href="" class="stretched-link">2. Peralatan yang lengkap</a></h4>
-              <p>Alat yang digunakan oleh barberman untuk memotong rambut juga berbeda dengan salon biasa, yakni menggunakan clipper yang memang sangat cocok untuk memotong rambut pria.</p>
-            </div>
-          </div><!-- End Icon Box -->
-
-          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-            <div>
-              <h4><a href="" class="stretched-link">3. Pelayanan yang memuaskan</a></h4>
-              <p>Barbershop menyediakan handuk hangat agar membuat kamu rileks. Satu lagi layanan setelah potong rambut selesai, adalah pijatan pada bagian pundak, kepala dan punggung yang akan menenangkan.</p>
-            </div>
-          </div><!-- End Icon Box -->
-
-          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
-            <div>
-              <h4><a href="" class="stretched-link">4. Suasana yang nyaman</a></h4>
-              <p>Barbershop bisa dipastikan memiliki air conditioner dan koneksi internet yang cepat. Kenyamanan yang dihadirkan barbershop biasanya juga menjadikan keakrabakan antara customer dan barberman untuk bertukar informasi terkait men’s grooming.</p>
-            </div>
-          </div><!-- End Icon Box -->
-
-        </div>
       </div>
-     </div>
    </div><!-- End kelebihan & kekurangan-->
 
     <!-- ======= Our Projects Section ======= -->
