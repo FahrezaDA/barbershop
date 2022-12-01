@@ -45,7 +45,7 @@
       <a href="index.php" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>CUTLUCK BARBERSHOP<span>.</span></h1>
+        <h1>CUTLUCK BARBERSHOP</h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -435,7 +435,6 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-<<<<<<< HEAD
           <h2>Our Projects</h2>
           <p>Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel architecto accusamus fugit aut qui distinctio</p>
         </div>
@@ -1460,9 +1459,6 @@
         <div class="section-header">
           <h2>Our Projects</h2>
           <p>Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel architecto accusamus fugit aut qui distinctio</p>
-=======
-          <h2>Galeri</h2>
->>>>>>> 2d86e5e2ead70e4253778e62fedb932f8291dd0c
         </div>
 
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
