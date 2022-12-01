@@ -37,7 +37,7 @@ while ($row =mysqli_fetch_array($result)){
 <body>
     <form class="user" action="editKaryawan.php" method="POST">
         <p><input type="hidden" name="txt_id" value="<?php echo $id; ?>"></p>
-        <p>Username &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input type="text" name="txt_nama_karyawan" value="<?php echo $userEmail; ?>" readonly></p>
+        <p>Username &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input type="text" name="txt_nama_karyawan" value="<?php echo $userName; ?>"></p>
         <p>Alamat : <input type="text" name="txt_alamat" value="<?php echo $userAlamat; ?>"></p>
         <p>No Telpon: <input type="text" name="txt_no_telpon" value="<?php echo $userNoTelpon; ?>"></p>
         <p>email : <input type="text" name="txt_email" value="<?php echo $userEmail ; ?>"></p>

@@ -1,7 +1,7 @@
 <?php
 require('koneksi.php');
 if( isset($_POST['update']) ){
-    $userIDD =$_POST['txt_id_pemesanan'];
+    $userIdPemesanan =$_POST['txt_id_pemesanan'];
     $userCustomer = $_POST['txt_nama_customer'];
     $userJenis = $_POST['txt_jenis_pelayanan'];
     $userHarga = $_POST['txt_harga'];
@@ -15,7 +15,7 @@ if( isset($_POST['update']) ){
     $query = "UPDATE pemesanan SET nama_customer='$userCustomer', jenis_pelayanan='$userJenis', harga='$userHarga', no_antrian='$userAntri',tanggal_pemesanan='$userTanggal', id_user='$userId', id_pelayanan='$userLayanan'";
     echo $query;
     $result = mysqli_query($koneksi, $query);
-    header('Location: dashboard.php');
+    header('Location: dashboardPemesanan.php');
 }
 
 $id = $_GET['id'];
