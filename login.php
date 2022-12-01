@@ -80,7 +80,7 @@ if( isset($_POST['submit'])){
               <p class="text-white-50 mb-5">Please enter your login and password!</p>
              <form class="user" action="login.php" method="POST">
               <div class="form-outline form-white mb-4" class="user login-form" method="POST" action="login.php">
-                <input type="email" name="txt_email" id="typeEmailX" class="form-control form-control-lg" />
+                <input type="email" name="txt_email" id="typeEmailX" class="form-control form-control-lg"/>
                 <label class="form-label" for="typeEmailX">Email</label>
               </div>
 
