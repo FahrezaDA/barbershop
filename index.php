@@ -45,7 +45,7 @@
       <a href="index.php" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>CUTLUCK BARBERSHOP<span>.</span></h1>
+        <h1>CUTLUCK BARBERSHOP</h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -111,7 +111,7 @@
 
           <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
             <div class="content">
-              <h3>Barbershop.</h3>
+              <h3>Barbershop</h3>
               <p> Barbershop adalah tempat potong/pangkas rambut yang melayani berbagai model rambut dengan pelayanan dan fasilitas terbaik kepada pelanggan <br>sehingga tingkat kenyamanan yang tinggi dapat dirasakan oleh pelanggan
             </div>
           </div>
