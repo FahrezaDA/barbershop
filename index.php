@@ -351,10 +351,10 @@
       </div>
     </section><!-- End Services Section -->
 
+  <!-- ======= kelebihan & kekurangan ======= -->
    <div class="container ">
    <div class="section-header">
-          <h2>Fasilitas</h2>
-          <p>Mengutamakan kenyaman adalah prioritas kami untuk membuat anda nyaman di barbershop, maka dari itu kami memberikan fasilitas terbaik untuk anda.</p>
+          <h2>Kekurangan & Kelebihan</h2>
         </div>
      <div class="row">
        <div class="col-md-6">
@@ -428,7 +428,7 @@
         </div>
       </div>
      </div>
-   </div>
+   </div><!-- End kelebihan & kekurangan-->
 
     <!-- ======= Our Projects Section ======= -->
     <section id="projects" class="projects">
