@@ -176,7 +176,7 @@
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
                     <h4 class="card-title">Gentlement Cut</h4>
-                    <p>Potongan rambut pria klasik yang biasanya lebih pendek dan ditata dengan belahan samping atau sisir. Terinspirasi oleh potongan rambut vintage yang melambangkan kualitas seorang pria, potongan rambut ini tetap halus dan bergaya sepanjang waktu.</p>
+                    <p>Potong rambut tanpa keramas dan diakhiri dengan pemakaian tonic atau pomade</p>
                     <a href="servis_detail.php" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
