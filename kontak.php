@@ -5,7 +5,11 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+<<<<<<< HEAD
   <title>UpConstruction Bootstrap Template - Contact</title>
+=======
+  <title>Kontak</title>
+>>>>>>> 3dd583e15e0ff886489a62b4ed50125f63a553bc
   <meta content="" name="description">
   <meta content="" name="keywords">
 
