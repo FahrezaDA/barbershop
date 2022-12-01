@@ -56,9 +56,8 @@
           <li><a href="pelayanan.php">Pelayanan </a></li>
           <li><a href="tentangKami.php">Tentang Kami </a></li>
           <li><a href="projects.php">Galeri </a></li>
-          <li><a href="blog.php">Pesan </a></li>
-          <li><a href="contact.php">Kontak</a></li>
-          <li><a href="dashboard.php">Dashboard</a></li>
+          <li><a href="kontak.php">Kontak</a></li>
+          <li><a href="dashboardPemesanan.php">Dashboard</a></li>
           <li><a href="login.php">Logout</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -177,7 +176,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Gentlement Cut</h4>
                     <p>Potong rambut tanpa keramas dan diakhiri dengan pemakaian tonic atau pomade</p>
-                    <a href="servis_detail.php" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                    <a href="servis_detail.php" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -194,7 +193,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Kids Haircut</h4>
                     <p>Pengalaman potong rambut yang ramah dan nyaman untuk si kecil.</p>
-                    <a href="servis_detail.php" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                    <a href="servis_detail.php" class="readmore stretched-link">Kontak <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -211,7 +210,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Grooming And Hair Tato</h4>
                     <p>Biarkan barberman kami yang terampil untuk membentuk dan merancang gaya rambut-mu seperti hasil mahakaryanya.</p>
-                    <a href="servis_detail.php" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                    <a href="servis_detail.php" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -228,7 +227,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Black Hair Coloring</h4>
                     <p>Ubah rambut ubanmu menjadi rambut hitam berkilau</p>
-                    <a href="servis_detail.php" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                    <a href="servis_detail.php" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -245,7 +244,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Smoothing</h4>
                     <p>Pelurusan rambut dengan hasil yang natural</p>
-                    <a href="servis_detail.php" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                    <a href="servis_detail.php" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -262,7 +261,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Perm Hair Treatment</h4>
                     <p>Pengeritingan rambut dengan hasil yang natural dan trendy</p>
-                    <a href=".php" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                    <a href=".php" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
