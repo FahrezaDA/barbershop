@@ -1,7 +1,7 @@
 <?php
 require('koneksi.php');
 if( isset($_POST['update']) ){
-    $userIdPemesanan =$_POST['txt_id_pemesanan'];
+    $userIdPemesanan =$_POST['txt_id'];
     $userCustomer = $_POST['txt_nama_customer'];
     $userJenis = $_POST['txt_jenis_pelayanan'];
     $userHarga = $_POST['txt_harga'];
@@ -12,7 +12,7 @@ if( isset($_POST['update']) ){
     
     
 
-    $query = "UPDATE pemesanan SET nama_customer='$userCustomer', jenis_pelayanan='$userJenis', harga='$userHarga', no_antrian='$userAntri',tanggal_pemesanan='$userTanggal', id_user='$userId', id_pelayanan='$userLayanan'";
+    $query = "UPDATE pemesanan SET nama_customer='$userCustomer', jenis_pelayanan='$userJenis', harga='$userHarga', no_antrian='$userAntri',tanggal_pemesanan='$userTanggal', id_user='$userId', id_pelayanan='$userLayanan' WHERE id_pemesanan='$userIdPemesanan'";
     echo $query;
     $result = mysqli_query($koneksi, $query);
     header('Location: dashboardPemesanan.php');
@@ -77,7 +77,7 @@ while ($row =mysqli_fetch_array($result)){
                             <form class="user" action="editPemesanan.php" method="POST">
                                 <div class="form-group">
                                     <input type="hidden" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="ID pemesanan" name="txt_id_pemesanan" value="<?php echo $id; ?>">
+                                        placeholder="ID pemesanan" name="txt_id" value="<?php echo $id; ?>">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"

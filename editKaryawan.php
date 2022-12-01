@@ -13,7 +13,7 @@ if(isset($_POST['update'])){
     $query = "UPDATE karyawan SET nama_karyawan='$userName', alamat='$userAlamat', no_telpon='$userNoTelpon', email='$userEmail', posisi='$userPosisi', gaji='$userGaji' WHERE karyawanID='$userId'";
     echo $query;
     $result = mysqli_query($koneksi, $query);
-    header('Location: dashboard.php');
+    header('Location: dashboardKaryawan.php');
 }
 $id = $_GET['id'];
 $query = "SELECT * FROM karyawan WHERE karyawanID='$id'";

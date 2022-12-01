@@ -423,7 +423,7 @@ $sesName = $_SESSION['name'];
                                             <td><?php echo $userIdPelayanan; ?></td>
                                             <td>
                                             <a href="editPemesanan.php?id= <?php echo $row['id_pemesanan']; ?>" class="btn btn-primary btn-circle" <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
-                                            <a href="hapusPemesanan.php?id= <?php echo $row['id_pemesanan']; ?>" class="btn btn-danger btn-circle" <?php echo" ";?>" onClick="confirmModal('hapusPemesanan.php?&id=<?php echo $row['id_pemesanan']; ?>');"><i class="fas fa-trash"></i></a>
+                                            <a href="hapusPemesanan.php?id= <?php echo $row['id_pemesanan']; ?>" class="btn btn-danger btn-circle" <?php echo" ";?>  onClick="confirmModal('hapusPemesanan.php?&id=<?php echo $row['id_pemesanan']; ?>');"><i class="fas fa-trash"></i></a>
                                             </td>
                                             
                                         </tr>
