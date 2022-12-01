@@ -352,6 +352,10 @@
     </section><!-- End Services Section -->
 
    <div class="container ">
+   <div class="section-header">
+          <h2>Fasilitas</h2>
+          <p>Mengutamakan kenyaman adalah prioritas kami untuk membuat anda nyaman di barbershop, maka dari itu kami memberikan fasilitas terbaik untuk anda.</p>
+        </div>
      <div class="row">
        <div class="col-md-6">
         <div class="col-lg-8 img-bg" class="img-fluid" data-aos="zoom-in" data-aos-delay="100">
