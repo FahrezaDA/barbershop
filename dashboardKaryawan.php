@@ -156,7 +156,7 @@ $sesName = $_SESSION['name'];
                     <span>Data Admin</span></a>
                     
             </li>  
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
@@ -165,6 +165,7 @@ $sesName = $_SESSION['name'];
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">admin</h6>
+                        <a class="collapse-item" href="dashboardKaryawan.php">Karyawan</a>
                         <a class="collapse-item" href="dashboardPemesanan.php">Pemesanan</a>
                         <a class="collapse-item" href="pemasukan.php">Pemasukan</a>
                         <a class="collapse-item" href="pengeluaran.php">Pengeluaran</a>

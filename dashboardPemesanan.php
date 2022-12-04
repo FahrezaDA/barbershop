@@ -49,7 +49,7 @@ $sesName = $_SESSION['name'];
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">DASHBOARD</div>
+                <div class="sidebar-brand-text mx-3">CUTLUCK BARBERSHOP</div>
             </a>
 
             <!-- Divider -->
@@ -127,14 +127,8 @@ $sesName = $_SESSION['name'];
                     <span>Charts</span></a>
             </li>
 
-            <!-- Nav Item - Tables -->
+            <!-- Nav Item - Tables --> 
             <li class="nav-item active">
-                <a class="nav-link" href="dashboard.php">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Data Admin</span></a>
-                    
-            </li>  
-            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
@@ -143,7 +137,8 @@ $sesName = $_SESSION['name'];
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">admin</h6>
-                        <a class="collapse-item" href="pemesanan.php">Pemesanan</a>
+                        <a class="collapse-item" href="dashboardKaryawan.php">Karyawan</a>
+                        <a class="collapse-item" href="dashboardPemesanan.php">Pemesanan</a>
                         <a class="collapse-item" href="pemasukan.php">Pemasukan</a>
                         <a class="collapse-item" href="pengeluaran.php">Pengeluaran</a>
                     </div>

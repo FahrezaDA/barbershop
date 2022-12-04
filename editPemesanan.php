@@ -96,7 +96,7 @@ while ($row =mysqli_fetch_array($result)){
                                         placeholder="No Antrian" name="txt_no_antrian" value="<?php echo $userAntri; ?>">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputPassword"
+                                    <input type="date" class="form-control form-control-user" id="exampleInputPassword"
                                         placeholder="Tanggal Pemesanan" name="txt_tanggal_pemesanan" value="<?php echo $userTanggal; ?>">
                                 </div>
                                 <div class="form-group">
