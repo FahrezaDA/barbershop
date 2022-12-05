@@ -350,112 +350,53 @@
       </div>
     </section><!-- End Services Section -->
 
-  <!-- ======= kelebihan & kekurangan ======= -->
+  <!-- ======= kelebihan ======= -->
   <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>kelebihan & kekurangan</h2>
-          <p>nah, setiap barbershop pasti mempunyai kekurangan dan kelebihan seperti pangkas rambut lainya, dan dibawah ini kekurangan dan kelebihan pada barbershop CutLuck. </p>
+          <h2>kelebihan BarberShop CutLuck</h2>
+          <p>Demi kenyamanan dan kepuasan Barbershop CutLuck memiliki banyak kelebihan untuk pelanggan, contohnya seperti berikut :</p>
         </div>
+
           <div class="row">
-
-            <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
-              <img src="https://images.pexels.com/photos/2061820/pexels-photo-2061820.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid p-4" alt="">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">karyawan profesional</a></h4>
+              <p>karyawan memiliki keahlian untuk memotong rambut, karyawan juga bisa memotong cambang dan kumis.</p>
             </div>
-
-            <div class="col-xl-8 d-flex content">
-              <div class="row align-self-center gy-4">
-
-                <div class="col-md-6 icon-box" data-aos="fade-up">
-                  <i class="ri-line-chart-line"></i>
-                  <div>
-                    <h4><strong>Kekurangan Barbershop CutLuck</strong></h4>
-                    <p>Di Barbershop pastinya ada kekurangan, mungkin cara berikut bisa meminalimisir kekurangan tersebut.</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 icon-box" data-aos="fade-up">
-                  <i class="ri-line-chart-line"></i>
-                  <div>
-                    <h4><strong>Kelebihan Barbershop CutLuck</strong></h4>
-                    <p>Dibalik kekurangan pasti ada kelebihan pada Barbershop, kelebihanya seperti berikut. </p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 icon-box" data-aos="fade-up">
-                  <i class="ri-line-chart-line"></i>
-                  <div>
-                    <h4>- karyawan kurang handal</h4>
-                    <p>pada barbershop mungkin ada karyawan baru yang masih belum menguasai teknik memotong rambut.  </p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <i class="ri-stack-line"></i>
-                  <div>
-                    <h4>- karyawan profesional</h4>
-                    <p>karyawan memiliki keahlian untuk memotong rambut, karyawan juga bisa memotong cambang dan kumis.</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-                  <i class="ri-brush-4-line"></i>
-                  <div>
-                    <h4>- tarif mahal</h4>
-                    <p>jangan memasang harga yang tinggi diatas rata-rata, nantinya pelanggan akan pindah ke barbershop lain.  </p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 icon-box" data-aos="fade-up">
-                  <i class="ri-line-chart-line"></i>
-                  <div>
-                    <h4>- peralatan lengkap</h4>
-                    <p>alat yang dipakai baberman yaitu clipper yang memang sangat cocok untuk memotong rambut pria.</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 icon-box" data-aos="fade-up">
-                  <i class="ri-line-chart-line"></i>
-                  <div>
-                    <h4>- peralatan tidak memadai</h4>
-                    <p>memiliki alat lengkap itu kewajiban barbershop, jika alat tidak memadai pelanggan tidak akan datang lagi.</p>
-                  </div>
-                </div>                
-
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-                  <i class="ri-magic-line"></i>
-                  <div>
-                    <h4>- pelayanan memuaskan</h4>
-                    <p>pelayanan habis potong rambut mendapatkan pijatan dibagian pundak, kepala dan punggung supaya relax.</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-                  <i class="ri-command-line"></i>
-                  <div>
-                    <h4>- tempat kotor</h4>
-                    <p>karyawan harus selalu membersihkan alat cukur dan lantai setelah memangkas, supaya barbershop tidak berkesan kotor.</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-                  <i class="ri-radar-line"></i>
-                  <div>
-                    <h4>- suasana nyaman</h4>
-                    <p>barbershop menggunakan ac dan memberikan koneksi internet yang cepat agar pelanggan merasakan kenyamanan.</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
           </div>
 
-        </div><!-- End Feature Icons -->
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">peralatan lengkap</a></h4>
+              <p>alat yang dipakai baberman yaitu clipper yang memang sangat cocok untuk memotong rambut pria.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">pelayanan memuaskan</a></h4>
+              <p>pelayanan habis potong rambut mendapatkan pijatan dibagian pundak, kepala dan punggung supaya relax.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4><a href="">suasana nyaman</a></h4>
+              <p>barbershop menggunakan ac dan koneksi internet yang cepat agar pelanggan merasakan kenyamanan.</p>
+            </div>
+          </div>
+
+        </div>
 
       </div>
-   </div><!-- End kelebihan & kekurangan-->
+   </div>
+</section><!-- End kelebihan & kekurangan-->
 
     <!-- ======= Our Projects Section ======= -->
     <section id="projects" class="projects">
