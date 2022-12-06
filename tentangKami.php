@@ -69,7 +69,7 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('gambar/background (3).jpg');">
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('gambar/background.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
         <h2>Tentang Kami</h2>
@@ -87,7 +87,7 @@
 
         <div class="row position-relative">
 
-          <div class="col-lg-7 about-img" style="background-image: url(assets/img/about.jpg);"></div>
+          <div class="col-lg-7 about-img" style="background-image: url(gambar/logo-barbershop.jpeg);"></div>
 
           <div class="col-lg-7">
             <h2>Selamat Datang di CutLuck Barber Shop</h2>
