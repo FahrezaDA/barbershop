@@ -1587,6 +1587,7 @@ section {
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
+
 .service-details .services-list {
   padding: 10px 30px;
   border: 1px solid #d5d7da;
@@ -1613,17 +1614,21 @@ section {
 }
 
 .service-details .services-img {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+  height: 500px;
+  width: 50px;
 }
 
 .service-details h3 {
   font-size: 28px;
   font-weight: 700;
+  margin-left: 500;
 }
 
 .service-details h4 {
   font-size: 20px;
   font-weight: 700;
+  margin-right: 500;
 }
 
 .service-details p {
