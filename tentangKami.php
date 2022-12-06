@@ -46,7 +46,7 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>CUTLUCK BARBERSHOP<span>.</span></h1>
+        <h1>CUTLUCK BARBERSHOP</h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -57,23 +57,9 @@
           <li><a href="pelayanan.php">Pelayanan </a></li>
           <li><a href="tentangKami.php" class="active">Tentang Kami </a></li>
           <li><a href="projects.php">Galeri </a></li>
-          <li><a href="blog.php">Pesan </a></li>
-          <li><a href="blog.php">Kontak</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>DASHBOARD</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">PEMESANAN</a></li>
-                  <li><a href="#">PENGELUARAN</a></li>
-                  <li><a href="#">PEMASUKAN</a></li>
-                  
-                </ul>
-              </li>
-              <li><a href="login.php">Logout</a></li>
-              
-            </ul>
-          </li>
+          <li><a href="kontak.php">Kontak </a></li>
+          <li><a href="dashboardPemesanan.php">Dashboard </a></li>
+          <li><a href="login.php">Logout </a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -83,7 +69,7 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/background-atas.png');">
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('gambar/background.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
         <h2>Tentang Kami</h2>
@@ -101,7 +87,7 @@
 
         <div class="row position-relative">
 
-          <div class="col-lg-7 about-img" style="background-image: url(assets/img/about.jpg);"></div>
+          <div class="col-lg-7 about-img" style="background-image: url(gambar/logo-barbershop.jpeg);"></div>
 
           <div class="col-lg-7">
             <h2>Selamat Datang di CutLuck Barber Shop</h2>
@@ -220,7 +206,6 @@
               <li><i class="bi bi-chevron-right"></i> <a href="pelayanan.php">Pelayanan</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="tentangKami.php">Tentang Kami</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="projects.php">Galeri</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="blog.html">Pesan</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="kontak.php">Kontak</a></li>
             </ul>
           </div>
