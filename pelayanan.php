@@ -70,7 +70,7 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('gambar/background (2).jpg');">
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('gambar/background.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
         <h2>Pelayanan</h2>
