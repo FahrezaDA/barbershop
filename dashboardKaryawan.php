@@ -418,6 +418,7 @@ $sesName = $_SESSION['name'];
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
+                                    
                                     <tbody>
                                         <?php
                                             $query = "SELECT*FROM karyawan";
