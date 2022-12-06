@@ -529,8 +529,9 @@ $sesName = $_SESSION['name'];
     <script src="assets2/DataTables/JSZip-2.5.0/jszip.min.js"></script>
     <script src="assets2/DataTables/pdfmake-0.1.36/pdfmake.min.js"></script>
     <script src="assets2/DataTables/pdfmake-0.1.36/vfs_fonts.js"></script>
-    <script src="assets2/DataTables/buttons-2.3.3/js/buttons.html5.min.js"></script>
-    <script src="assets2/DataTables/buttons-2.3.3/js/buttons.print.min.js"></script>
+    <script src="assets2/DataTables/Buttons-2.3.3/js/buttons.html5.min.js"></script>
+    <script src="assets2/DataTables/Buttons-2.3.3/js/buttons.print.min.js"></script>
+    <script src="assets2/DataTables/Buttons-2.3.3/js/buttons.colVis.min.js"></script>
 
     <script>
         $(document).ready(function() {
