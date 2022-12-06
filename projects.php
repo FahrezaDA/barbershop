@@ -51,16 +51,7 @@
           <li><a href="pelayanan.php">Pelayanan</a></li>
           <li><a href="tentangKami.php">Tentang Kami</a></li>
           <li><a href="project.php">Galeri</a></li>
-          <li><a href="blog.php">Pesan </a></li>
-          <li><a href="blog.html">Kontak</a></li>
-          
-          <li class="dropdown"><a href="#"><span>DASHBOARD</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="dashboard.php">PEMESANAN </a></li>
-              <li><a href="#">PENGELUARAN</a></li>
-              <li><a href="#">PEMASUKAN</a></li>
-            </ul>
-          </li>
+          <li><a href="kontak.php">Kontak</a></li>
           <li><a href="login.php">Logout</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -72,7 +63,7 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/background-atas.png');">
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('gambar/background.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
         <h2>Galeri</h2>
@@ -517,7 +508,6 @@
               <li><i class="bi bi-chevron-right"></i> <a href="pelayanan.php">Pelayanan</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="tentangKami.php">Tentang Kami</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="projects.php">Galeri</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="blog.html">Pesan</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="kontak.php">Kontak</a></li>
             </ul>
           </div>
