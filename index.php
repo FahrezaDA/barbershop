@@ -615,7 +615,6 @@
               <li><i class="bi bi-chevron-right"></i> <a href="pelayanan.php">Pelayanan</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="tentangKami.php">Tentang Kami</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="projects.php">Galeri</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="blog.html">Pesan</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="kontak.php">Kontak</a></li>
             </ul>
           </div>
