@@ -125,7 +125,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Gentlement Cut</h4>
                     <p>Potong rambut tanpa keramas dan diakhiri dengan pemakaian tonic atau pomade</p>
-                    <a href="pelayanan.php" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                    <a href="service-details.html" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -540,7 +540,7 @@
     </section><!-- End Our Projects Section -->
   
       <!-- ======= Get Started Section ======= -->
-      <section id="get-started" class="get-started section-bg">
+    <section id="get-started" class="get-started section-bg">
       <div class="container">
 
         <div class="row justify-content-between gy-4">
