@@ -398,23 +398,24 @@ $sesName = $_SESSION['name'];
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">DATA KARYAWAN </h1>
-
                     <!-- DataTales Example -->
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <div class="container">
+                        <div class="card mt-5">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                <h3 class="display-6">Data Karyawan</h3>
+                                <table id="example" class="table table-bordered" style="width:100%">
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>id</th>
+                                            <th>Id</th>
                                             <th>Nama</th>
                                             <th>Alamat</th>
-                                            <th>No Telpon </th>
-                                            <th>Email </th>
-                                            <th>Posisi </th>
-                                            <th>Gaji </th>
+                                            <th>No Telpon</th>
+                                            <th>Email</th>
+                                            <th>Posisi</th>
+                                            <th>Gaji</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -453,7 +454,7 @@ $sesName = $_SESSION['name'];
                                         ?>
                                         
                                     </tbody>
-                                    
+                                </div>   
                                 </table>
                                 <a href="register_karyawan.php" type="submit" name="register" class="btn btn-primary">Register</a>
                             </div>
