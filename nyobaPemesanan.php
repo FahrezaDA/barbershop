@@ -62,26 +62,24 @@ if( isset($_POST['register']) ){
                                         placeholder="Jenis Pelayanan" name="txt_jenis_pelayanan">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="Harga" name="txt_harga">
+                                <select class="option" placeholder="Pilih Daftar Sebagai" class="form-control  form-select" name="txt_jenis_pelayanan" id="OptionLevel">
+                            <option>Daftar sebagai</option>
+                            <?php
+                            $query = "SELECT * FROM pelayanan";
+                             $result = mysqli_query($koneksi, $query);
+                             while ($row = mysqli_fetch_array($result)) {
+                                echo "<option value=$row[id_pelayanan] > $row[jenis_pelayanan] </option>";}
+                                ?>
+                                </select>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputEmail"
                                         placeholder="No Antrian " name="txt_no_antrian">
                                 </div>
                                 <div class="form-group">
-                                <select class="option" placeholder="Pilih Daftar Sebagai" class="form-control  form-select" name="txt_jenis_pelayanan" id="OptionLevel">
-                                <option>-- Pilih Pelayanan --</option>
-                                 <?php
-                                $query = "SELECT * FROM pelayanan";
-                                $result = mysqli_query($koneksi, $query);
-                                while ($row = mysqli_fetch_array($result)) {
-                                echo "<option value=$row[id_pelayanan] > $row[jenis_pelayanan] </option>";}
-                                ?>
-                                </select>
+                                    <input type="date" class="form-control form-control-user" id="exampleInputUsername"
+                                        placeholder="Tanggal Pemesanan" name="txt_tanggal_pemesanan">
                                 </div>
-                                <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="<?php echo date('l, d-m-Y  H:i:s');?>" name="txt_tanggal_sekarang" >
                                 <button type="submit" name="register" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
                             </form>
                             <hr>
