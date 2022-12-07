@@ -72,7 +72,10 @@ section {
   text-align: center;
   padding-bottom: 70px;
 }
-
+img.kiri {
+  float: left;
+  margin: 5px;
+}
 .section-header h2 {
   font-size: 32px;
   font-weight: 700;
