@@ -11,7 +11,7 @@ if( isset($_POST['register']) ){
 
     $query = "INSERT INTO karyawan VALUES(null, '$userName', '$userAlamat', '$userNoTelpon','$userEmail','$userPosisi','$userGaji')";
     $result = mysqli_query($koneksi, $query);
-    header('Location: dashboard.php');
+    header('Location: dashboardKaryawan.php');
 }
 ?>
 
