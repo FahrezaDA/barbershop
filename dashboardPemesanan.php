@@ -19,6 +19,11 @@ $sesName = $_SESSION['name'];
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets2/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="assets2/DataTables/DataTables-1.13.1/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets2/DataTables/Buttons-2.3.3/css/buttons.bootstrap4.min.css">
+
     <title>DASHBOARD</title>
 
     <!-- Custom fonts for this template -->
@@ -370,23 +375,23 @@ $sesName = $_SESSION['name'];
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">DATA PEMESANAN</h1>
-
                     <!-- DataTales Example -->
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <div class="container">
+                        <div class="card mt-5">
+                            <div class="card-body">
+                                <h3 class="display-7">Data Pemesanan</h3>
+                                <table id="dataTable" class="table table-bordered" style="width:100%">
                                     <thead>
                                         <tr>
                                             <th>No</th>
                                             <th>Nama</th>
                                             <th>Jenis Pelayanan</th>
-                                            <th>Harga </th>
+                                            <th>Harga</th>
                                             <th>No Antrian</th>
-                                            <th>Tanggal Pemesanan </th>
-                                            <th>Id User </th>
-                                            <th>Id Pelayanan </th>
+                                            <th>Tanggal Pemesanan</th>
+                                            <th>Id User</th>
+                                            <th>Id Pelayanan</th>
+                                            <th>Aksi</th>
 
                                         </tr>
                                     </thead>
@@ -441,16 +446,6 @@ $sesName = $_SESSION['name'];
             </div>
             <!-- End of Main Content -->
 
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
-
         </div>
         <!-- End of Content Wrapper -->
 
@@ -481,6 +476,38 @@ $sesName = $_SESSION['name'];
             </div>
         </div>
     </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets2/js/jquery.min.js"></script>
+    <script src="assets2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- DataTables -->
+    <script src="assets2/DataTables/DataTables-1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="assets2/DataTables/DataTables-1.13.1/js/dataTables.bootstrap4.min.js"></script>
+
+
+    <script src="assets2/DataTables/Buttons-2.3.3/js/dataTables.buttons.min.js"></script>
+    <script src="assets2/DataTables/Buttons-2.3.3/js/buttons.bootstrap4.min.js"></script>
+    <script src="assets2/DataTables/JSZip-2.5.0/jszip.min.js"></script>
+    <script src="assets2/DataTables/pdfmake-0.1.36/pdfmake.min.js"></script>
+    <script src="assets2/DataTables/pdfmake-0.1.36/vfs_fonts.js"></script>
+    <script src="assets2/DataTables/Buttons-2.3.3/js/buttons.html5.min.js"></script>
+    <script src="assets2/DataTables/Buttons-2.3.3/js/buttons.print.min.js"></script>
+    <script src="assets2/DataTables/Buttons-2.3.3/js/buttons.colVis.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var table = $('#dataTable').DataTable( {
+                lengthChange: false,
+                buttons: ['copy', 'excel', 'pdf', 'colvis']
+            });
+
+            table.buttons().container()
+                .appendTo( 'dataTable_wrapper .col-md-6:eq(0)');
+        } );
+    </script>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
