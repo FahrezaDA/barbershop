@@ -52,7 +52,7 @@ if( isset($_POST['register']) ){
                     <div class="col-lg-7 bg-form">
                         <div class="p-4">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+                                <h1 class="h4 text-gray-900 mb-4">TAMBAHKAN KARYAWAN</h1>
                             </div>
                             <form class="user" action="register_karyawan.php" method="POST">
                                 <div class="form-group">
