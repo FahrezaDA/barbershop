@@ -1,6 +1,6 @@
 <?php
 require('koneksi.php');
-if( isset($_POST['register']) ){
+if( isset($_POST['submit']) ){
     $userName = $_POST['txt_name'];
     $userAlamat = $_POST['txt_alamat'];
     $userNoTelpon = $_POST['txt_no_telpon'];
@@ -65,21 +65,21 @@ if( isset($_POST['register']) ){
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="NO Telpon" name="txt_no_telpon">
+                                        placeholder="No Telpon" name="txt_no_telpon">
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control form-control-user" id="exampleInputEmail"
                                         placeholder="Email " name="txt_email">
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control form-control-user" id="exampleInputPassword"
+                                    <input type="text" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="Posisi" name="txt_posisi">
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control form-control-user" id="exampleInputPassword"
+                                    <input type="text" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="Gaji" name="txt_gaji">
                                 </div>
-                                <button type="submit" name="register" class="btn btn-primary btn-user btn-block">Tambah Karyawan</button>
+                                <button type="submit" name="submit" class="btn btn-primary btn-user btn-block">Tambah Karyawan</button>
                             </form>
                             <hr>
                             <div class="text-center">

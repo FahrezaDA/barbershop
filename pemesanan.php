@@ -57,10 +57,7 @@ if( isset($_POST['register']) ){
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="Nama" name="txt_nama_customer">
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="Jenis Pelayanan" name="txt_jenis_pelayanan">
-                                </div>
+
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="Harga" name="txt_harga">
@@ -76,12 +73,12 @@ if( isset($_POST['register']) ){
                                 $query = "SELECT * FROM pelayanan";
                                 $result = mysqli_query($koneksi, $query);
                                 while ($row = mysqli_fetch_array($result)) {
-                                echo "<option value=$row[id_pelayanan] > $row[jenis_pelayanan] </option>";}
+                                echo "<option value=$row[jenis_pelayanan] > $row[jenis_pelayanan] </option>";}
                                 ?>
                                 </select>
                                 </div>
                                 <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="<?php echo date('l, d-m-Y  H:i:s');?>" name="txt_tanggal_sekarang" >
+                                        placeholder="<?php echo date('d-m-Y');?>" value="<?php echo date('d-m-Y');?>" name="txt_tanggal_pemesanan"  readonly>
                                 <button type="submit" name="register" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
                             </form>
                             <hr>
