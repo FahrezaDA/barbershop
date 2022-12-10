@@ -524,15 +524,12 @@ $sesName = $_SESSION['name'];
     <script src="assets2/DataTables/Buttons-2.3.3/js/buttons.colVis.min.js"></script>
 
     <script>
-        $(document).ready(function() {
-            var table = $('#data').DataTable( {
-                lengthChange: false,
-                buttons: [ 'copy', 'print', 'excel', 'pdf',]
+        $('#dataTable').DataTable( {
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'print', 'excel', 'pdf'
+             ]
             } );
-        
-            table.buttons().container()
-                .appendTo( '#data_wrapper .col-md-6:eq(0)' );
-        } );
     </script>
 
     <!-- Bootstrap core JavaScript-->
