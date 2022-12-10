@@ -524,7 +524,7 @@ $sesName = $_SESSION['name'];
     <script src="assets2/DataTables/Buttons-2.3.3/js/buttons.colVis.min.js"></script>
 
     <script>
-        $('#dataTable').DataTable( {
+        $('#data').DataTable( {
             dom: 'Bfrtip',
             buttons: [
                 'copy', 'print', 'excel', 'pdf'
