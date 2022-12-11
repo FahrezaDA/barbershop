@@ -42,11 +42,9 @@
   <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.php" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>CUTLUCK BARBERSHOP</h1>
-      </a>
+    <div id="logo">
+    <a href="index.php"><img src="assets/img/projects/gambar.png" alt="image" height="60" width="200"></a>
+    </div>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
