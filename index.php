@@ -245,7 +245,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+                <i class="fa-solid fa-wifi"></i>
               </div>
               <h3>Free wifi</h3>
               <p>Untuk ke stabilan dan kenyamanan berinternet kami memasang wifi dan bisa bisa digunakan oleh pelanggan.</p>
@@ -255,7 +255,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="fa-solid fa-compass-drafting"></i>
+                <i class="fa-solid fa-tv"></i>
               </div>
               <h3>Hiburan diruang tunggu</h3>
               <p>Nah sembari pelanggann menunggu antrian, kami menyediakan tv, majalah dan buku yang bisa anda nikmati.</p>
@@ -265,7 +265,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="fa-solid fa-trowel-bricks"></i>
+                <i class="fa-solid fa-hamburger"></i>
               </div>
               <h3>Minuman & Snack</h3>
               <p>Untuk menunda lapar pada saat menunggu antrian, pelanggan bisa mengganjal lapar dan haus saat di barbershop.</p>
@@ -275,7 +275,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="fa-solid fa-helmet-safety"></i>
+                <i class="fa-solid fa-couch"></i>
               </div>
               <h3>Kursi barber</h3>
               <p>Barbershop memiliki kursi yang empuk dan tentunya berkualitas, agar pelanggan bisa duduk dengan nyaman pada saat potong rambut.</p>
@@ -285,7 +285,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+                <i class="fa-solid fa-toilet"></i>
               </div>
               <h3>Toilet</h3>
               <p>Kami menyediakan toilet bagi pelanggan barbershop yang bersih dan rapi tentunya agar pelanggan tidak merasa risih.</p>
