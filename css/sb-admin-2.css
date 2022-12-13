@@ -9900,7 +9900,7 @@ a:focus {
 }
 
 .bg-gradient-primary {
-    background: url("https://furnizing.com/files/img/5f79bdab267ab.png");
+    background: url("https://www.alinear.id/assets_web/images/article/ARTICLE_2060_20171228093930.jpg");
     background-size: cover;
 }
 
@@ -10876,6 +10876,7 @@ a:focus {
     justify-content: center;
     align-items: center;
     }
+    
 .bg-login-image {
   background: #000;
   background-position: center;
@@ -10883,13 +10884,15 @@ a:focus {
 }
 
 .bg-register-image {
-  background: url("https://source.unsplash.com/Mv9hjnEUHR4/600x800");
-  background-position: center;
+  background: url("https://i.pinimg.com/736x/8f/a2/05/8fa2059ff5647157dffc4396c9962b1c--barbershop-design-barbershop-ideas.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
 }
 
 .bg-password-image {
-  background: url("https://source.unsplash.com/oWTW-jNGl9I/600x800");
+  background: url("https://i.pinimg.com/736x/8f/a2/05/8fa2059ff5647157dffc4396c9962b1c--barbershop-design-barbershop-ideas.jpg");
   background-position: center;
   background-size: cover;
 }

@@ -67,8 +67,8 @@ if( isset($_POST['register']) ){
                                         placeholder="No Antrian " name="txt_no_antrian">
                                 </div>
                                 <div class="form-group">
-                                <select class="option" placeholder="Pilih Daftar Sebagai" class="form-control  form-select" name="txt_jenis_pelayanan" id="OptionLevel">
-                                <option>-- Pilih Pelayanan --</option>
+                                <select type="text" placeholder="Pilih Daftar Sebagai" class="form-control  form-select" name="txt_jenis_pelayanan" id="OptionLevel">
+                                <option>Pilih Pelayanan</option>
                                  <?php
                                 $query = "SELECT * FROM pelayanan";
                                 $result = mysqli_query($koneksi, $query);
