@@ -12,38 +12,23 @@ $sesName = $_SESSION['name'];
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="assets2/css/bootstrap.min.css" >
   <link rel="stylesheet" href="assets2/DataTables/DataTables-1.13.1/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="assets2/DataTables/Buttons-2.3.3/css/buttons.bootstrap4.min.css">
 
-  <title>Barbershop</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <title>DASHBOARD Pengeluaran</title>
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    
-  <link
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
@@ -53,15 +38,6 @@ $sesName = $_SESSION['name'];
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: UpConstruction - v1.2.1
-  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body id="page-top">
@@ -77,7 +53,7 @@ $sesName = $_SESSION['name'];
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">DASHBOARD</div>
+                <div class="sidebar-brand-text mx-3">DASHBOARD Pengeluaran</div>
             </a>
 
             <!-- Divider -->
@@ -120,7 +96,7 @@ $sesName = $_SESSION['name'];
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
                         <a class="collapse-item" href="login.php">Login</a>
-                        <a class="collapse-item" href="register_Karyawan.php">Register</a>
+                        <a class="collapse-item" href="pengeluaran.php">Tambah</a>
                         <a class="collapse-item" href="forgot-password.php">Forgot Password</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
@@ -381,49 +357,51 @@ $sesName = $_SESSION['name'];
                     <div class="container">
                         <div class="card mt-5">
                             <div class="card-body">
-                                <h3 class="display-7">Data Karyawan</h3>
-                                <table id="data" class="table table-bordered" style="width:100%">
+                                <h3 class="display-7">Data Pengeluaran</h3>
+                                <table id="dataTable" class="table table-bordered" style="width:100%">
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Id</th>
-                                            <th>Nama</th>
-                                            <th>Alamat</th>
-                                            <th>No Telpon</th>
-                                            <th>Email</th>
-                                            <th>Posisi</th>
-                                            <th>Gaji</th>
+                                            <th>Jenis Pengeluaran</th>
+                                            <th>id_fasilitas</th>
+                                            <th>Jumlah</th>
+                                            <th>Biaya</th>
+                                            <th>Total Pengeluaran</th>
+                                            <th>Tanggal Pengeluaran</th>
+                                            <th>Id User</th>
                                             <th>Aksi</th>
+
                                         </tr>
                                     </thead>
-                                    
                                     <tbody>
                                         <?php
-                                            $query = "SELECT*FROM karyawan";
+                                            $query = "SELECT*FROM pengeluaran";
                                             $result = mysqli_query($koneksi, $query); 
                                             $no = 1; 
                                             $postt ="admin";        
                                             while ($row = mysqli_fetch_array($result)){
-                                                $userId = $row['karyawanID'];
-                                                $userName = $row['nama_karyawan'];
-                                                $userAlamat = $row['alamat'];
-                                                $userNoTelpon = $row['no_telpon'];
-                                                $userEmail = $row['email'];
-                                                $userPosisi = $row['posisi'];
-                                                $userGaji = $row['gaji'];
+                                              
+                                                $userJenisPengluaran = $row['jenis_pengeluaran'];
+                                                $userIdFasilitas = $row['id_fasilitas'];
+                                                $userJumlah = $row['jumlah'];
+                                                $userBiaya = $row['biaya'];
+                                                $userTotalPelanggan = $row['total_pelanggan'];
+                                                $userTanggalPengeluaran = $row['tanggal_pengeluaran'];
+                                                $userIdUser = $row['id_user'];
                                         ?>
                                         <tr>
                                             <td><?php echo $no; ?></td>
-                                            <td><?php echo $userId; ?></td>
-                                            <td><?php echo $userName; ?></td>
-                                            <td><?php echo $userAlamat; ?></td>
-                                            <td><?php echo $userNoTelpon; ?></td> 
-                                            <td><?php echo $userEmail; ?></td>
-                                            <td><?php echo $userPosisi; ?></td>
-                                            <td><?php echo $userGaji; ?></td>
+                                           
+                                            <td><?php echo $userJenisPengeluaran; ?></td>
+                                            <td><?php echo $userIdFasilitas; ?></td>
+                                            <td><?php echo $userJumlah; ?></td>
+                                            <td><?php echo $userBiaya; ?></td>
+                                            <td><?php echo $userTotalPelanggan; ?></td>
+                                            <td><?php echo $userTanggalPengeluaran; ?></td>
+                                            <td><?php echo $userIdUser; ?></td>
                                             <td>
-                                            <a href="editKaryawan.php?id= <?php echo $row['karyawanID']; ?>" class="btn btn-primary btn-circle <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
-                                            <a href="hapusKaryawan.php?id= <?php echo $row['karyawanID']; ?>" class="btn btn-danger btn-circle <?php echo" ";?>" onClick="confirmModal('hapus.php?&id=<?php echo $row['karyawanID']; ?>');"><i class="fas fa-trash"></i></a>
+                                            <a href="editPengeluaran.php?id= <?php echo $row['id_pengeluaran']; ?>" class="btn btn-primary btn-circle" <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
+                                            <a href="hapusPengeluaran.php?id= <?php echo $row['id_pengeluaran']; ?>" class="btn btn-danger btn-circle" <?php echo" ";?>  onClick="confirmModal('hapusPengeluaran.php?&id=<?php echo $row['id_pengeluaran']; ?>');"><i class="fas fa-trash"></i></a>
                                             </td>
                                             
                                         </tr>
@@ -433,9 +411,9 @@ $sesName = $_SESSION['name'];
                                         ?>
                                         
                                     </tbody>
-                                </div>   
+                                    
                                 </table>
-                                <a href="register_karyawan.php" class="btn btn-primary">Register</a>
+                                <a href="pengeluaran.php" type="submit" name="register" class="btn btn-primary">Tambah</a>
                             </div>
                         </div>
                     </div>
@@ -477,6 +455,7 @@ $sesName = $_SESSION['name'];
         </div>
     </div>
 
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets2/js/jquery.min.js"></script>
@@ -497,7 +476,7 @@ $sesName = $_SESSION['name'];
     <script src="assets2/DataTables/Buttons-2.3.3/js/buttons.colVis.min.js"></script>
 
     <script>
-        $('#data').DataTable( {
+        $('#dataTable').DataTable( {
             dom: 'Bfrtip',
             buttons: [
                 'copy', 'print', 'excel', 'pdf'
