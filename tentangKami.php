@@ -112,61 +112,63 @@
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
             <div class="member-img">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/fahreza.png" class="img-fluid" alt="">
               
             </div>
             <div class="member-info text-center">
               <h4>Fahreza</h4>
 
-              <p>Merupakan pegawai yang kompeten dan berdedikasi tinggi</p>
+              <p>E31210039</p>
             </div>
           </div><!-- End Team Member -->
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
             <div class="member-img">
-              <img src="assets/img/team/team-5.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/nia.jpg" class="img-fluid" alt="">
               
             </div>
             <div class="member-info text-center">
               <h4>Nia</h4>
              
-              <p>Merupakan pegawai yang kompeten dan berdedikasi tinggi</p>
+              <p>E31210400</p>
             </div>
           </div><!-- End Team Member -->
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
             <div class="member-img">
-              <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/lucky.jpeg" class="img-fluid" alt="">
               
             </div>
             <div class="member-info text-center">
               <h4>Lucky</h4>
             
-              <p>Merupakan pegawai yang kompeten dan berdedikasi tinggi</p>
+              <p>E31210164</p>
             </div>
           </div><!-- End Team Member -->
           
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
             <div class="member-img">
-              <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/wulan.jpeg" class="img-fluid" alt="">
               
             </div>
             <div class="member-info text-center">
               <h4>Wulan</h4>
             
-              <p>Merupakan pegawai yang kompeten dan berdedikasi tinggi</p>
+              <p>E31210538</p>
             </div>
           </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600"></div>
           
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
             <div class="member-img">
-              <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/suci.jpeg" class="img-fluid" alt="">
               
             </div>
             <div class="member-info text-center">
               <h4>Suci</h4>
             
-              <p>Merupakan pegawai yang kompeten dan berdedikasi tinggi</p>
+              <p>E31210549</p>
             </div>
           </div><!-- End Team Member -->
 
