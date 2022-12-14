@@ -157,7 +157,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Grooming And Hair Tato</h4>
                     <p>Biarkan barberman kami yang terampil untuk membentuk dan merancang gaya rambut-mu seperti hasil mahakaryanya.</p>
-                    <a href="pelayanan.php" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                    <a href="service-details2.html" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -174,7 +174,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Black Hair Coloring</h4>
                     <p>Ubah rambut ubanmu menjadi rambut hitam berkilau</p>
-                    <a href="pelayanan.php" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                    <a href="service-detail3.html" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
