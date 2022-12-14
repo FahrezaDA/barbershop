@@ -140,7 +140,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Kids Haircut</h4>
                     <p>Pengalaman potong rambut yang ramah dan nyaman untuk si kecil.</p>
-                    <a href="pelayanan.php" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                    <a href="service-details1.html" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
