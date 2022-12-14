@@ -191,7 +191,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Smoothing</h4>
                     <p>Pelurusan rambut dengan hasil yang natural</p>
-                    <a href="pelayanan.php" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                    <a href="service-details4.html" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -208,7 +208,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Perm Hair Treatment</h4>
                     <p>Pengeritingan rambut dengan hasil yang natural dan trendy</p>
-                    <a href="pelayanan.php" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                    <a href="service-details5.html" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
