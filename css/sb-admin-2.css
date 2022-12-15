@@ -10884,6 +10884,7 @@ a:focus {
 }
 
 .bg-register-image {
+  /* fallback for old browsers */
   background: url("https://i.pinimg.com/736x/8f/a2/05/8fa2059ff5647157dffc4396c9962b1c--barbershop-design-barbershop-ideas.jpg");
   background-size: cover;
   background-repeat: no-repeat;

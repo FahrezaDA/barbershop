@@ -25,7 +25,7 @@ if( isset($_POST['register']) ){
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title> Tes</title>
+    <title>Tambah Pesanan</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -78,7 +78,7 @@ if( isset($_POST['register']) ){
                                 </select>
                                 </div>
                                 <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="<?php echo date('d-m-Y');?>" value="<?php echo date('d-m-Y');?>" name="txt_tanggal_pemesanan"  readonly>
+                                        placeholder="<?php echo date('d-m-Y');?>" value="<?php echo date('d-m-Y');?>" name="txt_tanggal_pemesanan"  readonly><br>
                                 <button type="submit" name="register" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
                             </form>
                             <hr>
