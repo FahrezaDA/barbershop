@@ -48,7 +48,7 @@
           <li><a href="index.php">Utama</a></li>
           <li><a href="pelayanan.php">Pelayanan</a></li>
           <li><a href="tentangKami.php">Tentang Kami </a></li>
-          <li><a href="project.php">Galeri </a></li>
+          <li><a href="galeri.php" class="active">Galeri </a></li>
           <li><a href="kontak.php">Kontak </a></li>
           <li><a href="dashboardPemesanan.php">Dashboard </a></li>
           <li><a href="login.php">Logout </a></li>
