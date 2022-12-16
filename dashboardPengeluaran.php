@@ -381,22 +381,19 @@ $sesName = $_SESSION['name'];
                                             $postt ="admin";        
                                             while ($row = mysqli_fetch_array($result)){
                                               
-                                                $userJenisPengluaran = $row['jenis_pengeluaran'];
+                                                $userJenisPengeluaran = $row['jenis_pengeluaran'];
                                                 $userIdFasilitas = $row['id_fasilitas'];
                                                 $userJumlah = $row['jumlah'];
                                                 $userBiaya = $row['biaya'];
-                                                $userTotalPelanggan = $row['total_pelanggan'];
                                                 $userTanggalPengeluaran = $row['tanggal_pengeluaran'];
                                                 $userIdUser = $row['id_user'];
                                         ?>
                                         <tr>
                                             <td><?php echo $no; ?></td>
-                                           
                                             <td><?php echo $userJenisPengeluaran; ?></td>
                                             <td><?php echo $userIdFasilitas; ?></td>
                                             <td><?php echo $userJumlah; ?></td>
                                             <td><?php echo $userBiaya; ?></td>
-                                            <td><?php echo $userTotalPelanggan; ?></td>
                                             <td><?php echo $userTanggalPengeluaran; ?></td>
                                             <td><?php echo $userIdUser; ?></td>
                                             <td>
