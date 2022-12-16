@@ -54,7 +54,7 @@ if( isset($_POST['register']) ){
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">TAMBAHKAN PENGELUARAN</h1>
                             </div>
-                            <form class="user" action="register_karyawan.php" method="POST">
+                            <form class="user" action="pengeluaran.php" method="POST">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="Jenis Pengeluaran" name="txt_jenis_pengeluaran">
