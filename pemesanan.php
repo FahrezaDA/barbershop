@@ -63,7 +63,7 @@ if( isset($_POST['register']) ){
                                         placeholder="Harga" name="txt_harga">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail"
+                                    <input type="number" class="form-control form-control-user" id="exampleInputEmail"
                                         placeholder="No Antrian " name="txt_no_antrian">
                                 </div>
                                 <div class="form-group">

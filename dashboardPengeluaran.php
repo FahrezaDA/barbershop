@@ -366,7 +366,6 @@ $sesName = $_SESSION['name'];
                                             <th>id_fasilitas</th>
                                             <th>Jumlah</th>
                                             <th>Biaya</th>
-                                            <th>Total Pengeluaran</th>
                                             <th>Tanggal Pengeluaran</th>
                                             <th>Id User</th>
                                             <th>Aksi</th>
