@@ -68,18 +68,18 @@ if( isset($_POST['submit']) ){
                                         placeholder="Jumlah" name="txt_jumlah">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail"
+                                    <input type="text" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="biaya " name="txt_biaya">
                                 </div>
                                 <div class="form-group">
-                                    <input type="date" class="form-control form-control-user" id="exampleInputUsername"
+                                    <input type="date" class="form-control form-control-user" 
                                         placeholder="Tanggal Pengeluaran" name="txt_tanggal_pengeluaran">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user"
                                         placeholder="ID User" name="txt_id_user">
                                 </div>
-                                <button type="submit" name="submit" class="btn btn-primary btn-user btn-block">Tambah Karyawan</button>
+                                <button type="submit" name="submit" class="btn btn-primary btn-user btn-block">Tambah Pengeluaran</button>
                             </form>
                             <hr>
                             <div class="text-center">

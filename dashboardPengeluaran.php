@@ -409,7 +409,7 @@ $sesName = $_SESSION['name'];
                                     </tbody>
                                     
                                 </table>
-                                <a href="pengeluaran.php" type="submit" name="register" class="btn btn-primary">Tambah</a>
+                                <a href="pengeluaran.php" type="submit" name="submit" class="btn btn-primary">Tambah</a>
                             </div>
                         </div>
                     </div>
