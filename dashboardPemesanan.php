@@ -122,7 +122,6 @@ $sesName = $_SESSION['name'];
                         <h6 class="collapse-header">admin</h6>
                         <a class="collapse-item" href="dashboardKaryawan.php">Karyawan</a>
                         <a class="collapse-item" href="dashboardPemesanan.php">Pemesanan</a>
-                        <a class="collapse-item" href="pemasukan.php">Pemasukan</a>
                         <a class="collapse-item" href="dashboardPengeluaran.php">Pengeluaran</a>
                     </div>
                 </div>

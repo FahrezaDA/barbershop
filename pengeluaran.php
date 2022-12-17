@@ -1,6 +1,6 @@
 <?php
 require('koneksi.php');
-if( isset($_POST['register']) ){
+if( isset($_POST['submit']) ){
     $userJenisPengeluaran = $_POST['txt_jenis_pengeluaran'];
     $userIdFasilitas = $_POST['txt_id_fasilitas'];
     $userJumlah = $_POST['txt_jumlah'];
@@ -79,7 +79,7 @@ if( isset($_POST['register']) ){
                                     <input type="text" class="form-control form-control-user"
                                         placeholder="ID User" name="txt_id_user">
                                 </div>
-                                <button type="submit" name="register" class="btn btn-primary btn-user btn-block">Tambah Karyawan</button>
+                                <button type="submit" name="submit" class="btn btn-primary btn-user btn-block">Tambah Karyawan</button>
                             </form>
                             <hr>
                             <div class="text-center">
