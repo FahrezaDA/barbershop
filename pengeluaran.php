@@ -79,7 +79,7 @@ if( isset($_POST['submit']) ){
                                     <input type="text" class="form-control form-control-user"
                                         placeholder="ID User" name="txt_id_user">
                                 </div>
-                                <button type="submit" name="submit" class="btn btn-primary btn-user btn-block">Tambah Karyawan</button>
+                                <button type="submit" name="submit" class="btn btn-primary btn-user btn-block">Tambah Pengeluaran</button>
                             </form>
                             <hr>
                             <div class="text-center">
