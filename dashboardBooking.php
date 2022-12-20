@@ -53,7 +53,7 @@ $sesName = $_SESSION['name'];
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">DASHBOARD</div>
+                <div class="sidebar-brand-text mx-3">DASHBOARD BOOKING</div>
             </a>
 
             <!-- Divider -->
@@ -357,51 +357,48 @@ $sesName = $_SESSION['name'];
                     <div class="container">
                         <div class="card mt-5">
                             <div class="card-body">
-                                <h3 class="display-7">Data Pemesanan</h3>
+                                <h3 class="display-7">Data Booking</h3>
                                 <table id="dataTable" class="table table-bordered" style="width:100%">
                                     <thead>
                                         <tr>
                                             <th>No</th>
+                                            <th>ID Booking</th>
                                             <th>Nama</th>
                                             <th>Jenis Pelayanan</th>
-                                            <th>Harga</th>
-                                            <th>No Antrian</th>
-                                            <th>Tanggal Pemesanan</th>
-                                            <th>Id User</th>
-                                            <th>Id Pelayanan</th>
+                                            <th>Tanggal Booking</th>
+                                            <th>Jam</th>
+                                            <th>Kasir ID</th>
                                             <th>Aksi</th>
 
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php
-                                            $query = "SELECT*FROM pemesanan";
+                                            $query = "SELECT*FROM booking";
                                             $result = mysqli_query($koneksi, $query); 
                                             $no = 1; 
                                             $postt ="admin";        
                                             while ($row = mysqli_fetch_array($result)){
                                               
-                                                $userName = $row['nama_customer'];
+                                                $userBooking = $row['id_booking'];
+                                                $userName = $row['nama'];
                                                 $userJenisPelayanan = $row['jenis_pelayanan'];
-                                                $userHarga = $row['harga'];
-                                                $userNoAntrian = $row['no_antrian'];
-                                                $userTanggalPemesanan = $row['tanggal_pemesanan'];
-                                                $userIdUser = $row['id_user'];
-                                                $userIdPelayanan = $row['id_pelayanan'];
+                                                $userTanggalBooking = $row['tanggal_booking'];
+                                                $userJam = $row['jam'];
+                                                $userKasirID = $row['kasirID'];
+                                            
                                         ?>
                                         <tr>
                                             <td><?php echo $no; ?></td>
-                                           
+                                            <td><?php echo $userBooking; ?></td>
                                             <td><?php echo $userName; ?></td>
                                             <td><?php echo $userJenisPelayanan; ?></td>
-                                            <td><?php echo $userHarga; ?></td>
-                                            <td><?php echo $userNoAntrian; ?></td>
-                                            <td><?php echo $userTanggalPemesanan; ?></td>
-                                            <td><?php echo $userIdUser; ?></td>
-                                            <td><?php echo $userIdPelayanan; ?></td>
+                                            <td><?php echo $userTanggalBooking; ?></td>
+                                            <td><?php echo $userJam; ?></td>
+                                            <td><?php echo $userKasirID; ?></td>
                                             <td>
-                                            <a href="editPemesanan.php?id= <?php echo $row['id_pemesanan']; ?>" class="btn btn-primary btn-circle" <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
-                                            <a href="hapusPemesanan.php?id= <?php echo $row['id_pemesanan']; ?>" class="btn btn-danger btn-circle" <?php echo" ";?>  onClick="confirmModal('hapusPemesanan.php?&id=<?php echo $row['id_pemesanan']; ?>');"><i class="fas fa-trash"></i></a>
+                                            <a href="editBooking.php?id= <?php echo $row['id_booking']; ?>" class="btn btn-primary btn-circle" <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
+                                            <a href="hapusBooking.php?id= <?php echo $row['id_booking']; ?>" class="btn btn-danger btn-circle" <?php echo" ";?>  onClick="confirmModal('hapusPemesanan.php?&id=<?php echo $row['id_booking']; ?>');"><i class="fas fa-trash"></i></a>
                                             </td>
                                             
                                         </tr>
@@ -413,7 +410,7 @@ $sesName = $_SESSION['name'];
                                     </tbody>
                                     
                                 </table>
-                                <a href="pemesanan.php" type="submit" name="register" class="btn btn-primary">Tambah</a>
+                                <a href="booking.php" type="submit" name="register" class="btn btn-primary">Tambah</a>
                             </div>
                         </div>
                     </div>
