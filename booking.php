@@ -10,7 +10,7 @@ if( isset($_POST['register']) ){
     // query memasukkan data 
     $query = "INSERT INTO booking VALUES(null, '$nama', '$jenis_pelayanan', '$tanggal_booking','$jam','$kasirID')";
     $result = mysqli_query($koneksi, $query);
-    header('Location: dashboardPemesanan.php');
+    header('Location: dashboardBooking.php');
 }
 ?>
 
@@ -52,19 +52,10 @@ if( isset($_POST['register']) ){
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">PEMESANAN</h1>
                             </div>
-                            <form class="user" action="pemesanan.php" method="POST">
+                            <form class="user" action="booking.php" method="POST">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="Nama" name="txt_nama_customer">
-                                </div>
-
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="Harga" name="txt_harga">
-                                </div>
-                                <div class="form-group">
-                                    <input type="number" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="No Antrian " name="txt_no_antrian">
+                                        placeholder="Nama" name="txt_nama_">
                                 </div>
                                 <div class="form-group">
                                 <select type="text" placeholder="Pilih Daftar Sebagai" class="form-control  form-select" name="txt_jenis_pelayanan" id="OptionLevel">
@@ -79,6 +70,10 @@ if( isset($_POST['register']) ){
                                 </div>
                                 <input type="text" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="<?php echo date('d-m-Y');?>" value="<?php echo date('d-m-Y');?>" name="txt_tanggal_pemesanan"  readonly><br>
+                                <div class="form-group">
+                                    <input type="number" class="form-control form-control-user" id="exampleInputEmail"
+                                        placeholder="<?php echo date('h:i:s:a')?>" readonly>
+                                </div>
                                 <button type="submit" name="register" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
                             </form>
                             <hr>

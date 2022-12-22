@@ -43,6 +43,7 @@ $row = mysqli_fetch_array($result);
 
     <table>
         <tbody>
+            
         <tr>
                 <td>Kasir</td>
                 <td>:</td>
