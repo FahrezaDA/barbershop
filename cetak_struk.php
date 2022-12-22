@@ -3,10 +3,25 @@ require("koneksi.php");
 session_start();
 if (!empty($_SESSION['id']));
 $query = "SELECT*FROM pemesanan where id_pemesanan = '$_SESSION[id]'";
-
-$result = mysqli_query($koneksi, $query); 
-       
+$result = mysqli_query($koneksi, $query);       
 $row = mysqli_fetch_array($result);
+
+$id = $_GET['id'];
+$query = "SELECT * FROM pemesanan WHERE id_pemesanan='$id'";
+$result = mysqli_query($koneksi, $query)or die(mysql_error());
+//$nomor = 1;
+while ($row =mysqli_fetch_array($result)){
+    $id     = $row['id_pemesanan'];
+    $userCustomer = $row['nama_customer'];
+    $userJenis = $row['jenis_pelayanan'];
+    $userHarga = $row['harga'];
+    $userAntri = $row['no_antrian'];
+    $userTanggal = $row['tanggal_pemesanan'];
+    $userId = $row['id_user'];
+    $userLayanan = $row['id_pelayanan'];
+    
+    
+}
 ?>
 
 <script>
@@ -47,32 +62,32 @@ $row = mysqli_fetch_array($result);
         <tr>
                 <td>Kasir</td>
                 <td>:</td>
-                <td><?php echo $row['id_user'] ?></td>
+                <td><?php echo $id?></td>
             </tr>
             <tr>
                 <td>Customer</td>
                 <td>:</td>
-                <td><?php echo $row['nama_customer'] ?></td>
+                <td><?php echo $userCustomer ?></td>
             </tr>
             <tr>
                 <td>Pelayanan</td>
                 <td>:</td>
-                <td><?php echo $row['jenis_pelayanan'] ?></td>
+                <td><?php echo $userJenis ?></td>
             </tr>
             <tr>
                 <td>Harga</td>
                 <td>:</td>
-                <td><?php echo $row['harga'] ?></td>
+                <td><?php echo $userHarga ?></td>
             </tr>
             <tr>
                 <td>Tanggal</td>
                 <td>:</td>
-                <td><?php echo $row['tanggal_pemesanan'] ?></td>
+                <td><?php echo $userTanggal ?></td>
             </tr>
             <tr>
                 <td>Antrian</td>
                 <td>:</td>
-                <td><?php echo $row['no_antrian'] ?></td>
+                <td><?php echo $userAntri ?></td>
             </tr>
         </tbody>
     </table>
