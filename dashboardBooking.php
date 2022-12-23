@@ -379,7 +379,6 @@ $sesName = $_SESSION['name'];
                                             $no = 1; 
                                             $postt ="admin";        
                                             while ($row = mysqli_fetch_array($result)){
-                                              
                                                 $userBooking = $row['id_booking'];
                                                 $userName = $row['nama'];
                                                 $userJenisPelayanan = $row['jenis_pelayanan'];

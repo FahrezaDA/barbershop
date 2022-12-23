@@ -74,8 +74,8 @@ date_default_timezone_set('Asia/Jakarta');
                                         placeholder="<?php echo date('d-m-Y');?>" value="<?php echo date('d-m-Y');?>" name="txt_tanggal_booking"  readonly>
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" class="form-control form-control-user" id="exampleInputEmail"
-                                        value="<?php echo date('h:i:s'); ?>" name="txt_jam"
+                                    <input type="number" class="form-control form-control-user" id="exampleInputEmail" name="txt_jam"
+                                        value="<?php echo date('h:i:s'); ?>" 
                                         placeholder="<?php echo date('h:i:s'); ?>" readonly>
                                 </div>
                                 <button type="submit" name="register" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
