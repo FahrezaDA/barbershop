@@ -8,10 +8,11 @@ if( isset($_POST['register']) ){
     $kasirID= $_POST['txt_kasir_id'];
     
     // query memasukkan data 
-    $query = "INSERT INTO booking VALUES(null, '$nama', '$jenis_pelayanan', '$tanggal_booking','$jam','$kasirID')";
+    $query = "INSERT INTO booking VALUES(null, '$nama', '$jenis_pelayanan', '$tanggal_booking','$jam',5)";
     $result = mysqli_query($koneksi, $query);
     header('Location: dashboardBooking.php');
 }
+date_default_timezone_set('Asia/Jakarta');
 ?>
 
 <!DOCTYPE html>
@@ -50,7 +51,7 @@ if( isset($_POST['register']) ){
                     <div class="col-lg-7">
                         <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">PEMESANAN</h1>
+                                <h1 class="h4 text-gray-900 mb-4">Booking</h1>
                             </div>
                             <form class="user" action="booking.php" method="POST">
                                 <div class="form-group">
@@ -68,11 +69,14 @@ if( isset($_POST['register']) ){
                                 ?>
                                 </select>
                                 </div>
+                                <div class="form-group">
                                 <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="<?php echo date('d-m-Y');?>" value="<?php echo date('d-m-Y');?>" name="txt_tanggal_pemesanan"  readonly><br>
+                                        placeholder="<?php echo date('d-m-Y');?>" value="<?php echo date('d-m-Y');?>" name="txt_tanggal_booking"  readonly>
+                                </div>
                                 <div class="form-group">
                                     <input type="number" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="<?php echo date('h:i:s:a')?>" readonly>
+                                        value="<?php echo date('h:i:s'); ?>" name="txt_jam"
+                                        placeholder="<?php echo date('h:i:s'); ?>" readonly>
                                 </div>
                                 <button type="submit" name="register" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
                             </form>
