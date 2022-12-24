@@ -7,11 +7,23 @@ if( isset($_POST['submit']) ){
     $userEmail = $_POST['txt_email'];
     $userPosisi = $_POST['txt_posisi'];
     $userGaji = $_POST['txt_gaji'];
-    
 
-    $query = "INSERT INTO karyawan VALUES(null, '$userName', '$userAlamat', '$userNoTelpon','$userEmail','$userPosisi','$userGaji')";
-    $result = mysqli_query($koneksi, $query);
-    header('Location: dashboardKaryawan.php');
+    $q = mysqli_query($koneksi, "SELECT*FROM karyawan WHERE nama_karyawan='$userName' ");
+    $cek = mysqli_num_rows($q);
+
+    if($cek==0){
+        $query = "INSERT INTO karyawan VALUES(null, '$userName', '$userAlamat', '$userNoTelpon','$userEmail','$userPosisi','$userGaji')";
+        $result = mysqli_query($koneksi, $query);
+        header('Location: dashboardKaryawan.php');
+        if($query){
+            $alert = "<div class='alert alert-success'> anda berhasil </div>";
+        }
+    }
+else {
+    $alert = "<div class='alert alert-danger'> Username sudah di pakai </div>";
+}
+    
+   
 }
 ?>
 
@@ -54,6 +66,7 @@ if( isset($_POST['submit']) ){
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">TAMBAHKAN KARYAWAN</h1>
                             </div>
+                            <?php echo @$alert ?>
                             <form class="user" action="register_karyawan.php" method="POST">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
