@@ -19,29 +19,30 @@ if( isset($_POST['submit'])){
             $passVal = $row['password'];
             $userVal = $row['email'];
         }
-        if ($num !=0){
-            if($userVal==$email && $passVal==$pass){
-                $_SESSION['id'] = $id;
-                $_SESSION['name'] = $userName;
-                header('Location: dashboardPemesanan.php');
-            }else{
-                $error= 'user atau password salah!!';
-                echo'<div id="tampil_modal">
-                     <div id="modal">
-                    <div id="modal_atas">Informasi</div>
-                    <p>Gagal di tambahkan!.</p>
-                    <a href="index.php"><button id="oke">Oke</button></a>
-                    </div></div>';
-            }
-        }else{
-            $error = 'user tidak di temukan!!';
-            echo $error;
-        }
-    }else{
-        $error = 'Data tidak boleh kosong!!';
-        echo $error;
-    }
-}
+        
+            if ($num !=0){
+              if($userVal==$email && $passVal==$pass){
+                  $_SESSION['id'] = $id;
+                  $_SESSION['name'] = $userName;
+                  header('Location: dashboardPemesanan.php');
+              }else{
+                  $error= 'user atau password salah!!';
+                  echo'<div id="tampil_modal">
+                       <div id="modal">
+                      <div id="modal_atas">Informasi</div>
+                      <p>Gagal di tambahkan!.</p>
+                      <a href="index.php"><button id="oke">Oke</button></a>
+                      </div></div>';
+              }
+          }else{
+              $error = 'user tidak di temukan!!';
+              echo $error;
+          }
+      }else{
+          $error = 'Data tidak boleh kosong!!';
+          echo $error;
+      }
+  }
 ?>
 <!doctype html>
 <html lang="en">
