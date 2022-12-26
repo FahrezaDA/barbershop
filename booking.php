@@ -7,10 +7,21 @@ if( isset($_POST['register']) ){
     $jam = $_POST['txt_jam'];
     $kasirID= $_POST['txt_kasir_id'];
     
+    $q = mysqli_query($koneksi, "SELECT*FROM booking WHERE jam='$jam' ");
+    $cek = mysqli_num_rows($q);
+
+    if($cek==0){
+        $query = "INSERT INTO booking VALUES(null, '$nama', '$jenis_pelayanan', '$tanggal_booking','$jam')";
+         $result = mysqli_query($koneksi, $query);
+        header('Location: dashboardBooking.php');
+        if($query){
+            $alert = "<div class='alert alert-success'> anda berhasil </div>";
+        }
+    }
+else {
+    $alert = "<div class='alert alert-danger'> Username sudah di pakai </div>";
+}
     // query memasukkan data 
-    $query = "INSERT INTO booking VALUES(null, '$nama', '$jenis_pelayanan', '$tanggal_booking','$jam',5)";
-    $result = mysqli_query($koneksi, $query);
-    header('Location: dashboardBooking.php');
 }
 date_default_timezone_set('Asia/Jakarta');
 ?>
@@ -74,10 +85,22 @@ date_default_timezone_set('Asia/Jakarta');
                                         placeholder="<?php echo date('d-m-Y');?>" value="<?php echo date('d-m-Y');?>" name="txt_tanggal_booking"  readonly>
                                 </div>
                                 <div class="form-group">
+                                <select type="text" placeholder="Pilih Daftar Sebagai" class="form-control  form-select" name="txt_jenis_pelayanan" id="OptionLevel">
+                                <option>Pilih Jam Booking</option>
+                                 <?php
+                                $query = "SELECT * FROM data_booking";
+                                $result = mysqli_query($koneksi, $query);
+                                while ($row = mysqli_fetch_array($result)) {
+                                echo "<option value=$row[jam] > $row[jam] </option>";}
+                                ?>
+                                </select>
+                                </div>
+                                <div class="form-group">
                                     <input type="number" class="form-control form-control-user" id="exampleInputEmail" name="txt_jam"
                                         value="<?php echo date('h:i:s'); ?>" 
                                         placeholder="<?php echo date('h:i:s'); ?>" readonly>
                                 </div>
+                                
                                 <button type="submit" name="register" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
                             </form>
                             <hr>
