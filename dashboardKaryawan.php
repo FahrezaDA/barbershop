@@ -145,6 +145,7 @@ $sesName = $_SESSION['name'];
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">admin</h6>
                         <a class="collapse-item" href="dashboardKaryawan.php">Karyawan</a>
+                        <a class="collapse-item" href="dashboardCustomer.php">Customer</a>
                         <a class="collapse-item" href="dashboardPemesanan.php">Pemesanan</a>
                         <a class="collapse-item" href="dashboardPengeluaran.php">Pengeluaran</a>
                         <a class="collapse-item" href="dashboardBooking.php">Booking</a>
