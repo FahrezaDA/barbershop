@@ -7,10 +7,21 @@ if( isset($_POST['register']) ){
     $no_antrian = $_POST['txt_no_antrian'];
     $tanggal_pemesanan= $_POST['txt_tanggal_pemesanan'];
     
+    $q = mysqli_query($koneksi, "SELECT*FROM pemesanan WHERE nama_customer='$nama_customer' ");
+    $cek = mysqli_num_rows($q);
+
     // query memasukkan data 
-    $query = "INSERT INTO pemesanan VALUES(null, '$nama_customer', '$jenis_pelayanan', '$harga','$no_antrian','$tanggal_pemesanan',124,131)";
-    $result = mysqli_query($koneksi, $query);
-    header('Location: dashboardPemesanan.php');
+    if ($cek == 0) {
+        $query = "INSERT INTO pemesanan VALUES(null, '$nama_customer', '$jenis_pelayanan', '$harga','$no_antrian','$tanggal_pemesanan',124,131)";
+        $result = mysqli_query($koneksi, $query);
+        header('Location: dashboardPemesanan.php');
+        if($query){
+            $alert = "<div class='alert alert-success'> anda berhasil </div>";
+        }
+    }
+    else {
+        $alert = "<div class='alert alert-danger'> Username sudah di pakai </div>";
+    }
 }
 ?>
 
@@ -53,6 +64,7 @@ if( isset($_POST['register']) ){
                                 <h1 class="h4 text-gray-900 mb-4">PEMESANAN</h1>
                             </div>
                             <form class="user" action="pemesanan.php" method="POST">
+                            <?php echo @$alert ?>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="Nama" name="txt_nama_customer">
