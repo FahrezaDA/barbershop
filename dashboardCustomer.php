@@ -417,8 +417,8 @@ $sesName = $_SESSION['name'];
                                             <td><?php echo $userNoTelpon; ?></td> 
                                             <td><?php echo $userEmail; ?></td>
                                             <td>
-                                            <a href="editKaryawan.php?id= <?php echo $row['id_customer']; ?>" class="btn btn-primary btn-circle <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
-                                            <a href="hapusKaryawan.php?id= <?php echo $row['id_customer']; ?>" class="btn btn-danger btn-circle <?php echo" ";?>" onClick="confirmModal('hapus.php?&id=<?php echo $row['id_customer']; ?>');"><i class="fas fa-trash"></i></a>
+                                            <a href="editCustomer.php?id= <?php echo $row['id_customer']; ?>" class="btn btn-primary btn-circle <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
+                                            <a href="hapusCustomer.php?id= <?php echo $row['id_customer']; ?>" class="btn btn-danger btn-circle <?php echo" ";?>" onClick="confirmModal('hapus.php?&id=<?php echo $row['id_customer']; ?>');"><i class="fas fa-trash"></i></a>
                                             </td>
                                             
                                         </tr>
