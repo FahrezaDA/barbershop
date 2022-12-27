@@ -19,8 +19,6 @@ while ($row =mysqli_fetch_array($result)){
     $userTanggal = $row['tanggal_pemesanan'];
     $userId = $row['id_user'];
     $userLayanan = $row['id_pelayanan'];
-    
-    
 }
 ?>
 
