@@ -102,125 +102,6 @@
   <main id="main">
 
 
-    <!-- ======= Constructions Section ======= -->
-    <section id="constructions" class="constructions">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Pelayanan</h2>
-          <p>Pelayanan yang kami berikan sangat bervariasi sesuai kebutuhan konsumen</p>
-        </div>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                <img src="Pelayanan/gentlemen cut.jpg" alt="" width="240">
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Gentlement Cut</h4>
-                    <p>Potong rambut tanpa keramas dan diakhiri dengan pemakaian tonic atau pomade</p>
-                    <a href="service-details.html" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-6" dnavata-aos="fade-up" data-aos-delay="200">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                <img src="Pelayanan/kids haircut.jpg" alt="" width="265">
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Kids Haircut</h4>
-                    <p>Pengalaman potong rambut yang ramah dan nyaman untuk si kecil.</p>
-                    <a href="service-details1.html" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                <img src="Pelayanan/grooming and hair tato.jpg" alt="" width="260">
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Grooming And Hair Tato</h4>
-                    <p>Biarkan barberman kami yang terampil untuk membentuk dan merancang gaya rambut-mu seperti hasil mahakaryanya.</p>
-                    <a href="service-details2.html" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                <img src="Pelayanan/black hair coloring.jpg" alt="" width="260">
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Black Hair Coloring</h4>
-                    <p>Ubah rambut ubanmu menjadi rambut hitam berkilau</p>
-                    <a href="service-detail3.html" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                <img src="Pelayanan/smoothing.jpg" alt="" width="260">
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Smoothing</h4>
-                    <p>Pelurusan rambut dengan hasil yang natural</p>
-                    <a href="service-details4.html" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                <img src="Pelayanan/perm hair treatment.jpg" alt="" width="220">
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Perm Hair Treatment</h4>
-                    <p>Pengeritingan rambut dengan hasil yang natural dan trendy</p>
-                    <a href="service-details5.html" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-
-        </div>
-
-      </div>
-    </section><!-- End Constructions Section -->
-
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
@@ -310,7 +191,7 @@
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">karyawan profesional</a></h4>
+              <h4 class="title"><a href="">karyawan profesional</a></h4>
               <p>karyawan memiliki keahlian untuk memotong rambut, karyawan juga bisa memotong cambang dan kumis.</p>
             </div>
           </div>
@@ -340,7 +221,6 @@
           </div>
 
         </div>
-
       </div>
    </div>
 </section><!-- End kelebihan & kekurangan-->
