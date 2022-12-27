@@ -67,7 +67,7 @@ date_default_timezone_set('Asia/Jakarta');
                             <form class="user" action="booking.php" method="POST">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="Nama" name="txt_nama_">
+                                        placeholder="Nama" name="txt_nama">
                                 </div>
                                 <div class="form-group">
                                 <select type="text" placeholder="Pilih Daftar Sebagai" class="form-control  form-select" name="txt_jenis_pelayanan" id="OptionLevel">
@@ -85,7 +85,7 @@ date_default_timezone_set('Asia/Jakarta');
                                         placeholder="<?php echo date('d-m-Y');?>" value="<?php echo date('d-m-Y');?>" name="txt_tanggal_booking"  readonly>
                                 </div>
                                 <div class="form-group">
-                                <select type="text" placeholder="Pilih Daftar Sebagai" class="form-control  form-select" name="txt_jenis_pelayanan" id="OptionLevel">
+                                <select type="text" placeholder="Pilih Daftar Sebagai" class="form-control  form-select" name="txt_jam" id="OptionLevel">
                                 <option>Pilih Jam Booking</option>
                                  <?php
                                 $query = "SELECT * FROM data_booking";
@@ -95,12 +95,6 @@ date_default_timezone_set('Asia/Jakarta');
                                 ?>
                                 </select>
                                 </div>
-                                <div class="form-group">
-                                    <input type="number" class="form-control form-control-user" id="exampleInputEmail" name="txt_jam"
-                                        value="<?php echo date('h:i:s'); ?>" 
-                                        placeholder="<?php echo date('h:i:s'); ?>" readonly>
-                                </div>
-                                
                                 <button type="submit" name="register" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
                             </form>
                             <hr>

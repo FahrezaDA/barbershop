@@ -362,12 +362,10 @@ $sesName = $_SESSION['name'];
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>ID Booking</th>
                                             <th>Nama</th>
                                             <th>Jenis Pelayanan</th>
                                             <th>Tanggal Booking</th>
-                                            <th>Jam</th>
-                                            <th>Kasir ID</th>
+                                            <th>Jam Booking</th>
                                             <th>Aksi</th>
 
                                         </tr>
@@ -379,22 +377,19 @@ $sesName = $_SESSION['name'];
                                             $no = 1; 
                                             $postt ="admin";        
                                             while ($row = mysqli_fetch_array($result)){
-                                                $userBooking = $row['id_booking'];
                                                 $userName = $row['nama'];
                                                 $userJenisPelayanan = $row['jenis_pelayanan'];
                                                 $userTanggalBooking = $row['tanggal_booking'];
-                                                $userJam = $row['jam'];
-                                                $userKasirID = $row['kasirID'];
+                                                $userJam = $row['jam_booking'];
+                                                
                                             
                                         ?>
                                         <tr>
                                             <td><?php echo $no; ?></td>
-                                            <td><?php echo $userBooking; ?></td>
                                             <td><?php echo $userName; ?></td>
                                             <td><?php echo $userJenisPelayanan; ?></td>
                                             <td><?php echo $userTanggalBooking; ?></td>
                                             <td><?php echo $userJam; ?></td>
-                                            <td><?php echo $userKasirID; ?></td>
                                             <td>
                                             <a href="editBooking.php?id= <?php echo $row['id_booking']; ?>" class="btn btn-primary btn-circle" <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
                                             <a href="hapusBooking.php?id= <?php echo $row['id_booking']; ?>" class="btn btn-danger btn-circle" <?php echo" ";?>  onClick="confirmModal('hapusPemesanan.php?&id=<?php echo $row['id_booking']; ?>');"><i class="fas fa-trash"></i></a>
