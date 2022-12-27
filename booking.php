@@ -5,9 +5,8 @@ if( isset($_POST['register']) ){
     $jenis_pelayanan = $_POST['txt_jenis_pelayanan'];
     $tanggal_booking = $_POST['txt_tanggal_booking'];
     $jam = $_POST['txt_jam'];
-    $kasirID= $_POST['txt_kasir_id'];
     
-    $q = mysqli_query($koneksi, "SELECT*FROM booking WHERE jam='$jam' ");
+    $q = mysqli_query($koneksi, "SELECT*FROM booking WHERE jam_booking='$jam' AND tanggal_booking='$tanggal_booking' ");
     $cek = mysqli_num_rows($q);
 
     if($cek==0){
@@ -19,7 +18,7 @@ if( isset($_POST['register']) ){
         }
     }
 else {
-    $alert = "<div class='alert alert-danger'> Username sudah di pakai </div>";
+    $alert = "<div class='alert alert-danger'> JAM SUDAH DI BOOKING </div>";
 }
     // query memasukkan data 
 }
@@ -65,6 +64,7 @@ date_default_timezone_set('Asia/Jakarta');
                                 <h1 class="h4 text-gray-900 mb-4">Booking</h1>
                             </div>
                             <form class="user" action="booking.php" method="POST">
+                                <?php echo @$alert ?>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="Nama" name="txt_nama">
@@ -81,8 +81,8 @@ date_default_timezone_set('Asia/Jakarta');
                                 </select>
                                 </div>
                                 <div class="form-group">
-                                <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="<?php echo date('d-m-Y');?>" value="<?php echo date('d-m-Y');?>" name="txt_tanggal_booking"  readonly>
+                                <input type="date" class="form-control form-control-user" id="exampleInputUsername"
+                                        placeholder="<?php echo date('d-m-Y');?>" value="<?php echo date('d-m-Y');?>" name="txt_tanggal_booking"  >
                                 </div>
                                 <div class="form-group">
                                 <select type="text" placeholder="Pilih Daftar Sebagai" class="form-control  form-select" name="txt_jam" id="OptionLevel">
