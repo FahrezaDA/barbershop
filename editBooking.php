@@ -1,18 +1,18 @@
 <?php
 require('koneksi.php');
 if( isset($_POST['update']) ){
-    $userIdPemesanan =$_POST['txt_id'];
-    $userCustomer = $_POST['txt_nama_customer'];
+    $userIdBooking =$_POST['txt_id'];
+    $userNama = $_POST['txt_nama'];
     $userJenis = $_POST['txt_jenis_pelayanan'];
     $userHarga = $_POST['txt_harga'];
-    $userAntri = $_POST['txt_no_antrian'];
     $userTanggal = $_POST['txt_tanggal_pemesanan'];
-    $userId = $_POST['txt_id_user'];
-    $userLayanan = $_POST['txt_id_pelayanan'];
+    $userBukti = $_POST['txt_Bukti'];
+    $userStatus= $_POST['txt_status'];
+
     
     
 
-    $query = "UPDATE pemesanan SET nama_customer='$userCustomer', jenis_pelayanan='$userJenis', harga='$userHarga', no_antrian='$userAntri',tanggal_pemesanan='$userTanggal', id_user='$userId', id_pelayanan='$userLayanan' WHERE id_pemesanan='$userIdPemesanan'";
+    $query = "UPDATE booking SET nama_customer='$userNama', jenis_pelayanan='$userJenis', harga='$userHarga',tanggal_pemesanan='$userTanggal', bukti = '$userBukti', stats ='$userStatus' WHERE id_booking='$userIdBooking'";
     echo $query;
     $result = mysqli_query($koneksi, $query);
     header('Location: dashboardPemesanan.php');
@@ -102,10 +102,6 @@ while ($row =mysqli_fetch_array($result)){
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputPassword"
                                         placeholder="Id User" name="txt_id_user" value="<?php echo $userId; ?>">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputPassword"
-                                        placeholder="ID Pelayanan" name="txt_id_pelayanan" value="<?php echo $userLayanan; ?>">
                                 </div>
                                 <button type="submit" name="update" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
                             </form>
