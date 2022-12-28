@@ -10,8 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/Icon-atas.png" rel="icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,7 +53,7 @@
           <li><a href="index.php">Utama</a></li>
           <li><a href="pelayanan.php">Pelayanan </a></li>
           <li><a href="tentangKami.php">Tentang Kami </a></li>
-          <li><a href="projects.php">Galeri </a></li>
+          <li><a href="galeri.php">Galeri </a></li>
           <li><a href="kontak.php">Kontak</a></li>
           <li><a href="dashboardPemesanan.php">Dashboard</a></li>
           <li><a href="login.php">Logout</a></li>
@@ -90,7 +89,7 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="Pelayanan/smoothing2.jpg" alt="" width="350">
+                  <img src="Pelayanan/black hair2.jpg" alt="" width="350">
                 </div>
               </div>
             </div>
@@ -100,18 +99,18 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Kategori </strong> : <br>dewasa</li><br>
-                <li><strong>Model </strong> :<br>Smoothing</li>
+                <li><strong>Kategori </strong> : <br>Dewasa</li><br>
+                <li><strong>Model </strong> :<br>Black Hair Coloring</li>
                 <br>
-                <li><strong>Harga </strong> :<br>Rp 30.000 - Rp 60.000</li>
+                <li><strong>Harga </strong> :<br>Rp 20.000 - Rp 40.000t</li>
                 <br>
                 <li><strong>Deskripsi </strong> : <br>
-                  <p> Proses smoothing akan membuat rambutmu lurus dengan sempurna. Sehingga tidak akan mudah berantakan dan
-                    tidak terlihat mengembang seperti orang bangun tidur. Rambut hasil smoothing akan menjadikan 
-                    rambut tersebut terlihat sedikit tipis dan rapi.
+                  <p> Warna rambut dengan hitam berkilau akan membuat kamu semakin memancarkan pesona manly dan bossy. 
+                    Warna hitam akan menambah kharismatik dari diri seseorang. Rambut dengan warna hitam berkilau akan 
+                    membuatmu terlihat rapi dan berkharisma.
                   </p>
                   <br>
-                  <button onclick="window.location='http://localhost/project-barber/barbershop/booking.php' "style="background-color: red; color: white; height: 35px; width: 150px;">
+                  <button onclick="window.location='http://localhost/project-barber/barbershop/booking.php' "style="background-color: #4E73DF; color: white; height: 35px; width: 150px;">
                   <b>Booking</b>
                   </button>
                 </li>

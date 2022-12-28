@@ -10,8 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/Icon-atas.png" rel="icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,7 +53,7 @@
           <li><a href="index.php">Utama</a></li>
           <li><a href="pelayanan.php">Pelayanan </a></li>
           <li><a href="tentangKami.php">Tentang Kami </a></li>
-          <li><a href="projects.php">Galeri </a></li>
+          <li><a href="galeri.php">Galeri </a></li>
           <li><a href="kontak.php">Kontak</a></li>
           <li><a href="dashboardPemesanan.php">Dashboard</a></li>
           <li><a href="login.php">Logout</a></li>
@@ -90,7 +89,7 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="Pelayanan/grooming and hair tatto2.jpg" alt="" width="350">
+                  <img src="Pelayanan/gentlemen-cut2.jpg" alt="" width="350">
                 </div>
               </div>
             </div>
@@ -101,17 +100,17 @@
               <h3>Project information</h3>
               <ul>
                 <li><strong>Kategori </strong> : <br>dewasa</li><br>
-                <li><strong>Model </strong> :<br>Grooming and Hair Tato</li>
+                <li><strong>Model </strong> :<br>gentlemen cut</li>
                 <br>
-                <li><strong>Harga </strong> :<br>Rp 25.000 - Rp 50.000</li>
+                <li><strong>Harga </strong> :<br>Rp 25.000 - Rp 35.000</li>
                 <br>
                 <li><strong>Deskripsi </strong> : <br>
-                  <p> Penambahan aksen tatto akan membuat rambut anda lebih manly dan unik. 
-                    Pemilihan bentuk tatto yang beda dari biasanya akan membuatmu menjadi pusat perhatian.
-                    Ditambah lagi dengan aksen rambut grroming akan semakin menambah kharisma dari dalam diri kamu.
+                  <p>Sesuai namanya, gaya ini dapat memberikan tampilan rambut pria yang berkesan gentleman dan mempesona.
+                     Potongan rambut tipis berlapis pada sisi bawah dan samping kepala akan memamerkan tekstur rambut bergelombang 
+                     di bagian atas yang indah. Gaya ini tentu memberikan pesona pria yang menarik hingga mudah mendapat perhatian wanita.
                   </p>
                   <br>
-                  <button onclick="window.location='http://localhost/project-barber/barbershop/booking.php' "style="background-color: red; color: white; height: 35px; width: 150px;">
+                  <button onclick="window.location='http://localhost/project-barber/barbershop/booking.php' "style="background-color: #4E73DF; color: white; height: 35px; width: 150px;">
                   <b>Booking</b>
                   </button>
                 </li>

@@ -10,9 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <link href="assets/img/Icon-atas.png" rel="icon">
+ 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -90,7 +89,7 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="Pelayanan/kids-haircut2.jpg" alt="" width="350">
+                  <img src="Pelayanan/perm hair2.jpg" alt="" width="350">
                 </div>
               </div>
             </div>
@@ -100,19 +99,18 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Kategori </strong> : <br>anak-anak</li><br>
-                <li><strong>Model </strong> :<br>kids haircut</li>
+                <li><strong>Kategori </strong> : <br>dewasa</li><br>
+                <li><strong>Model </strong> :<br>Perm Hair Treatment</li>
                 <br>
-                <li><strong>Harga </strong> :<br>Rp 20.000 - Rp 25.000</li>
+                <li><strong>Harga </strong> :<br>Rp 50.000</li>
                 <br>
                 <li><strong>Deskripsi </strong> : <br>
-                  <p>Selain orang dewasa, anak-anak zaman sekarang juga tidak mau 
-                    ketinggalan model terbaru seperti gaya rambut yang sedang trending. 
-                    Ada banyak model rambut untuk anak laki-laki yang cocok diaplikasikan pada anak usia 5-11 tahun. 
-                    Beberapa model gaya rambut ini juga meniru gaya rambut pria dewasa yang akan menambah kepercayaan diri anak. 
+                  <p> Membuat rambut menjadi kriting dengan metode perm akan membuat rambut terlihat kriting dengan natural.
+                    Model perm akan membuat kamu menjadi lebih trendy dan maskulin. Dengan gaya perm dijamin
+                    kamu akan lebih mudah menarik perhatian seseorang dengan gaya rambut kriting yang unik.
                   </p>
                   <br>
-                  <button onclick="window.location='http://localhost/project-barber/barbershop/booking.php' "style="background-color: red; color: white; height: 35px; width: 150px;">
+                  <button onclick="window.location='http://localhost/project-barber/barbershop/booking.php' "style="background-color: #4E73DF; color: white; height: 35px; width: 150px;">
                   <b>Booking</b>
                   </button>
                 </li>
@@ -120,7 +118,6 @@
             </div>
           </div>
         </div>
-        
     <!-- End Service Details Section -->
 
 

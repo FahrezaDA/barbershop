@@ -100,7 +100,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Gentlement Cut</h4>
                     <p>Potong rambut tanpa keramas dan diakhiri dengan pemakaian tonic atau pomade</p>
-                    <a href="service-details.html" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                    <a href="service-details.php" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -117,7 +117,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Kids Haircut</h4>
                     <p>Pengalaman potong rambut yang ramah dan nyaman untuk si kecil.</p>
-                    <a href="service-details1.html" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                    <a href="service-details1.php" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -134,7 +134,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Grooming And Hair Tato</h4>
                     <p>Biarkan barberman kami yang terampil untuk membentuk dan merancang gaya rambut-mu seperti hasil mahakaryanya.</p>
-                    <a href="service-details2.html" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                    <a href="service-details2.php" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -151,7 +151,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Black Hair Coloring</h4>
                     <p>Ubah rambut ubanmu menjadi rambut hitam berkilau</p>
-                    <a href="service-detail3.html" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                    <a href="service-detail3.php" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -168,7 +168,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Smoothing</h4>
                     <p>Pelurusan rambut dengan hasil yang natural</p>
-                    <a href="service-details4.html" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                    <a href="service-details4.php" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -185,7 +185,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Perm Hair Treatment</h4>
                     <p>Pengeritingan rambut dengan hasil yang natural dan trendy</p>
-                    <a href="service-details5.html" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                    <a href="service-details5.php" class="readmore stretched-link">Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>

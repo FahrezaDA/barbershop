@@ -10,9 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <link href="assets/img/Icon-atas.png" rel="icon">
+  
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,7 +53,7 @@
           <li><a href="index.php">Utama</a></li>
           <li><a href="pelayanan.php">Pelayanan </a></li>
           <li><a href="tentangKami.php">Tentang Kami </a></li>
-          <li><a href="projects.php">Galeri </a></li>
+          <li><a href="galeri.php">Galeri </a></li>
           <li><a href="kontak.php">Kontak</a></li>
           <li><a href="dashboardPemesanan.php">Dashboard</a></li>
           <li><a href="login.php">Logout</a></li>
@@ -90,7 +89,7 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="Pelayanan/black hair2.jpg" alt="" width="350">
+                  <img src="Pelayanan/kids-haircut2.jpg" alt="" width="350">
                 </div>
               </div>
             </div>
@@ -100,18 +99,19 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Kategori </strong> : <br>Dewasa</li><br>
-                <li><strong>Model </strong> :<br>Black Hair Coloring</li>
+                <li><strong>Kategori </strong> : <br>anak-anak</li><br>
+                <li><strong>Model </strong> :<br>kids haircut</li>
                 <br>
-                <li><strong>Harga </strong> :<br>Rp 20.000 - Rp 40.000t</li>
+                <li><strong>Harga </strong> :<br>Rp 20.000 - Rp 25.000</li>
                 <br>
                 <li><strong>Deskripsi </strong> : <br>
-                  <p> Warna rambut dengan hitam berkilau akan membuat kamu semakin memancarkan pesona manly dan bossy. 
-                    Warna hitam akan menambah kharismatik dari diri seseorang. Rambut dengan warna hitam berkilau akan 
-                    membuatmu terlihat rapi dan berkharisma.
+                  <p>Selain orang dewasa, anak-anak zaman sekarang juga tidak mau 
+                    ketinggalan model terbaru seperti gaya rambut yang sedang trending. 
+                    Ada banyak model rambut untuk anak laki-laki yang cocok diaplikasikan pada anak usia 5-11 tahun. 
+                    Beberapa model gaya rambut ini juga meniru gaya rambut pria dewasa yang akan menambah kepercayaan diri anak. 
                   </p>
                   <br>
-                  <button onclick="window.location='http://localhost/project-barber/barbershop/booking.php' "style="background-color: red; color: white; height: 35px; width: 150px;">
+                  <button onclick="window.location='http://localhost/project-barber/barbershop/booking.php' "style="background-color: #4E73DF; color: white; height: 35px; width: 150px;">
                   <b>Booking</b>
                   </button>
                 </li>
@@ -119,6 +119,7 @@
             </div>
           </div>
         </div>
+        
     <!-- End Service Details Section -->
 
 
