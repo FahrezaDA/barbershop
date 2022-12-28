@@ -10,8 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/Icon-atas.png" rel="icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,7 +53,7 @@
           <li><a href="index.php">Utama</a></li>
           <li><a href="pelayanan.php">Pelayanan </a></li>
           <li><a href="tentangKami.php">Tentang Kami </a></li>
-          <li><a href="projects.php">Galeri </a></li>
+          <li><a href="galeri.php">Galeri </a></li>
           <li><a href="kontak.php">Kontak</a></li>
           <li><a href="dashboardPemesanan.php">Dashboard</a></li>
           <li><a href="login.php">Logout</a></li>
