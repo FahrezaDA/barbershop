@@ -1,31 +1,30 @@
 <?php
-require ('koneksi.php');
-if(isset($_POST['update'])){
-    $userId   = $_POST['txt_id_customer'];
-    $userName   = $_POST['txt_nama_customer'];
-    $userAlamat   = $_POST['txt_alamat'];
-    $userNoTelpon = $_POST['txt_no_telpon'];
+require('koneksi.php');
+if( isset($_POST['submit']) ){
+    $userName = $_POST['txt_nama'];
+    $userAlamat = $_POST['txt_alamat'];
     $userEmail = $_POST['txt_email'];
+    $userNoTelpon = $_POST['txt_no_telpon'];
+   
 
+    $q = mysqli_query($koneksi, "SELECT*FROM customer WHERE email ='$userEmail' ");
+    $cek = mysqli_num_rows($q);
 
-    $query = "UPDATE customer SET nama_customer='$userName', alamat='$userAlamat', email='$userEmail', no_telpon='$userNoTelpon' WHERE id_customer='$userId'";
-    echo $query;
-    $result = mysqli_query($koneksi, $query);
-    header('Location: dashboardCustomer.php');
+    if($cek==0){
+        $query = "INSERT INTO customer VALUES(null, '$userName', '$userAlamat','$userEmail', '$userNoTelpon')";
+        $result = mysqli_query($koneksi, $query);
+        header('Location: dashboardCustomer.php');
+        if($query){
+            $alert = "<div class='alert alert-success'> anda berhasil </div>";
+        }
+    }
+else {
+    $alert = "<div class='alert alert-danger'> Email sudah di pakai </div>";
 }
-$id = $_GET['id'];
-$query = "SELECT * FROM customer WHERE id_customer='$id'";
-$result = mysqli_query($koneksi, $query)or die(mysql_error());
-//$nomor = 1;
-while ($row = mysqli_fetch_array($result)) {
-    $id = $row['id_customer'];
-    $userName = $row['nama_customer'];
-    $userAlamat = $row['alamat'];
-    $userEmail = $row['email'];
-    $userNoTelpon = $row['no_telpon'];
+    
+   
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,10 +37,11 @@ while ($row = mysqli_fetch_array($result)) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title> Tambah</title>
+    <title> Register</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/sb-admin-2.css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
@@ -59,34 +59,32 @@ while ($row = mysqli_fetch_array($result)) {
             <div class="card-body p-0">
                 <!-- Nested Row within Card Body -->
                 <div class="row">
-                    <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
-                    <div class="col-lg-7">
-                        <div class="p-5">
+                    <div class="col-lg-5 d-none d-lg-block bg-logo"></div>
+                    <div class="col-lg-7 bg-form">
+                        <div class="p-4">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+                                <h1 class="h4 text-gray-900 mb-4">TAMBAHKAN CUSTOMER</h1>
                             </div>
-                            <form class="user" action="editCustomer.php" method="POST">
+                            <?php echo @$alert ?>
+                            <form class="user" action="registerCustomer.php" method="POST">
                                 <div class="form-group">
-                                    <input type="hidden" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="ID pemesanan" name="txt_id" value="<?php echo $id; ?>">
+                                    <input type="text" class="form-control form-control-user" id="exampleInputUsername"
+                                        placeholder="Nama" name="txt_nama">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="Nama Customer" name="txt_nama_customer" value="<?php echo $userName; ?>">
+                                        placeholder="Alamat" name="txt_alamat">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                        placeholder="Email " name="txt_email">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="Jenis Pelayanan" name="txt_alamat" value="<?php echo $userAlamat; ?>">
+                                        placeholder="No Telpon" name="txt_no_telpon">
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="Harga" name="txt_no_telpon" value="<?php echo $userNoTelpon ?>">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputPassword"
-                                        placeholder="No Antrian" name="txt_email" value="<?php echo $userEmail; ?>">
-                                </div>
-                                <button type="submit" name="update" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
+                              
+                                <button type="submit" name="submit" class="btn btn-primary btn-user btn-block">Tambah Customer</button>
                             </form>
                             <hr>
                             <div class="text-center">
@@ -113,4 +111,3 @@ while ($row = mysqli_fetch_array($result)) {
 </body>
 
 </html>
-

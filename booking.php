@@ -5,12 +5,13 @@ if( isset($_POST['register']) ){
     $jenis_pelayanan = $_POST['txt_jenis_pelayanan'];
     $tanggal_booking = $_POST['txt_tanggal_booking'];
     $jam = $_POST['txt_jam'];
+    $buktiTransfer = $_POST['txt_bukti_transfer'];
     
     $q = mysqli_query($koneksi, "SELECT*FROM booking WHERE jam_booking='$jam' AND tanggal_booking='$tanggal_booking' ");
     $cek = mysqli_num_rows($q);
 
     if($cek==0){
-        $query = "INSERT INTO booking VALUES(null, '$nama', '$jenis_pelayanan', '$tanggal_booking','$jam')";
+        $query = "INSERT INTO booking VALUES(null, '$nama', '$jenis_pelayanan', '$tanggal_booking','$jam','$buktiTransfer')";
          $result = mysqli_query($koneksi, $query);
         header('Location: dashboardBooking.php');
         if($query){
@@ -36,7 +37,7 @@ date_default_timezone_set('Asia/Jakarta');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Tambah Pesanan</title>
+    <title>Tambah Booking</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -63,7 +64,7 @@ date_default_timezone_set('Asia/Jakarta');
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Booking</h1>
                             </div>
-                            <form class="user" action="booking.php" method="POST">
+                            <form class="user" action="booking.php" method="POST" enctype="multipart/form-data">
                                 <?php echo @$alert ?>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
@@ -94,6 +95,11 @@ date_default_timezone_set('Asia/Jakarta');
                                 echo "<option value=$row[jam] > $row[jam] </option>";}
                                 ?>
                                 </select>
+                                </div>
+                                <div class="form-group">
+                                    <p><b>Bukti Pembayaran :</P>
+                                    <input  placeholder="bukti transfer" type="file" class="form-control form-select" id="exampleInputUsername"
+                                        name="txt_bukti_transfer">
                                 </div>
                                 <button type="submit" name="register" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
                             </form>

@@ -387,7 +387,7 @@ $sesName = $_SESSION['name'];
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Id</th>
+                                            
                                             <th>Nama</th>
                                             <th>Alamat</th>
                                             <th>Email</th>
@@ -411,7 +411,6 @@ $sesName = $_SESSION['name'];
                                         ?>
                                         <tr>
                                             <td><?php echo $no; ?></td>
-                                            <td><?php echo $userId; ?></td>
                                             <td><?php echo $userName; ?></td>
                                             <td><?php echo $userAlamat; ?></td>
                                             <td><?php echo $userNoTelpon; ?></td> 
@@ -430,7 +429,7 @@ $sesName = $_SESSION['name'];
                                     </tbody>
                                 </div>   
                                 </table>
-                                <a href="register_karyawan.php" class="btn btn-primary">Register</a>
+                                <a href="registerCustomer.php" class="btn btn-primary">Register</a>
                             </div>
                         </div>
                     </div>

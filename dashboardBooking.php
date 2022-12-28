@@ -366,6 +366,8 @@ $sesName = $_SESSION['name'];
                                             <th>Jenis Pelayanan</th>
                                             <th>Tanggal Booking</th>
                                             <th>Jam Booking</th>
+                                            <th>Bukti Transfer</th>
+                                            <th>Status</th>
                                             <th>Aksi</th>
 
                                         </tr>
@@ -381,6 +383,9 @@ $sesName = $_SESSION['name'];
                                                 $userJenisPelayanan = $row['jenis_pelayanan'];
                                                 $userTanggalBooking = $row['tanggal_booking'];
                                                 $userJam = $row['jam_booking'];
+                                                $userBukti = $row['bukti_transfer'];
+                                                $userStatus = $row['status'];
+
                                                 
                                             
                                         ?>
@@ -390,6 +395,8 @@ $sesName = $_SESSION['name'];
                                             <td><?php echo $userJenisPelayanan; ?></td>
                                             <td><?php echo $userTanggalBooking; ?></td>
                                             <td><?php echo $userJam; ?></td>
+                                            <td><img src="<?php echo $userBukti; ?>"></img></td>
+                                            <td><?php echo $userStatus; ?></td>
                                             <td>
                                             <a href="editBooking.php?id= <?php echo $row['id_booking']; ?>" class="btn btn-primary btn-circle" <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
                                             <a href="hapusBooking.php?id= <?php echo $row['id_booking']; ?>" class="btn btn-danger btn-circle" <?php echo" ";?>  onClick="confirmModal('hapusPemesanan.php?&id=<?php echo $row['id_booking']; ?>');"><i class="fas fa-trash"></i></a>
