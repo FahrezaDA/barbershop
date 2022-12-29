@@ -93,9 +93,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/model-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Gaya Rambut</h4>
-                  <p>Gaya Rambut yang keren akan membuat anda semakin percaya diri</p>
+                  <h4>gentlemen cut</h4>
+                  <p>gentlemen cut - Potong rambut tanpa keramas dan diakhiri dengan pemakaian tonic atau pomade</p>
                   <a href="assets/img/projects/model-1.jpg" title="Gaya Rambut" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -115,9 +116,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/coloring-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Contoh Coloring</h4>
-                  <p>Dengan rambut berwarna hidupmu akan lebih berwarna</p>
+                  <h4>Hair Coloring</h4>
+                  <p>Hair Coloring - Dengan rambut berwarna hidupmu akan lebih berwarna</p>
                   <a href="assets/img/projects/coloring-1.jpg" title="Coloring 1" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-detail3.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -126,9 +128,11 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/style-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Style</h4>
-                  <p>Dengan Style yang rapi akan membuat anda lebih tampan</p>
+                  <h4>Style gentlemen cut</h4>
+                  <p>Style gentlemen cut - Dengan Style yang rapi akan membuat anda lebih tampan. 
+                    Gaya ini tentu memberikan pesona pria yang menarik hingga mudah mendapat perhatian wanita.</p>
                   <a href="assets/img/projects/style-1.jpg" title="Style" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -137,9 +141,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/model-2.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Gaya Rambut</h4>
-                  <p>Gaya Rambut yang keren akan membuat anda semakin percaya diri</p>
+                  <h4>Grooming And Hair Tato</h4>
+                  <p>Grooming And Hair Tato - Biarkan barberman kami yang terampil untuk membentuk dan merancang gaya rambut-mu seperti hasil mahakaryanya.</p>
                   <a href="assets/img/projects/model-2.png" title="Gaya Rambut" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details2.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -148,9 +153,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/model-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Gaya Rambut</h4>
-                  <p>Gaya Rambut yang keren akan membuat anda semakin percaya diri</p>
+                  <h4>kids haircut</h4>
+                  <p>kids haircut - Pengalaman potong rambut yang ramah dan nyaman untuk si kecil.</p>
                   <a href="assets/img/projects/model-3.jpg" title="Gaya Rambut" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details1.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -170,9 +176,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/model-4.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Gaya Rambut</h4>
-                  <p>Gaya Rambut yang keren akan membuat anda semakin percaya diri</p>
+                  <h4>gentlemen cut</h4>
+                  <p>gentlemen cut - Potong rambut tanpa keramas dan diakhiri dengan pemakaian tonic atau pomade</p>
                   <a href="assets/img/projects/model-4.jpg" title="Gaya Rambut" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -181,9 +188,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/model-5.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Gaya Rambut</h4>
-                  <p>Gaya Rambut yang keren akan membuat anda semakin percaya diri</p>
+                  <h4>kids haircut</h4>
+                  <p>kids haircut - Pengalaman potong rambut yang ramah dan nyaman untuk si kecil.</p>
                   <a href="assets/img/projects/model-5.jpg" title="Gaya Rambut" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details1.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -192,9 +200,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/coloring-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Contoh Coloring</h4>
-                  <p>Dengan rambut berwarna hidupmu akan lebih berwarna</p>
+                  <h4>Hair Coloring</h4>
+                  <p>Hair Coloring - Dengan rambut berwarna hidupmu akan lebih berwarna</p>
                   <a href="assets/img/projects/coloring-2.jpg" title="Coloring" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-detail3.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -203,9 +212,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/coloring-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Contoh Coloring</h4>
-                  <p>Dengan rambut berwarna hidupmu akan lebih berwarna</p>
+                  <h4>Hair Coloring</h4>
+                  <p>Hair Coloring - Dengan rambut berwarna hidupmu akan lebih berwarna</p>
                   <a href="assets/img/projects/coloring-3.jpg" title="Coloring" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-detail3.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -214,9 +224,11 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/style-2.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Style</h4>
-                  <p>Dengan Style yang rapi akan membuat anda lebih tampan</p>
+                  <h4>Style gentlemen cut</h4>
+                  <p>Style gentlemen cut - Dengan Style yang rapi akan membuat anda lebih tampan. 
+                    Gaya ini tentu memberikan pesona pria yang menarik hingga mudah mendapat perhatian wanita.</p>
                   <a href="assets/img/projects/style-2.png" title="Style" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -225,9 +237,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/model-6.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Gaya Rambut</h4>
-                  <p>Gaya Rambut yang keren akan membuat anda semakin percaya diri</p>
+                  <h4>gentlemen cut</h4>
+                  <p>gentlemen cut - Potong rambut tanpa keramas dan diakhiri dengan pemakaian tonic atau pomade</p>
                   <a href="assets/img/projects/model-6.png" title="Gaya Rambut" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -247,9 +260,11 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/style-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Style</h4>
-                  <p>Dengan Style yang rapi akan membuat anda lebih tampan</p>
+                  <h4>Style Perm Hair</h4>
+                  <p>Style Perm Hair - Dengan Style yang rapi akan membuat anda lebih tampan, metode perm akan membuat rambut terlihat kriting dengan natural.
+                  </p>
                   <a href="assets/img/projects/style-3.jpg" title="Style" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details5.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -258,9 +273,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/coloring-4.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Contoh Coloring</h4>
-                  <p>Dengan rambut berwarna hidupmu akan lebih berwarna</p>
+                  <h4>Hair Coloring</h4>
+                  <p>Hair Coloring - Dengan rambut berwarna hidupmu akan lebih berwarna</p>
                   <a href="assets/img/projects/coloring-4.jpg" title="Coloring" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-detail3.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -269,9 +285,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/model-7.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Gaya Rambut</h4>
-                  <p>Gaya Rambut yang keren akan membuat anda semakin percaya diri</p>
+                  <h4>Perm Hair Treatment</h4>
+                  <p>Perm Hair Treatment - Membuat rambut menjadi kriting dengan metode perm akan membuat rambut terlihat kriting dengan natural.</p>
                   <a href="assets/img/projects/model-7.jpg" title="Gaya Rambut" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details5.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -280,9 +297,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/model-8.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Gaya Rambut</h4>
-                  <p>Gaya Rambut yang keren akan membuat anda semakin percaya diri</p>
+                  <h4>Grooming And Hair Tato</h4>
+                  <p>Grooming And Hair Tato - Biarkan barberman kami yang terampil untuk membentuk dan merancang gaya rambut-mu seperti hasil mahakaryanya.</p>
                   <a href="assets/img/projects/model-8.jpg" title="Gaya Rambut" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details2.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -291,9 +309,11 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/style-4.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Style</h4>
-                  <p>Dengan Style yang rapi akan membuat anda lebih tampan</p>
+                  <h4>Style gentlemen cut</h4>
+                  <p>Style gentlemen cut - Dengan Style yang rapi akan membuat anda lebih tampan. 
+                    Gaya ini tentu memberikan pesona pria yang menarik hingga mudah mendapat perhatian wanita.</p>
                   <a href="assets/img/projects/style-4.jpg" title="Style" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -302,9 +322,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/coloring-5.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Contoh Coloring</h4>
-                  <p>Dengan rambut berwarna hidupmu akan lebih berwarna</p>
+                  <h4>Hair Coloring </h4>
+                  <p>Hair Coloring - Dengan rambut berwarna hidupmu akan lebih berwarna</p>
                   <a href="assets/img/projects/coloring-5.jpg" title="Coloring" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-detail3.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -324,9 +345,11 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/model-9.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Gaya Rambut</h4>
-                  <p>Gaya Rambut yang keren akan membuat anda semakin percaya diri</p>
+                  <h4>Smoothing</h4>
+                  <p>Smoothing - Proses smoothing akan membuat rambutmu lurus dengan sempurna. Sehingga tidak akan mudah berantakan dan
+                    tidak terlihat mengembang</p>
                   <a href="assets/img/projects/model-9.jpg" title="Gaya Rambut" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details4.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -335,9 +358,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/coloring-6.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Contoh Coloring</h4>
-                  <p>Dengan rambut berwarna hidupmu akan lebih berwarna</p>
+                  <h4>Hair Coloring</h4>
+                  <p>Hair Coloring - Dengan rambut berwarna hidupmu akan lebih berwarna</p>
                   <a href="assets/img/projects/coloring-6.jpg" title="Coloring" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-detail3.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -346,9 +370,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/model-10.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Gaya Rambut</h4>
-                  <p>Gaya Rambut yang keren akan membuat anda semakin percaya diri</p>
+                  <h4>gentlemen cut</h4>
+                  <p>gentlemen cut - Potong rambut tanpa keramas dan diakhiri dengan pemakaian tonic atau pomade</p>
                   <a href="assets/img/projects/model-10.jpg" title="Gaya Rambut" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -357,9 +382,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/model-11.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Gaya Rambut</h4>
-                  <p>Gaya Rambut yang keren akan membuat anda semakin percaya diri</p>
+                  <h4>gentlemen cut</h4>
+                  <p>gentlemen cut - Potong rambut tanpa keramas dan diakhiri dengan pemakaian tonic atau pomade</p>
                   <a href="assets/img/projects/model-11.jpg" title="Gaya Rambut" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -368,9 +394,11 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/style-5.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Style</h4>
-                  <p>Dengan Style yang rapi akan membuat anda lebih tampan</p>
+                  <h4>Style Grooming And Hair Tato</h4>
+                  <p>Style Grooming And Hair Tato - Dengan Style yang rapi akan membuat anda lebih tampan. 
+                    Penambahan aksen tatto akan membuat rambut anda lebih manly dan unik.</p>
                   <a href="assets/img/projects/style-5.jpg" title="Style" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details2.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -379,9 +407,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/model-12.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Gaya Rambut</h4>
-                  <p>Gaya Rambut yang keren akan membuat anda semakin percaya diri</p>
+                  <h4>Perm Hair Treatment</h4>
+                  <p>Perm Hair Treatment - Membuat rambut menjadi kriting dengan metode perm akan membuat rambut terlihat kriting dengan natural.</p>
                   <a href="assets/img/projects/model-12.jpg" title="Gaya Rambut" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details5.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -390,9 +419,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/model-13.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Gaya Rambut</h4>
-                  <p>Gaya Rambut yang keren akan membuat anda semakin percaya diri</p>
+                  <h4>Perm Hair Treatment</h4>
+                  <p>Perm Hair Treatment - Membuat rambut menjadi kriting dengan metode perm akan membuat rambut terlihat kriting dengan natural.</p>
                   <a href="assets/img/projects/model-13.jpg" title="Gaya Rambut" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details5.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -412,9 +442,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/style-6.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Style</h4>
-                  <p>Dengan Style yang rapi akan membuat anda lebih tampan</p>
+                  <h4>Style Smoothing</h4>
+                  <p>Dengan Style yang rapi akan membuat anda lebih tampan. smoothing akan membuat rambutmu lurus dengan sempurna.</p>
                   <a href="assets/img/projects/style-6.jpg" title="Style" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details4.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -423,9 +454,11 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/model-14.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Gaya Rambut</h4>
-                  <p>Gaya Rambut yang keren akan membuat anda semakin percaya diri</p>
+                  <h4>Smoothing</h4>
+                  <p>Smoothing - Proses smoothing akan membuat rambutmu lurus dengan sempurna. Sehingga tidak akan mudah berantakan dan
+                    tidak terlihat mengembang</p>
                   <a href="assets/img/projects/model-14.jpg" title="Gaya Rambut" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details4.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -445,9 +478,11 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/model-15.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Gaya Rambut</h4>
-                  <p>Gaya Rambut yang keren akan membuat anda semakin percaya diri</p>
+                  <h4>Smoothing</h4>
+                  <p>Smoothing - Proses smoothing akan membuat rambutmu lurus dengan sempurna. Sehingga tidak akan mudah berantakan dan
+                    tidak terlihat mengembang</p>
                   <a href="assets/img/projects/model-15.jpg" title="Gaya Rambut" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="service-details4.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
