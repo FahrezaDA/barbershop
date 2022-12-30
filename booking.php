@@ -1,17 +1,23 @@
 <?php
 require('koneksi.php');
 if( isset($_POST['register']) ){
+    $foto = $_FILES['bukti_transfer']['name'];
+    $temp = $_FILES['bukti_transfer']['tmp_name'];
+    $size = $_FILES['bukti_transfer']['size'];
     $nama = $_POST['txt_nama'];
     $jenis_pelayanan = $_POST['txt_jenis_pelayanan'];
     $tanggal_booking = $_POST['txt_tanggal_booking'];
     $jam = $_POST['txt_jam'];
-    $buktiTransfer = $_POST['txt_bukti_transfer'];
+    $image_files=$nama.".jpg";
     
+    if($size > 5000000){
+        echo "<script>alert('Ukuran gambar terlalu besar');</script>";
+    }
     $q = mysqli_query($koneksi, "SELECT*FROM booking WHERE jam_booking='$jam' AND tanggal_booking='$tanggal_booking' ");
     $cek = mysqli_num_rows($q);
-
+    copy($temp, "img/fileBooking/" . $image_files);
     if($cek==0){
-        $query = "INSERT INTO booking VALUES(null, '$nama', '$jenis_pelayanan', '$tanggal_booking','$jam','$buktiTransfer')";
+        $query = "INSERT INTO booking VALUES(null, '$nama', '$jenis_pelayanan', '$tanggal_booking','$jam','$foto')";
          $result = mysqli_query($koneksi, $query);
         header('Location: dashboardBooking.php');
         if($query){
@@ -99,7 +105,7 @@ date_default_timezone_set('Asia/Jakarta');
                                 <div class="form-group">
                                     <p><b>Bukti Pembayaran :</P>
                                     <input  placeholder="bukti transfer" type="file" class="form-control form-select" id="exampleInputUsername"
-                                        name="txt_bukti_transfer">
+                                        name="bukti_transfer">
                                 </div>
                                 <button type="submit" name="register" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
                             </form>

@@ -6,7 +6,7 @@ if( isset($_POST['submit']) ){
     $userJumlah = $_POST['txt_jumlah'];
     $userBiaya = $_POST['txt_biaya'];
     $userTanggalPengeluaran = $_POST['txt_tanggal_pengeluaran'];
-    $userIdUser = $_POST['txt_id_user'];
+    $userIdUser = $_POST['txt_id_kasir'];
     
 
     $query = "INSERT INTO pengeluaran VALUES(null, '$userJenisPengeluaran', '$userIdFasilitas', '$userJumlah','$userBiaya','$userTanggalPengeluaran','$userIdUser')";
@@ -60,8 +60,15 @@ if( isset($_POST['submit']) ){
                                         placeholder="Jenis Pengeluaran" name="txt_jenis_pengeluaran">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="ID Fasilitas" name="txt_id_fasilitas">
+                                <select type="text" placeholder="Pilih Daftar Sebagai" class="form-control  form-select" name="txt_id_fasilitas" id="OptionLevel">
+                                <option>Nama Fasilitas</option>
+                                 <?php
+                                $query = "SELECT * FROM fasilitas";
+                                $result = mysqli_query($koneksi, $query);
+                                while ($row = mysqli_fetch_array($result)) {
+                                echo "<option value=$row[id_fasilitas] > $row[nama_fasilitas] </option>";}
+                                ?>
+                                </select>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
@@ -76,8 +83,15 @@ if( isset($_POST['submit']) ){
                                         placeholder="Tanggal Pengeluaran" name="txt_tanggal_pengeluaran">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user"
-                                        placeholder="ID User" name="txt_id_user">
+                                <select type="text" placeholder="Pilih Kasir" class="form-control  form-select" name="txt_id_kasir" id="OptionLevel">
+                                <option>Pilih Kasir</option>
+                                 <?php
+                                $query = "SELECT * FROM kasir";
+                                $result = mysqli_query($koneksi, $query);
+                                while ($row = mysqli_fetch_array($result)) {
+                                echo "<option value=$row[kasirID] > $row[username] </option>";}
+                                ?>
+                                </select>
                                 </div>
                                 <button type="submit" name="submit" class="btn btn-primary btn-user btn-block">Tambah Pengeluaran</button>
                             </form>

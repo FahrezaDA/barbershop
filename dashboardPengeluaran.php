@@ -364,11 +364,11 @@ $sesName = $_SESSION['name'];
                                         <tr>
                                             <th>No</th>
                                             <th>Jenis Pengeluaran</th>
-                                            <th>id_fasilitas</th>
+                                            <th>ID Fasilitas</th>
                                             <th>Jumlah</th>
                                             <th>Biaya</th>
                                             <th>Tanggal Pengeluaran</th>
-                                            <th>Id User</th>
+                                            <th>Id Kasir</th>
                                             <th>Aksi</th>
 
                                         </tr>
@@ -386,7 +386,7 @@ $sesName = $_SESSION['name'];
                                                 $userJumlah = $row['jumlah'];
                                                 $userBiaya = $row['biaya'];
                                                 $userTanggalPengeluaran = $row['tanggal_pengeluaran'];
-                                                $userIdUser = $row['id_user'];
+                                                $userIdUser = $row['id_kasir'];
                                         ?>
                                         <tr>
                                             <td><?php echo $no; ?></td>
