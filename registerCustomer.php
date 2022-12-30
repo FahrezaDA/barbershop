@@ -3,17 +3,21 @@ require('koneksi.php');
 if( isset($_POST['submit']) ){
     $userName = $_POST['txt_nama'];
     $userAlamat = $_POST['txt_alamat'];
-    $userEmail = $_POST['txt_email'];
     $userNoTelpon = $_POST['txt_no_telpon'];
+    $userEmail = $_POST['txt_email'];
+    $userPassword = $_POST['txt_password'];
+    $userJabatan = $_POST['txt_jabatan'];
+    $userLevel = $_POST['txt_level'];
+   
    
 
-    $q = mysqli_query($koneksi, "SELECT*FROM customer WHERE email ='$userEmail' ");
+    $q = mysqli_query($koneksi, "SELECT*FROM user WHERE email ='$userEmail' ");
     $cek = mysqli_num_rows($q);
 
     if($cek==0){
-        $query = "INSERT INTO customer VALUES(null, '$userName', '$userAlamat','$userEmail', '$userNoTelpon')";
+        $query = "INSERT INTO user VALUES(null, '$userName', '$userAlamat','$userNoTelpon','$userEmail','$userPassword','$userJabatan',3)";
         $result = mysqli_query($koneksi, $query);
-        header('Location: dashboardCustomer.php');
+        header('Location: index.php');
         if($query){
             $alert = "<div class='alert alert-success'> anda berhasil </div>";
         }
@@ -76,13 +80,23 @@ else {
                                         placeholder="Alamat" name="txt_alamat">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="Email " name="txt_email">
-                                </div>
-                                <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="No Telpon" name="txt_no_telpon">
                                 </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                        placeholder="Email " name="txt_email">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail"
+                                        placeholder="Password " name="txt_password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail"
+                                        placeholder="Jabatan " name="txt_jabatan">
+                                </div>
+                                
                               
                                 <button type="submit" name="submit" class="btn btn-primary btn-user btn-block">Tambah Customer</button>
                             </form>

@@ -145,7 +145,7 @@ $sesName = $_SESSION['name'];
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">admin</h6>
                         <a class="collapse-item" href="dashboardKaryawan.php">Karyawan</a>
-                        <a class="collapse-item" href="dashboardCustomer.php">Customer</a>
+                        <a class="collapse-item" href="dashboardUser.php">User</a>
                         <a class="collapse-item" href="dashboardPemesanan.php">Pemesanan</a>
                         <a class="collapse-item" href="dashboardPengeluaran.php">Pengeluaran</a>
                         <a class="collapse-item" href="dashboardBooking.php">Booking</a>
@@ -390,24 +390,32 @@ $sesName = $_SESSION['name'];
                                             
                                             <th>Nama</th>
                                             <th>Alamat</th>
-                                            <th>Email</th>
                                             <th>No.Telpon</th>
+                                            <th>Email</th>
+                                            <th>Password</th>
+                                            <th>Jabatan</th>
+                                            <th>Level</th>
+                                           
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     
                                     <tbody>
                                         <?php
-                                            $query = "SELECT*FROM customer";
+                                            $query = "SELECT*FROM user";
                                             $result = mysqli_query($koneksi, $query); 
                                             $no = 1; 
                                             $postt ="admin";        
                                             while ($row = mysqli_fetch_array($result)){
-                                                $userId = $row['id_customer'];
-                                                $userName = $row['nama_customer'];
+                                                $userId = $row['id_user'];
+                                                $userName = $row['nama_user'];
                                                 $userAlamat = $row['alamat'];
-                                                $userEmail = $row['email'];
                                                 $userNoTelpon = $row['no_telpon'];
+                                                $userEmail = $row['email'];
+                                                $userPassword = $row['password'];
+                                                $userJabatan = $row['jabatan'];
+                                                $userLevel = $row['level'];
+                                               
                                         ?>
                                         <tr>
                                             <td><?php echo $no; ?></td>
@@ -415,9 +423,12 @@ $sesName = $_SESSION['name'];
                                             <td><?php echo $userAlamat; ?></td>
                                             <td><?php echo $userNoTelpon; ?></td> 
                                             <td><?php echo $userEmail; ?></td>
+                                            <td><?php echo $userPassword; ?></td>
+                                            <td><?php echo $userJabatan; ?></td>
+                                            <td><?php echo $userLevel; ?></td>
                                             <td>
-                                            <a href="editCustomer.php?id= <?php echo $row['id_customer']; ?>" class="btn btn-primary btn-circle <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
-                                            <a href="hapusCustomer.php?id= <?php echo $row['id_customer']; ?>" class="btn btn-danger btn-circle <?php echo" ";?>" onClick="confirmModal('hapus.php?&id=<?php echo $row['id_customer']; ?>');"><i class="fas fa-trash"></i></a>
+                                            <a href="editCustomer.php?id= <?php echo $row['id_user']; ?>" class="btn btn-primary btn-circle <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
+                                            <a href="hapusCustomer.php?id= <?php echo $row['id_user']; ?>" class="btn btn-danger btn-circle <?php echo" ";?>" onClick="confirmModal('hapus.php?&id=<?php echo $row['id_user']; ?>');"><i class="fas fa-trash"></i></a>
                                             </td>
                                             
                                         </tr>

@@ -6,6 +6,7 @@ if( isset($_POST['register']) ){
     $size = $_FILES['bukti_transfer']['size'];
     $nama = $_POST['txt_nama'];
     $jenis_pelayanan = $_POST['txt_jenis_pelayanan'];
+    $harga = $_POST['txt_harga'];
     $tanggal_booking = $_POST['txt_tanggal_booking'];
     $jam = $_POST['txt_jam'];
     $image_files=$nama.".jpg";
@@ -17,7 +18,7 @@ if( isset($_POST['register']) ){
     $cek = mysqli_num_rows($q);
     copy($temp, "img/fileBooking/" . $image_files);
     if($cek==0){
-        $query = "INSERT INTO booking VALUES(null, '$nama', '$jenis_pelayanan', '$tanggal_booking','$jam','$foto')";
+        $query = "INSERT INTO booking VALUES(null, '$nama', '$jenis_pelayanan','$harga', '$tanggal_booking','$jam','$foto')";
          $result = mysqli_query($koneksi, $query);
         header('Location: dashboardBooking.php');
         if($query){
@@ -84,6 +85,17 @@ date_default_timezone_set('Asia/Jakarta');
                                 $result = mysqli_query($koneksi, $query);
                                 while ($row = mysqli_fetch_array($result)) {
                                 echo "<option value=$row[jenis_pelayanan] > $row[jenis_pelayanan] </option>";}
+                                ?>
+                                </select>
+                                </div>
+                                <div class="form-group">
+                                <select type="text" placeholder="Pilih Daftar Sebagai" class="form-control  form-select" name="txt_harga" id="OptionLevel">
+                                <option>Harga</option>
+                                 <?php
+                                $query = "SELECT * FROM pelayanan";
+                                $result = mysqli_query($koneksi, $query);
+                                while ($row = mysqli_fetch_array($result)) {
+                                echo "<option value=$row[harga] > $row[jenis_pelayanan] </option>";}
                                 ?>
                                 </select>
                                 </div>
