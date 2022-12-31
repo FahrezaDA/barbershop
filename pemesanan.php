@@ -6,13 +6,15 @@ if( isset($_POST['register']) ){
     $harga = $_POST['txt_harga'];
     $no_antrian = $_POST['txt_no_antrian'];
     $tanggal_pemesanan= $_POST['txt_tanggal_pemesanan'];
+    $kasir = $_POST['txt_id_kasir'];
+
     
     $q = mysqli_query($koneksi, "SELECT*FROM pemesanan WHERE nama_customer='$nama_customer' ");
     $cek = mysqli_num_rows($q);
 
     // query memasukkan data 
     if ($cek == 0) {
-        $query = "INSERT INTO pemesanan VALUES(null, '$nama_customer', '$jenis_pelayanan', '$harga','$no_antrian','$tanggal_pemesanan',124,131)";
+        $query = "INSERT INTO pemesanan VALUES(null, '$nama_customer', '$jenis_pelayanan', '$harga','$no_antrian','$tanggal_pemesanan','$kasir')";
         $result = mysqli_query($koneksi, $query);
         header('Location: dashboardPemesanan.php');
         if($query){
@@ -91,6 +93,17 @@ if( isset($_POST['register']) ){
                                 </div>
                                 <input type="text" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="<?php echo date('d-m-Y');?>" value="<?php echo date('d-m-Y');?>" name="txt_tanggal_pemesanan"  readonly><br>
+                                        <div class="form-group">
+                                <select type="text" placeholder="Pilih Daftar Sebagai" class="form-control  form-select" name="txt_id_kasir" id="OptionLevel">
+                                <option>Pilih Kasir</option>
+                                 <?php
+                                $query = "SELECT * FROM kasir";
+                                $result = mysqli_query($koneksi, $query);
+                                while ($row = mysqli_fetch_array($result)) {
+                                echo "<option value=$row[kasirID] > $row[username] </option>";}
+                                ?>
+                                </select> </br>
+
                                 <button type="submit" name="register" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
                             </form>
                             <hr>

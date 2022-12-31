@@ -368,8 +368,8 @@ $sesName = $_SESSION['name'];
                                             <th>Harga</th>
                                             <th>No Antrian</th>
                                             <th>Tanggal Pemesanan</th>
-                                            <th>Id User</th>
-                                            <th>Id Pelayanan</th>
+                                            <th>Id Kasir </th>
+                                            
                                             <th>Aksi</th>
 
                                         </tr>
@@ -387,8 +387,7 @@ $sesName = $_SESSION['name'];
                                                 $userHarga = $row['harga'];
                                                 $userNoAntrian = $row['no_antrian'];
                                                 $userTanggalPemesanan = $row['tanggal_pemesanan'];
-                                                $userIdUser = $row['id_user'];
-                                                $userIdPelayanan = $row['id_pelayanan'];
+                                                $userKasir = $row['kasirID'];
                                         ?>
                                         <tr>
                                             <td><?php echo $no; ?></td>
@@ -398,8 +397,8 @@ $sesName = $_SESSION['name'];
                                             <td><?php echo $userHarga; ?></td>
                                             <td><?php echo $userNoAntrian; ?></td>
                                             <td><?php echo $userTanggalPemesanan; ?></td>
-                                            <td><?php echo $userIdUser; ?></td>
-                                            <td><?php echo $userIdPelayanan; ?></td>
+                                            <td><?php echo $userKasir; ?></td>
+                                            
                                             <td>
                                             <a href="editPemesanan.php?id= <?php echo $row['id_pemesanan']; ?>" class="btn btn-primary btn-circle" <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
                                             <a href="hapusPemesanan.php?id= <?php echo $row['id_pemesanan']; ?>" class="btn btn-danger btn-circle" <?php echo" ";?>  onClick="confirmModal('hapusPemesanan.php?&id=<?php echo $row['id_pemesanan']; ?>');"><i class="fas fa-trash"></i></a>
