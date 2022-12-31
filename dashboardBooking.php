@@ -121,6 +121,7 @@ $sesName = $_SESSION['name'];
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">admin</h6>
                         <a class="collapse-item" href="dashboardKaryawan.php">Karyawan</a>
+                        <a class="collapse-item" href="dashboardUser.php">User</a>
                         <a class="collapse-item" href="dashboardPemesanan.php">Pemesanan</a>
                         <a class="collapse-item" href="dashboardPengeluaran.php">Pengeluaran</a>
                         <a class="collapse-item" href="dashboardBooking.php">Booking</a>
@@ -305,7 +306,7 @@ $sesName = $_SESSION['name'];
                         <div class="topbar-divider d-none d-sm-block"></div>
 
                         <!-- Nav Item - User Information -->
-                        <button onclick="window.location='http://localhost/project-barber/barbershop/index.php' "style="background-color: #4E73DF; color: white; height: 40px; width: 100px; margin: 10px 10px 10px 10px;">
+                        <button onclick="window.location='http://localhost/php/repo-barbershop/barbershopPro/index.php' "style="background-color: #4E73DF; color: white; height: 40px; width: 100px; margin: 10px 10px 10px 10px;">
                         <b>Logout</b>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
