@@ -8,7 +8,7 @@ if( isset($_POST['submit'])){
     if(!empty(trim($email)) && !empty(trim($pass))){
 
 
-        $query = mysqli_query($koneksi,"select * from user where email ='$email' and password ='$pass'");
+        $query = mysqli_query($koneksi,"SELECT * from user where email ='$email' and password ='$pass'");
         $cek  = mysqli_num_rows($query);
 
         if ($cek > 0){
