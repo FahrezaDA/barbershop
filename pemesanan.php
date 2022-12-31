@@ -1,6 +1,7 @@
 <?php
 require('koneksi.php');
 if( isset($_POST['register']) ){
+    $id = $_POST['txt_id'];
     $nama_customer = $_POST['txt_nama_customer'];
     $jenis_pelayanan = $_POST['txt_jenis_pelayanan'];
     $harga = $_POST['txt_harga'];
@@ -25,7 +26,10 @@ if( isset($_POST['register']) ){
         $alert = "<div class='alert alert-danger'> Username sudah di pakai </div>";
     }
 }
+//$nomor = 1;
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -67,6 +71,7 @@ if( isset($_POST['register']) ){
                             </div>
                             <form class="user" action="pemesanan.php" method="POST">
                             <?php echo @$alert ?>
+                            
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="Nama" name="txt_nama_customer">
@@ -78,8 +83,12 @@ if( isset($_POST['register']) ){
                                 </div>
                                 <div class="form-group">
                                     <input type="number" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="No Antrian " name="txt_no_antrian">
-                                </div>
+                                        placeholder="No Antrian " name="txt_no_antrian " value="<?php
+                                $query = "SELECT * FROM pemesanan";
+                                $result = mysqli_query($koneksi, $query);
+                                while ($row = mysqli_fetch_array($result)) {
+                                echo  $row['no_antrian'];}  ?> "
+                                </div> </br>
                                 <div class="form-group">
                                 <select type="text" placeholder="Pilih Daftar Sebagai" class="form-control  form-select" name="txt_jenis_pelayanan" id="OptionLevel">
                                 <option>Pilih Pelayanan</option>

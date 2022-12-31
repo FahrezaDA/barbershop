@@ -100,7 +100,10 @@ while ($row =mysqli_fetch_array($result)){
                                     <input type="text" class="form-control form-control-user" id="exampleInputPassword"
                                         placeholder="Id User" name="txt_id_user" value="<?php echo $userKasir; ?>">
                                 </div>
-                               
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" id="exampleInputPassword"
+                                        placeholder="ID Pelayanan" name="txt_id_pelayanan" value="<?php echo $userLayanan; ?>">
+                                </div>
                                 <button type="submit" name="update" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
                             </form>
                             <hr>
