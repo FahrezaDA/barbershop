@@ -110,7 +110,7 @@
                     kamu akan lebih mudah menarik perhatian seseorang dengan gaya rambut kriting yang unik.
                   </p>
                   <br>
-                  <button onclick="window.location='http://localhost/php/repo-barbershop/barbershopPro/booking.php' "style="background-color: #4E73DF; color: white; height: 35px; width: 150px;">
+                  <button onclick="window.location='http://localhost/project-barber/barbershop/booking.php' "style="background-color: #4E73DF; color: white; height: 35px; width: 150px;">
                   <b>Booking</b>
                   </button>
                 </li>
