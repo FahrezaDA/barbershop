@@ -1,12 +1,12 @@
 <?php
 require("koneksi.php");
 session_start();
-if (!isset($_SESSION['id'])) {
+if (!isset($_SESSION['email'])) {
     $_SESSION['msg'] = 'anda harus login untuk mengakses halaman ini';
     header('Location: login.php');
 }
-$sesID = $_SESSION['id'];
-$sesName = $_SESSION['name'];
+$sesMail = $_SESSION['email'];
+$sesPass = $_SESSION['password'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -354,18 +354,18 @@ $sesName = $_SESSION['name'];
                                             <th>Harga</th>
                                             <th>No Antrian</th>
                                             <th>Tanggal Pemesanan</th>
-                                            <th>Id Kasir </th>
-                                            
+                                            <th>Id User </th>
+                                            <th>Id Pelayanan </th>
                                             <th>Aksi</th>
 
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php
-                                            $query = "SELECT*FROM pemesanan";
+                                        $query = "SELECT*FROM pemesanan";
                                             $result = mysqli_query($koneksi, $query); 
                                             $no = 1; 
-                                            $postt ="admin";        
+                                            $postt ="1";               
                                             while ($row = mysqli_fetch_array($result)){
                                               
                                                 $userName = $row['nama_customer'];
@@ -373,17 +373,19 @@ $sesName = $_SESSION['name'];
                                                 $userHarga = $row['harga'];
                                                 $userNoAntrian = $row['no_antrian'];
                                                 $userTanggalPemesanan = $row['tanggal_pemesanan'];
-                                                $userKasir = $row['kasirID'];
+                                                $userIdUser = $row['id_user'];
+                                                $userIdPelayanan = $row['id_pelayanan'];
                                         ?>
                                         <tr>
                                             <td><?php echo $no; ?></td>
                                            
-                                            <td><?php echo $userName; ?></td>
-                                            <td><?php echo $userJenisPelayanan; ?></td>
-                                            <td><?php echo $userHarga; ?></td>
-                                            <td><?php echo $userNoAntrian; ?></td>
-                                            <td><?php echo $userTanggalPemesanan; ?></td>
-                                            <td><?php echo $userKasir; ?></td>
+                                           <td><?php echo $userName; ?></td>
+                                           <td><?php echo $userJenisPelayanan; ?></td>
+                                           <td><?php echo $userHarga; ?></td>
+                                           <td><?php echo $userNoAntrian; ?></td>
+                                           <td><?php echo $userTanggalPemesanan; ?></td>
+                                           <td><?php echo $userIdUser; ?></td>
+                                           <td><?php echo $userIdPelayanan; ?></td>
                                             
                                             <td>
                                             <a href="editPemesanan.php?id= <?php echo $row['id_pemesanan']; ?>" class="btn btn-primary btn-circle" <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
