@@ -4,45 +4,44 @@ session_start();
 if( isset($_POST['submit'])){
     $email = $_POST['txt_email'];
     $pass  = $_POST['txt_password'];
-    
-    //$emailCheck = mysqli_real_escape_string($koneksi, $email);
-    //$passCheck  = mysqli_real_escape_string($koneksi, $pass);
-    if(!empty(trim($email)) && !empty(trim($pass))){
-        //select data berdasarkan username dari database
-        $query  ="SELECT * FROM kasir WHERE email = '$email'";
-        $result = mysqli_query($koneksi,$query);
-        $num    = mysqli_num_rows($result);
 
-        while ($row = mysqli_fetch_array($result)){
-            $id = $row['kasirID'];
-            $userName = $row['username'];
-            $passVal = $row['password'];
-            $userVal = $row['email'];
-        }
-        
-            if ($num !=0){
-              if($userVal==$email && $passVal==$pass){
-                  $_SESSION['id'] = $id;
-                  $_SESSION['name'] = $userName;
-                  header('Location: dashboardPemesanan.php');
-              }else{
-                  $error= 'user atau password salah!!';
-                  echo'<div id="tampil_modal">
-                       <div id="modal">
-                      <div id="modal_atas">Informasi</div>
-                      <p>Gagal di tambahkan!.</p>
-                      <a href="index.php"><button id="oke">Oke</button></a>
-                      </div></div>';
-              }
+    if(!empty(trim($email)) && !empty(trim($pass))){
+
+
+        $query = mysqli_query($koneksi,"select * from user where email ='$email' and password ='$pass'");
+        $cek  = mysqli_num_rows($query);
+
+        if ($cek > 0){
+          $data = mysqli_fetch_assoc($query);
+
+          if($data['level']== "1"){
+            $_SESSION['email'] = $email;
+            $_SESSION['password']= $pass;
+            $_SESSION['level'] == "1";
+
+            header("location: dashboardPemesanan.php");
+
+          }else if($data['level'] == "2"){
+            $_SESSION['email'] = $email;
+            $_SESSION['password']= $pass;
+            $_SESSION['level'] == "2";
+            header("location: dashboardPemesanan.php");
+          
+          }else if($data['level'] == "3"){
+            $_SESSION['email'] = $email;
+            $_SESSION['password']= $pass;
+            $_SESSION['level'] == "3";
+
+            header("location: booking.php");
           }else{
-              $error = 'user tidak di temukan!!';
-              echo $error;
+
+            header("location: login.php?pesan=gagal");
           }
-      }else{
-          $error = 'Data tidak boleh kosong!!';
-          echo $error;
+        }else{
+          header("location: login.php?pesan=gagal");
+        }
       }
-  }
+      };
 ?>
 <!doctype html>
 <html lang="en">
