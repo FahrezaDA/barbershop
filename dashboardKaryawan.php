@@ -6,7 +6,7 @@ if (!isset($_SESSION['email'])) {
     header('Location: login.php');
 }
 $sesMail = $_SESSION['email'];
-$sesPass = $_SESSION['password'];
+$sesPass = $_SESSION['pass'];
 ?>
 <!DOCTYPE html>
 <html lang="en">

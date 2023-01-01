@@ -8,7 +8,7 @@ if( isset($_POST['submit'])){
     if(!empty(trim($email)) && !empty(trim($pass))){
 
 
-        $query = mysqli_query($koneksi,"SELECT * from user where email ='$email' and password ='$pass'");
+        $query = mysqli_query($koneksi,"SELECT * from user where email ='$email' AND pass ='$pass'");
         $cek  = mysqli_num_rows($query);
 
         if ($cek > 0){
@@ -16,20 +16,20 @@ if( isset($_POST['submit'])){
 
           if($data['level']== "1"){
             $_SESSION['email'] = $email;
-            $_SESSION['password']= $pass;
+            $_SESSION['pass']= $pass;
             $_SESSION['level'] == "1";
 
             header("location: dashboardPemesanan.php");
 
           }else if($data['level'] == "2"){
             $_SESSION['email'] = $email;
-            $_SESSION['password']= $pass;
+            $_SESSION['pass']= $pass;
             $_SESSION['level'] == "2";
             header("location: dashboardPemesanan.php");
           
           }else if($data['level'] == "3"){
             $_SESSION['email'] = $email;
-            $_SESSION['password']= $pass;
+            $_SESSION['pass']= $pass;
             $_SESSION['level'] == "3";
 
             header("location: booking.php");

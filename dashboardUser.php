@@ -6,7 +6,7 @@ if (!isset($_SESSION['email'])) {
     header('Location: login.php');
 }
 $sesMail = $_SESSION['email'];
-$sesPass = $_SESSION['password'];
+$sesPass = $_SESSION['pass'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -398,7 +398,7 @@ $sesPass = $_SESSION['password'];
                                                 $userAlamat = $row['alamat'];
                                                 $userNoTelpon = $row['no_telpon'];
                                                 $userEmail = $row['email'];
-                                                $userPassword = $row['password'];
+                                                $userPassword = $row['pass'];
                                                 $userJabatan = $row['jabatan'];
                                                 $userLevel = $row['level'];
                                                

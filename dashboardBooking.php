@@ -6,7 +6,7 @@ if (!isset($_SESSION['email'])) {
     header('Location: login.php');
 }
 $sesMail = $_SESSION['email'];
-$sesPass = $_SESSION['password'];
+$sesPass = $_SESSION['pass'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -354,6 +354,7 @@ $sesPass = $_SESSION['password'];
                                             <th>Tanggal Booking</th>
                                             <th>Jam Booking</th>
                                             <th>Bukti Transfer</th>
+                                            <th>Status</th>
                                            
                                             <th>Aksi</th>
 
@@ -372,6 +373,7 @@ $sesPass = $_SESSION['password'];
                                                 $userTanggalBooking = $row['tanggal_booking'];
                                                 $userJam = $row['jam_booking'];
                                                 $userBukti = $row['bukti_transfer'];
+                                                $userStatus = $row['stats'];
                         
                                         ?>
                                         <tr>
@@ -382,6 +384,7 @@ $sesPass = $_SESSION['password'];
                                             <td><?php echo $userTanggalBooking; ?></td>
                                             <td><?php echo $userJam; ?></td>
                                             <td><img src="../img/fileBooking/<?php echo $userBukti; ?>"></img></td>
+                                            <td><?php echo $userStatus ;?></td>
                                            
                                             <td>
                                             <a href="editBooking.php?id= <?php echo $row['id_booking']; ?>" class="btn btn-primary btn-circle" <?php echo " "; ?>"><i class="fas fa-pen"></i></a>

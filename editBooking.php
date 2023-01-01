@@ -1,38 +1,34 @@
 <?php
 require('koneksi.php');
-if( isset($_POST['update']) ){
+if( isset($_POST['update']) ){ 
     $userIdBooking =$_POST['txt_id'];
     $userNama = $_POST['txt_nama'];
     $userJenis = $_POST['txt_jenis_pelayanan'];
     $userHarga = $_POST['txt_harga'];
     $userTanggal = $_POST['txt_tanggal_pemesanan'];
+    $userJam = $_POST['txt_jam_booking'];
     $userBukti = $_POST['txt_Bukti'];
     $userStatus= $_POST['txt_status'];
-
     
-    
-
     $query = "UPDATE booking SET nama_customer='$userNama', jenis_pelayanan='$userJenis', harga='$userHarga',tanggal_pemesanan='$userTanggal', bukti = '$userBukti', stats ='$userStatus' WHERE id_booking='$userIdBooking'";
     echo $query;
     $result = mysqli_query($koneksi, $query);
-    header('Location: dashboardPemesanan.php');
+    header('Location: dashboardBooking.php');
 }
 
 $id = $_GET['id'];
-$query = "SELECT * FROM pemesanan WHERE id_pemesanan='$id'";
+$query = "SELECT * FROM booking WHERE id_booking = '$id'";
 $result = mysqli_query($koneksi, $query)or die(mysql_error());
 //$nomor = 1;
-while ($row =mysqli_fetch_array($result)){
-    $id     = $row['id_pemesanan'];
-    $userCustomer = $row['nama_customer'];
+while ($row = mysqli_fetch_array($result)) {
+    
+    $userNama = $row['nama'];
     $userJenis = $row['jenis_pelayanan'];
     $userHarga = $row['harga'];
-    $userAntri = $row['no_antrian'];
-    $userTanggal = $row['tanggal_pemesanan'];
-    $userId = $row['id_user'];
-    $userLayanan = $row['id_pelayanan'];
-    
-    
+    $userTanggal = $row['tanggal_booking'];
+    $userJam = $row['jam_booking'];
+    $userBukti = $row['bukti_transfer'];
+    $userStatus = $row['stats'];
 }
 ?>
 
@@ -74,14 +70,14 @@ while ($row =mysqli_fetch_array($result)){
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
-                            <form class="user" action="editPemesanan.php" method="POST">
+                            <form class="user" action="editBooking.php" method="POST">
                                 <div class="form-group">
                                     <input type="hidden" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="ID pemesanan" name="txt_id" value="<?php echo $id; ?>">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="Nama Customer" name="txt_nama_customer" value="<?php echo $userCustomer; ?>">
+                                        placeholder="Nama Customer" name="txt_nama" value="<?php echo $userNama; ?>">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
@@ -92,16 +88,20 @@ while ($row =mysqli_fetch_array($result)){
                                         placeholder="Harga" name="txt_harga" value="<?php echo $userHarga; ?>">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputPassword"
-                                        placeholder="No Antrian" name="txt_no_antrian" value="<?php echo $userAntri; ?>">
+                                    <input type="date" class="form-control form-control-user" id="exampleInputPassword"
+                                        placeholder="" name="txt_tanggal_booking" value="<?php echo $userTanggal; ?>">
                                 </div>
                                 <div class="form-group">
                                     <input type="date" class="form-control form-control-user" id="exampleInputPassword"
-                                        placeholder="Tanggal Pemesanan" name="txt_tanggal_pemesanan" value="<?php echo $userTanggal; ?>">
+                                        placeholder="Tanggal Pemesanan" name="txt_jam_booking" value="<?php echo $userJam; ?>">
+                                </div>
+                                <div class="form-group">
+                                    <input type="files" class="form-control form-control-user" id="exampleInputPassword"
+                                        placeholder="Bukti" name="txt_bukti" value="<?php echo $userBukti; ?>">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputPassword"
-                                        placeholder="Id User" name="txt_id_user" value="<?php echo $userId; ?>">
+                                        placeholder="Bukti" name="txt_status" value="<?php echo $userStatus; ?>">
                                 </div>
                                 <button type="submit" name="update" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
                             </form>

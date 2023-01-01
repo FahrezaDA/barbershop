@@ -6,7 +6,7 @@ if (!isset($_SESSION['email'])) {
     header('Location: login.php');
 }
 $sesMail = $_SESSION['email'];
-$sesPass = $_SESSION['password'];
+$sesPass = $_SESSION['pass'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -354,8 +354,7 @@ $sesPass = $_SESSION['password'];
                                             <th>Harga</th>
                                             <th>No Antrian</th>
                                             <th>Tanggal Pemesanan</th>
-                                            <th>Id User </th>
-                                            <th>Id Pelayanan </th>
+                                            <th>ID Kasir</th>
                                             <th>Aksi</th>
 
                                         </tr>
@@ -373,8 +372,7 @@ $sesPass = $_SESSION['password'];
                                                 $userHarga = $row['harga'];
                                                 $userNoAntrian = $row['no_antrian'];
                                                 $userTanggalPemesanan = $row['tanggal_pemesanan'];
-                                                $userIdUser = $row['id_user'];
-                                                $userIdPelayanan = $row['id_pelayanan'];
+                                                $userIdKasir=$row['kasirID']
                                         ?>
                                         <tr>
                                             <td><?php echo $no; ?></td>
@@ -384,8 +382,8 @@ $sesPass = $_SESSION['password'];
                                            <td><?php echo $userHarga; ?></td>
                                            <td><?php echo $userNoAntrian; ?></td>
                                            <td><?php echo $userTanggalPemesanan; ?></td>
-                                           <td><?php echo $userIdUser; ?></td>
-                                           <td><?php echo $userIdPelayanan; ?></td>
+                                           <td><?php echo $userIdKasir ?></td>
+                                           
                                             
                                             <td>
                                             <a href="editPemesanan.php?id= <?php echo $row['id_pemesanan']; ?>" class="btn btn-primary btn-circle" <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
