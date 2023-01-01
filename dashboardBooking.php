@@ -387,8 +387,8 @@ $sesPass = $_SESSION['pass'];
                                             <td><?php echo $userStatus ;?></td>
                                            
                                             <td>
-                                            <a href="editBooking.php?id= <?php echo $row['id_booking']; ?>" class="btn btn-primary btn-circle" <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
-                                            <a href="hapusBooking.php?id= <?php echo $row['id_booking']; ?>" class="btn btn-danger btn-circle" <?php echo" ";?>  onClick="confirmModal('hapusPemesanan.php?&id=<?php echo $row['id_booking']; ?>');"><i class="fas fa-trash"></i></a>
+                                            <a href="editBooking.php?id=<?php echo $row['id_booking']; ?>" class="btn btn-primary btn-circle" <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
+                                            <a href="hapusBooking.php?id=<?php echo $row['id_booking']; ?>" class="btn btn-danger btn-circle" <?php echo" ";?>  onClick="confirmModal('hapusPemesanan.php?&id=<?php echo $row['id_booking']; ?>');"><i class="fas fa-trash"></i></a>
                                             </td>
                                             
                                         </tr>

@@ -16,9 +16,10 @@ if(isset($_POST['update'])){
     $result = mysqli_query($koneksi, $query);
     header('Location: dashboardKaryawan.php');
 }
+
 $id = $_GET['id'];
-$query = "SELECT * FROM karyawan WHERE karyawanID='$id'";
-$result = mysqli_query($koneksi, $query)or die(mysql_error());
+$query = "SELECT * FROM pengeluaran  WHERE id_pengeluaran='$id'";
+$result = mysqli_query($koneksi, $query)or die(mysqli_error($koneksi));
 //$nomor = 1;
 while ($row =mysqli_fetch_array($result)){
     $id     = $row['karyawanID'];

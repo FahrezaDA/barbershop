@@ -6,7 +6,7 @@ if (!isset($_SESSION['email'])) {
     header('Location: login.php');
 }
 $sesMail = $_SESSION['email'];
-$sesPass = $_SESSION['password'];
+$sesPass = $_SESSION['pass'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -383,8 +383,8 @@ $sesPass = $_SESSION['password'];
                                             <td><?php echo $userTanggalPengeluaran; ?></td>
                                             <td><?php echo $userIdUser; ?></td>
                                             <td>
-                                            <a href="editPengeluaran.php?id= <?php echo $row['id_pengeluaran']; ?>" class="btn btn-primary btn-circle" <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
-                                            <a href="hapusPengeluaran.php?id= <?php echo $row['id_pengeluaran']; ?>" class="btn btn-danger btn-circle" <?php echo" ";?>  onClick="confirmModal('hapusPengeluaran.php?&id=<?php echo $row['id_pengeluaran']; ?>');"><i class="fas fa-trash"></i></a>
+                                            <a href="editPengeluaran.php?id=<?php echo $row['id_pengeluaran']; ?>" class="btn btn-primary btn-circle" <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
+                                            <a href="hapusPengeluaran.php?id=<?php echo $row['id_pengeluaran']; ?>" class="btn btn-danger btn-circle" <?php echo" ";?>  onClick="confirmModal('hapusPengeluaran.php?&id=<?php echo $row['id_pengeluaran']; ?>');"><i class="fas fa-trash"></i></a>
                                             </td>
                                             
                                         </tr>

@@ -5,23 +5,23 @@ if( isset($_POST['update']) ){
     $userNama = $_POST['txt_nama'];
     $userJenis = $_POST['txt_jenis_pelayanan'];
     $userHarga = $_POST['txt_harga'];
-    $userTanggal = $_POST['txt_tanggal_pemesanan'];
+    $userTanggal = $_POST['txt_tanggal_booking'];
     $userJam = $_POST['txt_jam_booking'];
-    $userBukti = $_POST['txt_Bukti'];
+    $userBukti = $_POST['txt_bukti_transfer'];
     $userStatus= $_POST['txt_status'];
     
-    $query = "UPDATE booking SET nama_customer='$userNama', jenis_pelayanan='$userJenis', harga='$userHarga',tanggal_pemesanan='$userTanggal', bukti = '$userBukti', stats ='$userStatus' WHERE id_booking='$userIdBooking'";
-    echo $query;
-    $result = mysqli_query($koneksi, $query);
+    $query = "UPDATE booking SET nama='$userNama', jenis_pelayanan='$userJenis', harga='$userHarga',tanggal_booking='$userTanggal',jam_booking='$userJam', bukti_transfer='$userBukti', stats ='$userStatus' WHERE id_booking='$userIdBooking'";
+    // echo $query;
+    $result = mysqli_query($koneksi, $query)or die(mysqli_error($koneksi));
     header('Location: dashboardBooking.php');
 }
 
-$id = $_GET['id'];
+$id = isset($_GET['id']) ? $_GET['id'] : 0;
 $query = "SELECT * FROM booking WHERE id_booking = '$id'";
-$result = mysqli_query($koneksi, $query)or die(mysql_error());
+$result = mysqli_query($koneksi, $query)or die(mysqli_error($koneksi));
 //$nomor = 1;
 while ($row = mysqli_fetch_array($result)) {
-    
+    $id = $row['id_booking'];
     $userNama = $row['nama'];
     $userJenis = $row['jenis_pelayanan'];
     $userHarga = $row['harga'];
@@ -29,7 +29,7 @@ while ($row = mysqli_fetch_array($result)) {
     $userJam = $row['jam_booking'];
     $userBukti = $row['bukti_transfer'];
     $userStatus = $row['stats'];
-}
+
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +38,7 @@ while ($row = mysqli_fetch_array($result)) {
 <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -71,6 +71,7 @@ while ($row = mysqli_fetch_array($result)) {
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
                             <form class="user" action="editBooking.php" method="POST">
+
                                 <div class="form-group">
                                     <input type="hidden" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="ID pemesanan" name="txt_id" value="<?php echo $id; ?>">
@@ -92,12 +93,12 @@ while ($row = mysqli_fetch_array($result)) {
                                         placeholder="" name="txt_tanggal_booking" value="<?php echo $userTanggal; ?>">
                                 </div>
                                 <div class="form-group">
-                                    <input type="date" class="form-control form-control-user" id="exampleInputPassword"
+                                    <input type="text" class="form-control form-control-user" id="exampleInputPassword"
                                         placeholder="Tanggal Pemesanan" name="txt_jam_booking" value="<?php echo $userJam; ?>">
                                 </div>
                                 <div class="form-group">
-                                    <input type="files" class="form-control form-control-user" id="exampleInputPassword"
-                                        placeholder="Bukti" name="txt_bukti" value="<?php echo $userBukti; ?>">
+                                    <input type="text" class="form-control form-control-user" id="exampleInputPassword"
+                                        placeholder="Bukti" name="txt_bukti_transfer" value="<?php echo $userBukti; ?>">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputPassword"
@@ -130,3 +131,4 @@ while ($row = mysqli_fetch_array($result)) {
 </body>
 
 </html>
+<?php } ?>
