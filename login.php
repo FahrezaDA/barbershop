@@ -14,23 +14,23 @@ if( isset($_POST['submit'])){
         if ($cek > 0){
           $data = mysqli_fetch_assoc($query);
 
-          if($data['level']== "1"){
+          if($data['lvl']== "1"){
             $_SESSION['email'] = $email;
             $_SESSION['pass']= $pass;
-            $_SESSION['level'] == "1";
+            $_SESSION['lvl'] == "1";
 
             header("location: dashboardPemesanan.php");
 
-          }else if($data['level'] == "2"){
+          }else if($data['lvl'] == "2"){
             $_SESSION['email'] = $email;
             $_SESSION['pass']= $pass;
-            $_SESSION['level'] == "2";
+            $_SESSION['lvl'] == "2";
             header("location: dashboardPemesanan.php");
           
-          }else if($data['level'] == "3"){
+          }else if($data['lvl'] == "3"){
             $_SESSION['email'] = $email;
             $_SESSION['pass']= $pass;
-            $_SESSION['level'] == "3";
+            $_SESSION['lvl'] == "3";
 
             header("location: booking.php");
           }else{

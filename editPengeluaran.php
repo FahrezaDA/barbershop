@@ -2,39 +2,52 @@
 require ('koneksi.php');
 if(isset($_POST['update'])){
     $userId   = $_POST['txt_id'];
-    $userJenisPengeluaran   = $_POST['txt_jenis_pengluaran'];
-    $userIdFasilitas  = $_POST['txt_id_fasilitas'];
+    $userJenis  = $_POST['txt_jenis_pengeluaran'];
+    $userFasilitas  = $_POST['txt_id_fasilitas'];
     $userJumlah = $_POST['txt_jumlah'];
     $userBiaya = $_POST['txt_biaya'];
-    $userTotalPengeluaran = $_POST['txt_total_pengeluaran'];
-    $userTanggalPengeluaran = $_POST['txt_tanggal_pengeluaran'];
-    $userIdUser = $_POST['txt_id_user'];
+    $userPengeluaran = $_POST['txt_tanggal_pengeluaran'];
+    $userKasir = $_POST['txt_kasir'];
     
-
-    $query = "UPDATE pengeluaran SET jenis_pengeluaran='$userJenisPengeluaran', id_fasilitas='$userIdFasilitas', jumlah='$userJumlah', biaya='$userBiaya', total_pengeluaran='$userTotalPengeluaran', tanggal_pengeluaran='$userTanggalPengeluaran', id_user='$userIdUser' WHERE id_pengeluaran='$userId'";
+    
+    $query = "UPDATE pengeluaran SET jenis_pengeluaran='$userJenis', id_fasilitas='$userFasilitas', jumlah='$userJumlah', biaya='$userBiaya', tanggal_pengeluaran='$userPengeluaran', id_kasir='$userKasir' WHERE id_pengeluaran='$userId'";
     echo $query;
     $result = mysqli_query($koneksi, $query);
-    header('Location: dashboardKaryawan.php');
+    header('Location: dashboardPengeluaran.php');
 }
-
 $id = $_GET['id'];
 $query = "SELECT * FROM pengeluaran  WHERE id_pengeluaran='$id'";
 $result = mysqli_query($koneksi, $query)or die(mysqli_error($koneksi));
 //$nomor = 1;
 while ($row =mysqli_fetch_array($result)){
-    $id     = $row['karyawanID'];
-    $userName = $row['nama_karyawan'];
-    $userAlamat = $row['alamat'];
-    $userNoTelpon = $row['no_telpon'];
-    $userEmail= $row['email'];
-    $userPosisi = $row['posisi'];
-    $userGaji = $row['gaji'];
+    $id     = $row['id_pengeluaran'];
+    $userJenis = $row['jenis_pengeluaran'];
+    $userFasilitas = $row['id_fasilitas'];
+    $userJumlah = $row['jumlah'];
+    $userBiaya= $row['biaya'];
+    $userPengeluaran= $row['tanggal_pengeluaran'];
+    $userKasir = $row['id_kasir'];
 
     
 ?>
 <html>
 <head>
-    <title>Update</title>
+<meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title> Tambah</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
 </head>
 
 
@@ -50,18 +63,18 @@ while ($row =mysqli_fetch_array($result)){
                     <div class="text-center">
                         <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                     </div>
-                    <form class="user" action="editPemesanan.php" method="POST">
+                    <form class="user" action="editPengeluaran.php" method="POST">
                         <div class="form-group">
                             <input type="hidden" class="form-control form-control-user" id="exampleInputUsername"
                                 placeholder="ID pemesanan" name="txt_id" value="<?php echo $id; ?>">
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                placeholder="Nama Customer" name="txt_jenis_pengluaran" value="<?php echo $userJenisPengeluaran; ?>">
+                                placeholder="Jenis Pengeluaran" name="txt_jenis_pengeluaran" value="<?php echo $userJenis; ?>">
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                placeholder="Jenis Pelayanan" name="txt_id_fasilitas" value="<?php echo $userIdFasilitas; ?>">
+                                placeholder="Jenis Pelayanan" name="txt_id_fasilitas" value="<?php echo $userFasilitas; ?>">
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control form-control-user" id="exampleInputEmail"
@@ -73,15 +86,11 @@ while ($row =mysqli_fetch_array($result)){
                         </div>
                         <div class="form-group">
                             <input type="date" class="form-control form-control-user" id="exampleInputPassword"
-                                placeholder="Tanggal Pemesanan" name="txt_total_pengeluaran" value="<?php echo $userTotalPengeluaran; ?>">
+                                placeholder="Tanggal Pemesanan" name="txt_tanggal_pengeluaran" value="<?php echo $userPengeluaran; ?>">
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control form-control-user" id="exampleInputPassword"
-                                placeholder="Id User" name="txt_tanggal_pengeluaran" value="<?php echo $userTanggalPengeluaran; ?>">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control form-control-user" id="exampleInputPassword"
-                                placeholder="ID Pelayanan" name="txt_id_user" value="<?php echo $userIdUser; ?>">
+                                placeholder="ID Pelayanan" name="txt_kasir" value="<?php echo $userKasir; ?>">
                         </div>
                         <button type="submit" name="update" class="btn btn-primary btn-user btn-block"> UPDATE </button>
                     </form>

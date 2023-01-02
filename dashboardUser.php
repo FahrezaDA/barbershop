@@ -400,7 +400,7 @@ $sesPass = $_SESSION['pass'];
                                                 $userEmail = $row['email'];
                                                 $userPassword = $row['pass'];
                                                 $userJabatan = $row['jabatan'];
-                                                $userLevel = $row['level'];
+                                                $userLevel = $row['lvl'];
                                                
                                         ?>
                                         <tr>
@@ -413,7 +413,7 @@ $sesPass = $_SESSION['pass'];
                                             <td><?php echo $userJabatan; ?></td>
                                             <td><?php echo $userLevel; ?></td>
                                             <td>
-                                            <a href="editCustomer.php?id= <?php echo $row['id_user']; ?>" class="btn btn-primary btn-circle <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
+                                            <a href="editUser.php?id=<?php echo $row['id_user']; ?>" class="btn btn-primary btn-circle <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
                                             <a href="hapusCustomer.php?id= <?php echo $row['id_user']; ?>" class="btn btn-danger btn-circle <?php echo" ";?>" onClick="confirmModal('hapus.php?&id=<?php echo $row['id_user']; ?>');"><i class="fas fa-trash"></i></a>
                                             </td>
                                             

@@ -1,30 +1,41 @@
 <?php
 require ('koneksi.php');
 if(isset($_POST['update'])){
-    $userId   = $_POST['txt_id_customer'];
-    $userName   = $_POST['txt_nama_customer'];
+    $userId   = $_POST['txt_id_user'];
+    $userNama   = $_POST['txt_nama_user'];
     $userAlamat   = $_POST['txt_alamat'];
     $userNoTelpon = $_POST['txt_no_telpon'];
     $userEmail = $_POST['txt_email'];
+    $userPass = $_POST['txt_pass'];
+    $userJabatan = $_POST['txt_jabatan'];
+    $userLevel = $_POST['txt_level'];
+ 
+ 
 
 
-    $query = "UPDATE customer SET nama_customer='$userName', alamat='$userAlamat', email='$userEmail', no_telpon='$userNoTelpon' WHERE id_customer='$userId'";
+    $query = "UPDATE user SET nama_user='$userNama', alamat='$userAlamat', no_telpon='$userNoTelpon', email='$userEmail',pass='$userPass', jabatan='$userJabatan', lvl='$userLevel' WHERE id_user='$userId'";
     echo $query;
     $result = mysqli_query($koneksi, $query);
-    header('Location: dashboardCustomer.php');
+    header('Location: dashboardUser.php');
 }
 $id = $_GET['id'];
-$query = "SELECT * FROM customer WHERE id_customer='$id'";
+$query = "SELECT * FROM user WHERE id_user='$id'";
 $result = mysqli_query($koneksi, $query)or die(mysql_error());
 //$nomor = 1;
 while ($row = mysqli_fetch_array($result)) {
-    $id = $row['id_customer'];
-    $userName = $row['nama_customer'];
+    $id = $row['id_user'];
+    $userNama = $row['nama_user'];
     $userAlamat = $row['alamat'];
-    $userEmail = $row['email'];
     $userNoTelpon = $row['no_telpon'];
-}
-?>
+    $userEmail = $row['email'];
+    $userPass = $row['pass'];
+    $userJabatan = $row['jabatan'];
+    $userLevel = $row['lvl'];
+
+
+
+
+    ?>
 
 
 <!DOCTYPE html>
@@ -65,14 +76,14 @@ while ($row = mysqli_fetch_array($result)) {
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
-                            <form class="user" action="editCustomer.php" method="POST">
+                            <form class="user" action="editUser.php" method="POST">
                                 <div class="form-group">
                                     <input type="hidden" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="ID pemesanan" name="txt_id" value="<?php echo $id; ?>">
+                                        placeholder="ID pemesanan" name="txt_id_user" value="<?php echo $id; ?>">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
-                                        placeholder="Nama Customer" name="txt_nama_customer" value="<?php echo $userName; ?>">
+                                        placeholder="Nama User" name="txt_nama_user" value="<?php echo $userNama; ?>">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
@@ -83,8 +94,20 @@ while ($row = mysqli_fetch_array($result)) {
                                         placeholder="Harga" name="txt_no_telpon" value="<?php echo $userNoTelpon ?>">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputPassword"
+                                    <input type="email" class="form-control form-control-user" id="exampleInputPassword"
                                         placeholder="No Antrian" name="txt_email" value="<?php echo $userEmail; ?>">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail"
+                                        placeholder="Harga" name="txt_password" value="<?php echo $userPass ?>">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail"
+                                        placeholder="Harga" name="txt_jabatan" value="<?php echo $userJabatan ?>">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail"
+                                        placeholder="Harga" name="txt_level" value="<?php echo $userLevel ?>">
                                 </div>
                                 <button type="submit" name="update" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
                             </form>
@@ -113,4 +136,4 @@ while ($row = mysqli_fetch_array($result)) {
 </body>
 
 </html>
-
+<?php } ?>
