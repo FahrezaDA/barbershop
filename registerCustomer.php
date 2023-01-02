@@ -11,7 +11,7 @@ if( isset($_POST['submit']) ){
    
    
 
-    $q = mysqli_query($koneksi, "SELECT*FROM user WHERE email ='$userEmail' ");
+    $q = mysqli_query($koneksi, "SELECT*FROM user WHERE email='$userEmail' AND no_telpon='$userNoTelpon' ");
     $cek = mysqli_num_rows($q);
 
     if($cek==0){

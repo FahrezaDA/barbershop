@@ -8,7 +8,7 @@ if( isset($_POST['submit']) ){
     $userPosisi = $_POST['txt_posisi'];
     $userGaji = $_POST['txt_gaji'];
 
-    $q = mysqli_query($koneksi, "SELECT*FROM karyawan WHERE nama_karyawan='$userName' ");
+    $q = mysqli_query($koneksi, "SELECT*FROM karyawan WHERE email='$userEmail' AND no_telpon='$userNoTelpon' ");
     $cek = mysqli_num_rows($q);
 
     if($cek==0){
@@ -20,7 +20,7 @@ if( isset($_POST['submit']) ){
         }
     }
 else {
-    $alert = "<div class='alert alert-danger'> Username sudah di pakai </div>";
+    $alert = "<div class='alert alert-danger'> Email atau No Telpon Sudah dipakai </div>";
 }
     
    
