@@ -99,10 +99,17 @@ while ($row = mysqli_fetch_array($result)) {
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputPassword"
                                         placeholder="Bukti" name="txt_bukti_transfer" value="<?php echo $userBukti; ?>">
-                                </div>
+                                </div> </br>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputPassword"
-                                        placeholder="Bukti" name="txt_status" value="<?php echo $userStatus; ?>">
+                                <select type="text" placeholder="Pilih Daftar Sebagai" class="form-control  form-select" name="txt_status" id="OptionLevel">
+                                <option>Pilih Status</option>
+                                 <?php
+                                $query = "SELECT * FROM data_booking";
+                                $result = mysqli_query($koneksi, $query);
+                                while ($row = mysqli_fetch_array($result)) {
+                                echo "<option value=$row[stats] > $row[stats] </option>";}
+                                ?>
+                                </select>
                                 </div>
                                 <button type="submit" name="update" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>
                             </form>
