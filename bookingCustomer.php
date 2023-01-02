@@ -1,12 +1,6 @@
 <?php
 require("koneksi.php");
 session_start();
-if (!isset($_SESSION['id'])) {
-    $_SESSION['msg'] = 'anda harus login untuk mengakses halaman ini';
-    header('Location: login.php');
-}
-$sesID = $_SESSION['id'];
-$sesName = $_SESSION['name'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -216,6 +210,7 @@ $sesName = $_SESSION['name'];
                                             <th>Tanggal Booking</th>
                                             <th>Jam Booking</th>
                                             <th>Bukti Transfer</th>
+                                            <th>Status</th>
                                            
                                            
 
@@ -234,6 +229,7 @@ $sesName = $_SESSION['name'];
                                                 $userTanggalBooking = $row['tanggal_booking'];
                                                 $userJam = $row['jam_booking'];
                                                 $userBukti = $row['bukti_transfer'];
+                                                $userStatus = $row['stats'];
                         
                                         ?>
                                         <tr>
@@ -244,6 +240,7 @@ $sesName = $_SESSION['name'];
                                             <td><?php echo $userTanggalBooking; ?></td>
                                             <td><?php echo $userJam; ?></td>
                                             <td><img src="../img/fileBooking/<?php echo $userBukti; ?>"></img></td>
+                                            <td><?php echo $userStatus; ?></td>
                                             
                                         </tr>
                                         <?php

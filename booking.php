@@ -10,6 +10,7 @@ if( isset($_POST['register']) ){
     $tanggal_booking = $_POST['txt_tanggal_booking'];
     $jam = $_POST['txt_jam'];
     $image_files=$nama.".jpg";
+    $status=$_POST['txt_status'];
     
     if($size > 5000000){
         echo "<script>alert('Ukuran gambar terlalu besar');</script>";
@@ -18,9 +19,9 @@ if( isset($_POST['register']) ){
     $cek = mysqli_num_rows($q);
     copy($temp, "img/fileBooking/" . $image_files);
     if($cek==0){
-        $query = "INSERT INTO booking VALUES(null, '$nama', '$jenis_pelayanan','$harga', '$tanggal_booking','$jam','$foto')";
+        $query = "INSERT INTO booking VALUES(null, '$nama', '$jenis_pelayanan','$harga', '$tanggal_booking','$jam','$foto','wait')";
          $result = mysqli_query($koneksi, $query);
-        header('Location: dashboardBooking.php');
+        header('Location: bookingCustomer.php');
         if($query){
             $alert = "<div class='alert alert-success'> anda berhasil </div>";
         }
