@@ -7,6 +7,8 @@ if (!isset($_SESSION['email'])) {
 }
 $sesMail = $_SESSION['email'];
 $sesPass = $_SESSION['pass'];
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
