@@ -1,10 +1,6 @@
 <?php
 require("koneksi.php");
 session_start();
-if (!empty($_SESSION['id']));
-$query = "SELECT*FROM pemesanan where id_pemesanan = '$_SESSION[id]'";
-$result = mysqli_query($koneksi, $query);       
-$row = mysqli_fetch_array($result);
 
 $id = $_GET['id'];
 $query = "SELECT * FROM pemesanan WHERE id_pemesanan='$id'";
@@ -17,8 +13,8 @@ while ($row =mysqli_fetch_array($result)){
     $userHarga = $row['harga'];
     $userAntri = $row['no_antrian'];
     $userTanggal = $row['tanggal_pemesanan'];
-    $userId = $row['id_user'];
-    $userLayanan = $row['id_pelayanan'];
+    $userKasir = $row['kasirID'];
+ 
 }
 ?>
 
@@ -60,7 +56,7 @@ while ($row =mysqli_fetch_array($result)){
         <tr>
                 <td>Kasir</td>
                 <td>:</td>
-                <td><?php echo $id?></td>
+                <td><?php echo $userKasir?></td>
             </tr>
             <tr>
                 <td>Customer</td>

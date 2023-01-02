@@ -1,5 +1,13 @@
 <?php
 require('koneksi.php');
+session_start();
+if (!isset($_SESSION['email'])) {
+    $_SESSION['msg'] = 'anda harus login untuk mengakses halaman ini';
+    header('Location: login.php');
+}
+$sesMail = $_SESSION['email'];
+$sesPass = $_SESSION['pass'];
+
 if( isset($_POST['register']) ){
     $foto = $_FILES['bukti_transfer']['name'];
     $temp = $_FILES['bukti_transfer']['tmp_name'];

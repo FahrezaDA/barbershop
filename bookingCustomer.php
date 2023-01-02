@@ -1,6 +1,4 @@
-<?php
-require("koneksi.php");
-session_start();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
