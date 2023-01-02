@@ -368,7 +368,7 @@ $sesPass = $_SESSION['pass'];
                     <div class="container">
                         <div class="card mt-5">
                             <div class="card-body">
-                                <h3 class="display-7">Data Customer</h3>
+                                <h3 class="display-7">Data User</h3>
                                 <table id="data" class="table table-bordered" style="width:100%">
                                     <thead>
                                         <tr>

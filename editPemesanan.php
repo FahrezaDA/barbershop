@@ -94,8 +94,15 @@ while ($row = mysqli_fetch_array($result)) {
                                         placeholder="Tanggal Pemesanan" name="txt_tanggal_pemesanan" value="<?php echo $userTanggal; ?>">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputPassword"
-                                        placeholder="Id User" name="txt_id_user" value="<?php echo $userKasir; ?>">
+                                <select type="text" placeholder="Pilih Kasir" class="form-control  form-select" name="txt_kasirID" id="OptionLevel">
+                                <option>Pilih Kasir</option>
+                                 <?php
+                                $query = "SELECT * FROM kasir";
+                                $result = mysqli_query($koneksi, $query);
+                                while ($row = mysqli_fetch_array($result)) {
+                                echo "<option value=$row[kasirID] > $row[username] </option>";}
+                                ?>
+                                </select>
                                 </div>
                                 
                                 <button type="submit" name="update" class="btn btn-primary btn-user btn-block">TAMBAHKAN</button>

@@ -17,7 +17,7 @@ if( isset($_POST['submit']) ){
     if($cek==0){
         $query = "INSERT INTO user VALUES(null, '$userName', '$userAlamat','$userNoTelpon','$userEmail','$userPassword','$userJabatan',3)";
         $result = mysqli_query($koneksi, $query);
-        header('Location: index.php');
+        header('Location: dashboardUser.php');
         if($query){
             $alert = "<div class='alert alert-success'> anda berhasil </div>";
         }
