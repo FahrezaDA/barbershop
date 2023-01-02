@@ -426,7 +426,7 @@ $sesPass = $_SESSION['pass'];
                                     </tbody>
                                 </div>   
                                 </table>
-                                <a href="registerCustomer.php" class="btn btn-primary">Register</a>
+                                <a href="registerUser.php" class="btn btn-primary">Register</a>
                             </div>
                         </div>
                     </div>

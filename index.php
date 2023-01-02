@@ -55,7 +55,7 @@
           <li><a href="tentangKami.php">Tentang Kami </a></li>
           <li><a href="galeri.php">Galeri </a></li>
           <li><a href="kontak.php">Kontak</a></li>
-          <li><a href="dashboardPemesanan.php">Dashboard</a></li>
+          <li><a href="bookingCustomer.php">Dashboard</a></li>
           <li><a href="login.php">Login</a></li>
         </ul>
       </nav><!-- .navbar -->

@@ -120,6 +120,10 @@ date_default_timezone_set('Asia/Jakarta');
                                     <input  placeholder="bukti transfer" type="file" class="form-control form-select" id="exampleInputUsername"
                                         name="bukti_transfer">
                                 </div>
+                                <div class="form-group">
+                                    <input type="hidden" class="form-control form-control-user" id="exampleInputUsername"
+                                        placeholder="ID pemesanan" name="txt_status" value="">
+                                </div>
                                 <p><b>No Rek : 12345678910  ( BRI a/n Paijah  Paijih )</b></p>
                              
                                                         

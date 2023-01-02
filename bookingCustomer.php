@@ -163,7 +163,8 @@ session_start();
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
                             </div>
                         </li>
-
+                        <button onclick="window.location='http://localhost/php/repo-barbershop/barbershopPro/loginAdmin.php' "style="background-color: #4E73DF; color: white; height: 40px; width: 100px; margin: 10px 10px 10px 10px;">
+                        <b>Login Admin</b>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
