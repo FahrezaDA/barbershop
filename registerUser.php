@@ -98,7 +98,7 @@ else {
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="Jabatan " name="txt_level">
+                                        placeholder="Level " name="txt_level">
                                 </div>
                                 
                               

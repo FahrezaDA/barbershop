@@ -99,7 +99,7 @@ while ($row = mysqli_fetch_array($result)) {
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="Harga" name="txt_password" value="<?php echo $userPass ?>">
+                                        placeholder="Password" name="txt_pass" value="<?php echo $userPass ?>">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputEmail"
