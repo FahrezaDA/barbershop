@@ -56,7 +56,7 @@
           <li><a href="galeri.php">Galeri </a></li>
           <li><a href="kontak.php">Kontak</a></li>
           <li><a href="dashboardPemesanan.php">Dashboard </a></li>
-          <li><a href="login.php">Logout</a></li>
+          <li><a href="login.php">Login</a></li>
         </ul>
       </nav><!-- .navbar -->
 <!-- .navbar -->
