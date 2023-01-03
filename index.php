@@ -190,7 +190,7 @@
             <p>barbershop CutLuck memiliki kelebihan dari pangkas rambut dan barbershop lainya, kelebihan - kelebihan tersebut sebagai berikut </p>
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
-              <i class="bi bi-easel flex-shrink-0"></i>
+              <i class="bi bi-people-fill flex-shrink-0"></i>
               <div>
                 <h4><a href="" class="stretched-link">Karyawan Profesional</a></h4>
                 <p>Karyawan memiliki keahlian untuk memotong rambut, karyawan juga bisa memotong cambang dan kumis.aryawan memiliki keahlian untuk memotong rambut, karyawan juga bisa memotong cambang dan kumis.</p>
@@ -198,7 +198,7 @@
             </div><!-- End Icon Box -->
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-patch-check flex-shrink-0"></i>
+              <i class="bi bi-scissors flex-shrink-0"></i>
               <div>
                 <h4><a href="" class="stretched-link">Peralatan Lengkap</a></h4>
                 <p>Alat yang dipakai baberman yaitu clipper yang memang sangat cocok untuk memotong rambut pria.</p>
@@ -206,7 +206,7 @@
             </div><!-- End Icon Box -->
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <i class="bi bi-emoji-heart-eyes flex-shrink-0"></i>
               <div>
                 <h4><a href="" class="stretched-link">Pelayanan Memuaskan</a></h4>
                 <p>Pelayanan habis potong rambut mendapatkan pijatan dibagian pundak, kepala dan punggung supaya relax.</p>
@@ -214,7 +214,7 @@
             </div><!-- End Icon Box -->
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <i class="bi bi-broadcast-pin flex-shrink-0"></i>
               <div>
                 <h4><a href="" class="stretched-link">Suasana Nyaman</a></h4>
                 <p>Barbershop menggunakan ac dan koneksi internet yang cepat agar pelanggan merasakan kenyamanan.</p>
