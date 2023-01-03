@@ -1,4 +1,13 @@
 
+<?php
+require("koneksi.php");
+session_start();
+if (!isset($_SESSION['email'])) {
+    $_SESSION['msg'] = 'anda harus login untuk mengakses halaman ini';
+    header('Location: login.php');
+}
+$sesMail = $_SESSION['email'];
+$sesPass = $_SESSION['pass'];
 ?>
 <!DOCTYPE html>
 <html lang="en">

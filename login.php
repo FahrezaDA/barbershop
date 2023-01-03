@@ -32,7 +32,7 @@ if( isset($_POST['submit'])){
             $_SESSION['pass']= $pass;
             $_SESSION['lvl'] == "3";
 
-            header("location: booking.php");
+            header("location: bookingCustomer.php");
           }else{
 
             header("location: login.php?pesan=gagal");
