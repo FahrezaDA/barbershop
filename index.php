@@ -118,7 +118,7 @@
               <div class="icon">
                 <i class="fa-solid fa-mountain-city"></i>
               </div>
-              <h3>Ruangan ber-AC</h3>
+              <h3>Ruangan Ber-AC</h3>
               <p>Barbershop kami menggunakan air conditioner agar suasana selalu terasa lebih dingin supaya bisa dirasakan oleh pelangan.</p>
             </div>
           </div><!-- End Service Item -->
@@ -128,7 +128,7 @@
               <div class="icon">
                 <i class="fa-solid fa-wifi"></i>
               </div>
-              <h3>Free wifi</h3>
+              <h3>Free Wi-Fi</h3>
               <p>Untuk ke stabilan dan kenyamanan berinternet kami memasang wifi dan bisa bisa digunakan oleh pelanggan.</p>
             </div>
           </div><!-- End Service Item -->
@@ -138,7 +138,7 @@
               <div class="icon">
                 <i class="fa-solid fa-tv"></i>
               </div>
-              <h3>Hiburan diruang tunggu</h3>
+              <h3>Hiburan Diruang Tunggu</h3>
               <p>Nah sembari pelanggann menunggu antrian, kami menyediakan tv, majalah dan buku yang bisa anda nikmati.</p>
             </div>
           </div><!-- End Service Item -->
@@ -158,7 +158,7 @@
               <div class="icon">
                 <i class="fa-solid fa-couch"></i>
               </div>
-              <h3>Kursi barber</h3>
+              <h3>Kursi Barber</h3>
               <p>Barbershop memiliki kursi yang empuk dan tentunya berkualitas, agar pelanggan bisa duduk dengan nyaman pada saat potong rambut.</p>
             </div>
           </div><!-- End Service Item -->
