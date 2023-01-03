@@ -24,9 +24,12 @@ if( isset($_POST['register']) ){
         echo "<script>alert('Ukuran gambar terlalu besar');</script>";
     }
     $q = mysqli_query($koneksi, "SELECT*FROM booking WHERE jam_booking='$jam' AND tanggal_booking='$tanggal_booking' ");
+    $r = mysqli_query($koneksi, "SELECT*FROM booking WHERE jenis_pelayanan='$jenis_pelayanan' AND harga='$harga' ");
     $cek = mysqli_num_rows($q);
+    $cek2 = mysqli_num_rows($r);
     copy($temp, "img/fileBooking/" . $image_files);
-    if($cek==0){
+    
+    if($cek==0 && $cek2==0){
         $query = "INSERT INTO booking VALUES(null, '$nama', '$jenis_pelayanan','$harga', '$tanggal_booking','$jam','$foto','wait')";
          $result = mysqli_query($koneksi, $query);
         header('Location: bookingCustomer.php');
@@ -104,7 +107,7 @@ date_default_timezone_set('Asia/Jakarta');
                                 $query = "SELECT * FROM pelayanan";
                                 $result = mysqli_query($koneksi, $query);
                                 while ($row = mysqli_fetch_array($result)) {
-                                echo "<option value=$row[harga] > $row[jenis_pelayanan] </option>";}
+                                echo "<option value=$row[harga]  > $row[jenis_pelayanan]    ( $row[harga] )  </option>";}
                                 ?>
                                 </select>
                                 </div>
