@@ -28,7 +28,6 @@ if( isset($_POST['register']) ){
     $cek = mysqli_num_rows($q);
     $cek2 = mysqli_num_rows($r);
     copy($temp, "img/fileBooking/" . $image_files);
-    
     if($cek==0 && $cek2==0){
         $query = "INSERT INTO booking VALUES(null, '$nama', '$jenis_pelayanan','$harga', '$tanggal_booking','$jam','$foto','wait')";
          $result = mysqli_query($koneksi, $query);
@@ -38,7 +37,7 @@ if( isset($_POST['register']) ){
         }
     }
 else {
-    $alert = "<div class='alert alert-danger'> JAM SUDAH DI BOOKING </div>";
+    $alert = "<div class='alert alert-danger'> JAM ATAU HARGA SALAH </div>";
 }
     // query memasukkan data 
 }
