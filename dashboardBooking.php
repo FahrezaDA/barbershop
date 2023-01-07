@@ -349,6 +349,7 @@ $sesPass = $_SESSION['pass'];
                                         <tr>
                                             <th>No</th>
                                             <th>Nama</th>
+                                            <th>No Telpon</th>
                                             <th>Jenis Pelayanan</th>
                                             <th>Harga</th>
                                             <th>Tanggal Booking</th>
@@ -368,6 +369,7 @@ $sesPass = $_SESSION['pass'];
                                             $postt ="admin";        
                                             while ($row = mysqli_fetch_array($result)){
                                                 $userName = $row['nama'];
+                                                $userNoTelpon = $row['no_telpon'];
                                                 $userJenisPelayanan = $row['jenis_pelayanan'];
                                                 $userHarga = $row['harga'];
                                                 $userTanggalBooking = $row['tanggal_booking'];
@@ -379,6 +381,7 @@ $sesPass = $_SESSION['pass'];
                                         <tr>
                                             <td><?php echo $no; ?></td>
                                             <td><?php echo $userName; ?></td>
+                                            <td><?php echo $userNoTelpon; ?></td>
                                             <td><?php echo $userJenisPelayanan; ?></td>
                                             <td><?php echo $userHarga; ?></td>
                                             <td><?php echo $userTanggalBooking; ?></td>

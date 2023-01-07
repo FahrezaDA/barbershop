@@ -212,12 +212,9 @@ $sesPass = $_SESSION['pass'];
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Nama</th>
-                                            <th>Jenis Pelayanan</th>
-                                            <th>Harga</th>
                                             <th>Tanggal Booking</th>
                                             <th>Jam Booking</th>
-                                            <th>Bukti Transfer</th>
+                                          
                                             <th>Status</th>
                                            
                                            
@@ -231,24 +228,22 @@ $sesPass = $_SESSION['pass'];
                                             $no = 1; 
                                             $postt ="admin";        
                                             while ($row = mysqli_fetch_array($result)){
-                                                $userName = $row['nama'];
-                                                $userJenisPelayanan = $row['jenis_pelayanan'];
-                                                $userHarga = $row['harga'];
+                                               
                                                 $userTanggalBooking = $row['tanggal_booking'];
                                                 $userJam = $row['jam_booking'];
-                                                $userBukti = $row['bukti_transfer'];
+                                            
                                                 $userStatus = $row['stats'];
                         
                                         ?>
                                         <tr>
                                             <td><?php echo $no; ?></td>
-                                            <td><?php echo $userName; ?></td>
-                                            <td><?php echo $userJenisPelayanan; ?></td>
-                                            <td><?php echo $userHarga; ?></td>
                                             <td><?php echo $userTanggalBooking; ?></td>
                                             <td><?php echo $userJam; ?></td>
-                                            <td><img src="../img/fileBooking/<?php echo $userBukti; ?>"></img></td>
+                                           
                                             <td><?php echo $userStatus; ?></td>
+                                            
+                                            
+                                            
                                             
                                         </tr>
                                         <?php

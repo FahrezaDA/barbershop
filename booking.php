@@ -13,6 +13,7 @@ if( isset($_POST['register']) ){
     $temp = $_FILES['bukti_transfer']['tmp_name'];
     $size = $_FILES['bukti_transfer']['size'];
     $nama = $_POST['txt_nama'];
+    $no_telpon = $_POST['txt_no_telpon'];
     $jenis_pelayanan = $_POST['txt_jenis_pelayanan'];
     $harga = $_POST['txt_harga'];
     $tanggal_booking = $_POST['txt_tanggal_booking'];
@@ -24,12 +25,12 @@ if( isset($_POST['register']) ){
         echo "<script>alert('Ukuran gambar terlalu besar');</script>";
     }
     $q = mysqli_query($koneksi, "SELECT*FROM booking WHERE jam_booking='$jam' AND tanggal_booking='$tanggal_booking' ");
-    $r = mysqli_query($koneksi, "SELECT*FROM booking WHERE jenis_pelayanan='$jenis_pelayanan' AND harga='$harga' ");
+
     $cek = mysqli_num_rows($q);
-    $cek2 = mysqli_num_rows($r);
+  
     copy($temp, "img/fileBooking/" . $image_files);
-    if($cek==0 && $cek2==0){
-        $query = "INSERT INTO booking VALUES(null, '$nama', '$jenis_pelayanan','$harga', '$tanggal_booking','$jam','$foto','wait')";
+    if($cek==0 ){
+        $query = "INSERT INTO booking VALUES(null, '$nama', '$no_telpon','$jenis_pelayanan','$harga', '$tanggal_booking','$jam','$foto','wait')";
          $result = mysqli_query($koneksi, $query);
         header('Location: bookingCustomer.php');
         if($query){
@@ -89,6 +90,10 @@ date_default_timezone_set('Asia/Jakarta');
                                         placeholder="Nama" name="txt_nama">
                                 </div>
                                 <div class="form-group">
+                                    <input  placeholder="No Telpon" type="text" class="form-control form-select" id="exampleInputUsername"
+                                        name="txt_no_telpon">
+                                </div>
+                                <div class="form-group">
                                 <select type="text" placeholder="Pilih Daftar Sebagai" class="form-control  form-select" name="txt_jenis_pelayanan" id="OptionLevel">
                                 <option>Pilih Pelayanan</option>
                                  <?php
@@ -130,6 +135,7 @@ date_default_timezone_set('Asia/Jakarta');
                                     <input  placeholder="bukti transfer" type="file" class="form-control form-select" id="exampleInputUsername"
                                         name="bukti_transfer">
                                 </div>
+                             
                                 <div class="form-group">
                                     <input type="hidden" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="ID pemesanan" name="txt_status" value="">
