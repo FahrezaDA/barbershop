@@ -41,6 +41,10 @@ $sesPass = $_SESSION['pass'];
 </head>
 
 <body id="page-top">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -386,10 +390,36 @@ $sesPass = $_SESSION['pass'];
                                             <td><?php echo $userHarga; ?></td>
                                             <td><?php echo $userTanggalBooking; ?></td>
                                             <td><?php echo $userJam; ?></td>
-                                            <td><img src="../img/fileBooking/<?php echo $userBukti; ?>"></img></td>
+                                          
+                                            <td><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                                Lihat</button></td>
+	
                                             <td><?php echo $userStatus ;?></td>
                                            
                                             <td>
+                                            <!-- Modal -->
+                                            
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel" align="center">BUKTI TRANSFER</h4>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        
+	      </div>
+	      <div class="modal-body">
+	      	<center>	
+              <img src="img/fileBooking/<?= $userBukti?>" width="100%" height="850px" class="img-responsive">
+	        </center>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>	
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+                                            
                                             <a href="editBooking.php?id=<?php echo $row['id_booking']; ?>" class="btn btn-primary btn-circle" <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
                                             <a href="hapusBooking.php?id=<?php echo $row['id_booking']; ?>" class="btn btn-danger btn-circle" <?php echo" ";?>  onClick="confirmModal('hapusPemesanan.php?&id=<?php echo $row['id_booking']; ?>');"><i class="fas fa-trash"></i></a>
                                             </td>
