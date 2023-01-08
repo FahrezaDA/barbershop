@@ -372,6 +372,7 @@ $sesPass = $_SESSION['pass'];
                                             $no = 1; 
                                             $postt ="admin";        
                                             while ($row = mysqli_fetch_array($result)){
+                                                $id = $row['id_booking'];
                                                 $userName = $row['nama'];
                                                 $userNoTelpon = $row['no_telpon'];
                                                 $userJenisPelayanan = $row['jenis_pelayanan'];
@@ -391,7 +392,7 @@ $sesPass = $_SESSION['pass'];
                                             <td><?php echo $userTanggalBooking; ?></td>
                                             <td><?php echo $userJam; ?></td>
                                           
-                                            <td><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                            <td><button  type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal<?php echo $id; ?>">
                                                 Lihat</button></td>
 	
                                             <td><?php echo $userStatus ;?></td>
@@ -399,7 +400,7 @@ $sesPass = $_SESSION['pass'];
                                             <td>
                                             <!-- Modal -->
                                             
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal fade" id="myModal<?php echo $id; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
@@ -407,16 +408,16 @@ $sesPass = $_SESSION['pass'];
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 	        
 	      </div>
-	      <div class="modal-body">
+	      <div class="modal-body" >
 	      	<center>	
-              <img src="img/fileBooking/<?= $userBukti?>" width="100%" height="850px" class="img-responsive">
+              <img src="img/fileBooking/<?php echo $userBukti;?>"  width="100%" height="850px" class="img-responsive">
 	        </center>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>	
 	      </div>
 	    </div>
-	  </div>
+	  </div>
 	</div>
 
                                             

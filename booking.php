@@ -18,7 +18,7 @@ if( isset($_POST['register']) ){
     $harga = $_POST['txt_harga'];
     $tanggal_booking = $_POST['txt_tanggal_booking'];
     $jam = $_POST['txt_jam'];
-    $image_files=$nama.".jpg";
+    $image_files=$foto;
     $status=$_POST['txt_status'];
     
     if($size > 5000000){
@@ -28,7 +28,7 @@ if( isset($_POST['register']) ){
 
     $cek = mysqli_num_rows($q);
   
-    copy($temp, "img/fileBooking/".$image_files);
+    copy($temp, "img/fileBooking/" . $image_files);
     if($cek==0 ){
         $query = "INSERT INTO booking VALUES(null, '$nama', '$no_telpon','$jenis_pelayanan','$harga', '$tanggal_booking','$jam','$foto','wait')";
          $result = mysqli_query($koneksi, $query);
