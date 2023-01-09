@@ -4,9 +4,10 @@ session_start();
 if (!isset($_SESSION['email'])) {
     $_SESSION['msg'] = 'anda harus login untuk mengakses halaman ini';
     header('Location: loginAdmin.php');
-}
-
+} 
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,11 +19,6 @@ if (!isset($_SESSION['email'])) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="assets2/css/bootstrap.min.css" >
-  <link rel="stylesheet" href="assets2/DataTables/DataTables-1.13.1/css/dataTables.bootstrap4.min.css">
-  <link rel="stylesheet" href="assets2/DataTables/Buttons-2.3.3/css/buttons.bootstrap4.min.css">
-  
 
     <title>DASHBOARD</title>
 
@@ -35,8 +31,9 @@ if (!isset($_SESSION['email'])) {
     <!-- Custom styles for this template -->
     <link href="css/sb-admin-2.css" rel="stylesheet">
 
-    <!-- Custom styles for this page -->
-    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <!-- script Chart-->
+    <script type="text/javascript" src="vendor/chart.js/Chart.js"></script>
+
 
 </head>
 
@@ -49,7 +46,7 @@ if (!isset($_SESSION['email'])) {
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -61,21 +58,17 @@ if (!isset($_SESSION['email'])) {
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
+                <a class="nav-link" href="dashboard.php">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="index.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Hal Utama</span></a>
             </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
 
-            <!-- Heading -->
-          
-
-            <!-- Nav Item - Pages Collapse Menu -->
-
-            <!-- Nav Item - Utilities Collapse Menu -->
-            
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -90,14 +83,22 @@ if (!isset($_SESSION['email'])) {
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Chart</span>
+                    <span>Pages</span>
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="dashboardUtama.php">Charts</a>
+                        <a class="collapse-item" href="login.php">Login</a>
+                        <a class="collapse-item" href="register_Karyawan.php">Register</a>
+                        <a class="collapse-item" href="forgot-password.php">Forgot Password</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Other Pages:</h6>
+                        <a class="collapse-item" href="404.html">404 Page</a>
+                        <a class="collapse-item" href="blank.html">Blank Page</a>
+                    </div>
+                </div>
+            </li>
 
-            <!-- Nav Item - Charts -->
 
             <!-- Nav Item - Tables -->
                     
@@ -315,7 +316,7 @@ if (!isset($_SESSION['email'])) {
                                     Activity Log
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" href="Logout.php" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
@@ -326,88 +327,105 @@ if (!isset($_SESSION['email'])) {
 
                 </nav>
                 <!-- End of Topbar -->
+                <marquee>Selamat Datang di Halaman Utama CUTLUCK BARBERSHOP </marquee>
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- DataTales Example -->
-                    <div class="container">
-                        <div class="card mt-5">
-                            <div class="card-body">
-                                <h3 class="display-7">Data Pemesanan</h3>
-                                <table id="dataTable" class="table table-bordered" style="width:100%">
-                                    <thead>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>Nama</th>
-                                            <th>Jenis Pelayanan</th>
-                                            <th>Harga</th>
-                                            <th>No Antrian</th>
-                                            <th>Tanggal Pemesanan</th>
-                                            <th>ID Kasir</th>
-                                            <th>Aksi</th>
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                    </div>
 
-                                        </tr>
-                                    </thead>
-                                    <tbody>
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
                                         <?php
-                                        $query = "SELECT*FROM pemesanan";
-                                            $result = mysqli_query($koneksi, $query); 
-                                            $no = 1; 
-                                            $postt ="1";               
-                                            while ($row = mysqli_fetch_array($result)){
-                                              
-                                                $userName = $row['nama_customer'];
-                                                $userJenisPelayanan = $row['jenis_pelayanan'];
-                                                $userHarga = $row['harga'];
-                                                $userNoAntrian = $row['no_antrian'];
-                                                $userTanggalPemesanan = $row['tanggal_pemesanan'];
-                                                $userIdKasir=$row['kasirID']
-                                        ?>
-                                        <tr>
-                                            <td><?php echo $no; ?></td>
-                                           
-                                           <td><?php echo $userName; ?></td>
-                                           <td><?php echo $userJenisPelayanan; ?></td>
-                                           <td><?php echo $userHarga; ?></td>
-                                           <td><?php echo $userNoAntrian; ?></td>
-                                           <td><?php echo $userTanggalPemesanan; ?></td>
-                                           <td><?php echo $userIdKasir ?></td>
-                                           
-                                            
-                                            <td>
-                                            <a href="editPemesanan.php?id= <?php echo $row['id_pemesanan']; ?>" class="btn btn-primary btn-circle" <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
-                                            <a href="hapusPemesanan.php?id= <?php echo $row['id_pemesanan']; ?>" class="btn btn-danger btn-circle" <?php echo" ";?>  onClick="confirmModal('hapusPemesanan.php?&id=<?php echo $row['id_pemesanan']; ?>');"><i class="fas fa-trash"></i></a>
-                                            <a href="cetak_struk.php?id= <?php echo $row['id_pemesanan']; ?>" class="btn btn-success btn-circle" <?php echo" ";?>><i class="fas fa-print"></i></a> 
-                                        </td>
-                                            
-                                        </tr>
+                                            $query = mysqli_query($koneksi,"SELECT * FROM pemesanan");
+                                            $cek = mysqli_num_rows($query);
+                                            ?>
+                                            <p style="font-size: 20px;"><?php echo $cek; ?> Pemesanan</p>
+                                            <a href="dashboardPemesanan.php">
+                                                <p class="text-muted">Lihat Detail</p></a></div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-book fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
                                         <?php
-                                            $no++;
-                                            }
-                                        ?>
-                                        
-                                    </tbody>
-                                    
-                                </table>
-                                <a href="pemesanan.php" type="submit" name="register" class="btn btn-primary">Tambah</a>
+                                            $query = mysqli_query($koneksi,"SELECT * FROM pelayanan");
+                                            $cek = mysqli_num_rows($query);
+                                            ?>
+                                            <p style="font-size: 20px;"><?php echo $cek; ?> Pelayanan</p>
+                                            <a href="pelayanan.php">
+                                                <p class="text-muted">Lihat Detail</p></a></div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                        <?php
+                                            $query = mysqli_query($koneksi,"SELECT * FROM fasilitas");
+                                            $cek = mysqli_num_rows($query);
+                                            ?>
+                                            <p style="font-size: 20px;"><?php echo $cek; ?> Fasilitas</p>
+                                            <a href="index.php">
+                                                <p class="text-muted">Lihat Detail</p></a></div>
+                                                <div class="col-auto">
+                                            <i class="fas fa-database fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                        <?php
+                                            $query = mysqli_query($koneksi,"SELECT * FROM pengeluaran");
+                                            $cek = mysqli_num_rows($query);
+                                            ?>
+                                            <p style="font-size: 20px;"><?php echo $cek; ?> Pengeluaran</p>
+                                            <a href="dashboardPengeluaran.php">
+                                                <p class="text-muted">Lihat Detail</p></a></div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                </div>
-                <!-- /.container-fluid -->
-
-            </div>
-            <!-- End of Main Content -->
-
-        </div>
-        <!-- End of Content Wrapper -->
-
-    </div>
-    <!-- End of Page Wrapper -->
-
-    <!-- Scroll to Top Button-->
+            <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
@@ -433,34 +451,116 @@ if (!isset($_SESSION['email'])) {
     </div>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets2/js/jquery.min.js"></script>
-    <script src="assets2/js/bootstrap.bundle.min.js"></script>
+<!-- Begin Page Content -->
+<div class="container-fluid">
 
-    <!-- DataTables -->
-    <script src="assets2/DataTables/DataTables-1.13.1/js/jquery.dataTables.min.js"></script>
-    <script src="assets2/DataTables/DataTables-1.13.1/js/dataTables.bootstrap4.min.js"></script>
+<!-- Content Row -->
+<div class="row">
+
+    <div class="col-xl-8 col-lg-7">
+
+        <!-- Area Chart -->
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Pemesanan</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart-area">
+                    <canvas id="myAreaChart"></canvas>
+                </div>
+            </div>
+        </div>
 
 
-    <script src="assets2/DataTables/Buttons-2.3.3/js/dataTables.buttons.min.js"></script>
-    <script src="assets2/DataTables/Buttons-2.3.3/js/buttons.bootstrap4.min.js"></script>
-    <script src="assets2/DataTables/JSZip-2.5.0/jszip.min.js"></script>
-    <script src="assets2/DataTables/pdfmake-0.1.36/pdfmake.min.js"></script>
-    <script src="assets2/DataTables/pdfmake-0.1.36/vfs_fonts.js"></script>
-    <script src="assets2/DataTables/Buttons-2.3.3/js/buttons.html5.min.js"></script>
-    <script src="assets2/DataTables/Buttons-2.3.3/js/buttons.print.min.js"></script>
-    <script src="assets2/DataTables/Buttons-2.3.3/js/buttons.colVis.min.js"></script>
+    </div>
 
+    <!-- script -->
     <script>
-        $('#dataTable').DataTable( {
-            dom: 'Bfrtip',
-            buttons: [
-                'copy', 'print', 'excel', 'pdf'
-             ]
-            } );
-    </script>
+	var ctx = document.getElementById("myAreaChart").getContext('2d');
+	var myAreaChart = new Chart(ctx, {
+		type: 'line',
+		data: {
+			labels: ["Basic_Hair_Coloring", "Fashion_Hair_Coloring", "Black_Hair_Coloring", "Gentlement_Cut", "Gentlement_Grooming", "Grooming_and_Hair_Tato", "Hair_Repair_Treatment", "Kids_Haircut", "Perm_Hair_Threatment", "smoothing"],
+			datasets: [{
+				label: '',
+				data: [
+				<?php 
+				$pemasukan = mysqli_query($koneksi,"select * from pemesanan where jenis_pelayanan='Basic_Hair_Coloring'");
+				echo mysqli_num_rows($pemasukan);
+				?>, 
+				<?php 
+				$pemasukan = mysqli_query($koneksi,"select * from pemesanan where jenis_pelayanan='Black_Hair_Coloring'");
+				echo mysqli_num_rows($pemasukan);
+				?>, 
+				<?php 
+				$pemasukan = mysqli_query($koneksi,"select * from pemesanan where jenis_pelayanan='Fashion_Hair_Coloring'");
+				echo mysqli_num_rows($pemasukan);
+				?>,
+                <?php 
+				$pemasukan = mysqli_query($koneksi,"select * from pemesanan where jenis_pelayanan='Gentlement_Cut'");
+				echo mysqli_num_rows($pemasukan);
+				?>,
+                <?php 
+				$pemasukan = mysqli_query($koneksi,"select * from pemesanan where jenis_pelayanan='Gentlement_Grooming'");
+				echo mysqli_num_rows($pemasukan);
+				?>,
+                <?php 
+				$pemasukan = mysqli_query($koneksi,"select * from pemesanan where jenis_pelayanan='Grooming_and_Hair_Tato'");
+				echo mysqli_num_rows($pemasukan);
+				?>,
+                <?php 
+				$pemasukan = mysqli_query($koneksi,"select * from pemesanan where jenis_pelayanan='Hair_Repair_Treatment'");
+				echo mysqli_num_rows($pemasukan);
+				?>,
+                <?php 
+				$pemasukan = mysqli_query($koneksi,"select * from pemesanan where jenis_pelayanan='Kids_Haircut'");
+				echo mysqli_num_rows($pemasukan);
+				?>,
+                <?php 
+				$pemasukan = mysqli_query($koneksi,"select * from pemesanan where jenis_pelayanan='Perm_Hair_Threatment'");
+				echo mysqli_num_rows($pemasukan);
+				?>,
+                <?php 
+				$pemasukan = mysqli_query($koneksi,"select * from pemesanan where jenis_pelayanan='smoothing'");
+				echo mysqli_num_rows($pemasukan);
+				?>
+				],
+				backgroundColor: [
+				'rgba(255, 99, 132, 0.2)',
+				'rgba(54, 162, 235, 0.2)',
+				'rgba(255, 206, 86, 0.2)',
+				'rgba(75, 192, 192, 0.2)'
+				],
+				borderColor: [
+				'rgba(255,99,132,1)',
+				'rgba(54, 162, 235, 1)',
+				'rgba(255, 206, 86, 1)',
+				'rgba(75, 192, 192, 1)'
+				],
+				borderWidth: 1
+			}]
+		},
+		options: {
+			scales: {
+				yAxes: [{
+					ticks: {
+						beginAtZero:true
+					}
+				}]
+			}
+		}
+	});
+</script>
 
+</div>
+<!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
+
+
+
+    
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -472,11 +572,11 @@ if (!isset($_SESSION['email'])) {
     <script src="js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/datatables-demo.js"></script>
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>    
 
 </body>
 

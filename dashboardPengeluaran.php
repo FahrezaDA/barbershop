@@ -353,6 +353,7 @@ $sesPass = $_SESSION['pass'];
                                             <th>ID Fasilitas</th>
                                             <th>Jumlah</th>
                                             <th>Biaya</th>
+                                            <th>Bukti Nota</th>
                                             <th>Tanggal Pengeluaran</th>
                                             <th>Id Kasir</th>
                                             <th>Aksi</th>
@@ -366,11 +367,12 @@ $sesPass = $_SESSION['pass'];
                                             $no = 1; 
                                             $postt ="admin";        
                                             while ($row = mysqli_fetch_array($result)){
-                                              
+                                                $id = $row['id_pengeluaran'];
                                                 $userJenisPengeluaran = $row['jenis_pengeluaran'];
                                                 $userIdFasilitas = $row['id_fasilitas'];
                                                 $userJumlah = $row['jumlah'];
                                                 $userBiaya = $row['biaya'];
+                                                $userBuktiNota = $row['bukti_nota'];
                                                 $userTanggalPengeluaran = $row['tanggal_pengeluaran'];
                                                 $userIdUser = $row['id_kasir'];
                                         ?>
@@ -380,9 +382,12 @@ $sesPass = $_SESSION['pass'];
                                             <td><?php echo $userIdFasilitas; ?></td>
                                             <td><?php echo $userJumlah; ?></td>
                                             <td><?php echo $userBiaya; ?></td>
+                                            <td><button  type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal<?php echo $id; ?>">
+                                                Lihat</button></td>
                                             <td><?php echo $userTanggalPengeluaran; ?></td>
                                             <td><?php echo $userIdUser; ?></td>
                                             <td>
+                                            
                                             <a href="editPengeluaran.php?id=<?php echo $row['id_pengeluaran']; ?>" class="btn btn-primary btn-circle" <?php echo " "; ?>"><i class="fas fa-pen"></i></a>
                                             <a href="hapusPengeluaran.php?id=<?php echo $row['id_pengeluaran']; ?>" class="btn btn-danger btn-circle" <?php echo" ";?>  onClick="confirmModal('hapusPengeluaran.php?&id=<?php echo $row['id_pengeluaran']; ?>');"><i class="fas fa-trash"></i></a>
                                             </td>
@@ -412,7 +417,25 @@ $sesPass = $_SESSION['pass'];
 
     </div>
     <!-- End of Page Wrapper -->
-
+    <div class="modal fade" id="myModal<?php echo $id; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel" align="center">BUKTI TRANSFER</h4>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        
+	      </div>
+	      <div class="modal-body" >
+	      	<center>	
+              <img src="img/fileNota/<?php echo $userBuktiNota;?>"  width="100%" height="680px" class="img-responsive">
+	        </center>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>	
+	      </div>
+	    </div>
+	  </div>
+	</div>
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>

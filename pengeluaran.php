@@ -1,15 +1,22 @@
 <?php
 require('koneksi.php');
 if( isset($_POST['submit']) ){
+    $foto = $_FILES['bukti_nota']['name'];
+    $temp = $_FILES['bukti_nota']['tmp_name'];
+    $size = $_FILES['bukti_nota']['size'];
     $userJenisPengeluaran = $_POST['txt_jenis_pengeluaran'];
     $userIdFasilitas = $_POST['txt_id_fasilitas'];
     $userJumlah = $_POST['txt_jumlah'];
     $userBiaya = $_POST['txt_biaya'];
+    $image_files=$foto;
     $userTanggalPengeluaran = $_POST['txt_tanggal_pengeluaran'];
     $userIdUser = $_POST['txt_id_kasir'];
     
-
-    $query = "INSERT INTO pengeluaran VALUES(null, '$userJenisPengeluaran', '$userIdFasilitas', '$userJumlah','$userBiaya','$userTanggalPengeluaran','$userIdUser')";
+    if($size > 5000000){
+        echo "<script>alert('Ukuran gambar terlalu besar');</script>";
+    }
+    copy($temp, "img/fileNota/" . $image_files);
+    $query = "INSERT INTO pengeluaran VALUES(null, '$userJenisPengeluaran', '$userIdFasilitas', '$userJumlah','$userBiaya','$foto','$userTanggalPengeluaran','$userIdUser')";
     $result = mysqli_query($koneksi, $query);
     header('Location: dashboardPengeluaran.php');
 }
@@ -54,7 +61,7 @@ if( isset($_POST['submit']) ){
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">TAMBAHKAN PENGELUARAN</h1>
                             </div>
-                            <form class="user" action="pengeluaran.php" method="POST">
+                            <form class="user" action="pengeluaran.php" method="POST" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="Jenis Pengeluaran" name="txt_jenis_pengeluaran">
@@ -77,6 +84,11 @@ if( isset($_POST['submit']) ){
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputUsername"
                                         placeholder="biaya " name="txt_biaya">
+                                </div>
+                                <div class="form-group">
+                                    <p><b>Bukti Pembayaran :</P>
+                                    <input  placeholder="bukti transfer" type="file" class="form-control form-select" id="exampleInputUsername"
+                                        name="bukti_nota">
                                 </div>
                                 <div class="form-group">
                                     <input type="date" class="form-control form-control-user" 
