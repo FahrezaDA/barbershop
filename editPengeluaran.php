@@ -2,15 +2,22 @@
 require ('koneksi.php');
 if(isset($_POST['update'])){
     $userId   = $_POST['txt_id'];
+    $foto = $_FILES['bukti_nota']['name'];
+    $temp = $_FILES['bukti_nota']['tmp_name'];
+    $size = $_FILES['bukti_nota']['size'];
     $userJenis  = $_POST['txt_jenis_pengeluaran'];
     $userFasilitas  = $_POST['txt_id_fasilitas'];
     $userJumlah = $_POST['txt_jumlah'];
     $userBiaya = $_POST['txt_biaya'];
+    $image_files=$foto;
     $userPengeluaran = $_POST['txt_tanggal_pengeluaran'];
     $userKasir = $_POST['txt_kasir'];
     
-    
-    $query = "UPDATE pengeluaran SET jenis_pengeluaran='$userJenis', id_fasilitas='$userFasilitas', jumlah='$userJumlah', biaya='$userBiaya', tanggal_pengeluaran='$userPengeluaran', id_kasir='$userKasir' WHERE id_pengeluaran='$userId'";
+    if($size > 5000000){
+        echo "<script>alert('Ukuran gambar terlalu besar');</script>";
+    }
+    copy($temp, "img/fileNota/" . $image_files);
+    $query = "UPDATE pengeluaran SET jenis_pengeluaran='$userJenis', id_fasilitas='$userFasilitas', jumlah='$userJumlah', biaya='$userBiaya', bukti_nota='$foto',tanggal_pengeluaran='$userPengeluaran', id_kasir='$userKasir' WHERE id_pengeluaran='$userId'";
     echo $query;
     $result = mysqli_query($koneksi, $query);
     header('Location: dashboardPengeluaran.php');
@@ -22,9 +29,11 @@ $result = mysqli_query($koneksi, $query)or die(mysqli_error($koneksi));
 while ($row =mysqli_fetch_array($result)){
     $id     = $row['id_pengeluaran'];
     $userJenis = $row['jenis_pengeluaran'];
+    
     $userFasilitas = $row['id_fasilitas'];
     $userJumlah = $row['jumlah'];
     $userBiaya= $row['biaya'];
+    $foto = $row['bukti_nota'];
     $userPengeluaran= $row['tanggal_pengeluaran'];
     $userKasir = $row['id_kasir'];
 
@@ -63,7 +72,7 @@ while ($row =mysqli_fetch_array($result)){
                     <div class="text-center">
                         <h1 class="h4 text-gray-900 mb-4">EDIT PENGELUARAN</h1>
                     </div>
-                    <form class="user" action="editPengeluaran.php" method="POST">
+                    <form class="user" action="editPengeluaran.php" method="POST" enctype="multipart/form-data">
                         <div class="form-group">
                             <input type="hidden" class="form-control form-control-user" id="exampleInputUsername"
                                 placeholder="ID pemesanan" name="txt_id" value="<?php echo $id; ?>">
@@ -83,6 +92,10 @@ while ($row =mysqli_fetch_array($result)){
                         <div class="form-group">
                             <input type="text" class="form-control form-control-user" id="exampleInputPassword"
                                 placeholder="No Antrian" name="txt_biaya" value="<?php echo $userBiaya; ?>">
+                        </div>
+                        <div class="form-group">
+                            <input type="file" class="form-control form-control-user" id="exampleInputPassword"
+                                placeholder="Nota" name="bukti_nota" value="<?php echo $foto; ?>">
                         </div>
                         <div class="form-group">
                             <input type="date" class="form-control form-control-user" id="exampleInputPassword"
