@@ -388,10 +388,12 @@ $sesPass = $_SESSION['pass'];
                                     
                                     <tbody>
                                         <?php
+                                        //Melakukan pengulangan untuk menampilkan nilai pada table
                                             $query = "SELECT*FROM karyawan";
                                             $result = mysqli_query($koneksi, $query); 
                                             $no = 1; 
-                                            $postt ="admin";        
+                                            $postt ="admin";  
+                                            //Fungsi mysql_fetch_array() merupakan salah satu fungsi yang banyak digunakan dalam proses pengambilan data MySQL.      
                                             while ($row = mysqli_fetch_array($result)){
                                                 $userId = $row['karyawanID'];
                                                 $userName = $row['nama_karyawan'];
